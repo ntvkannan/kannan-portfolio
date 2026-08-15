@@ -30,7 +30,7 @@ export default function ProjectCard({ project }) {
       </p>
 
       {/* CTA Link */}
-      <Link href="/work" color="accent">
+      <Link href={`/work/${project.slug}`} color="accent">
         View Case Study →
       </Link>
     </div>
