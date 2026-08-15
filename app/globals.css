@@ -166,6 +166,16 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
+/* Button-like links: don't override their explicit text colors */
+a[class*="bg-accent"],
+a[class*="bg-transparent"][class*="border"] {
+  color: inherit;
+}
+
+a[class*="bg-accent"]:hover {
+  color: inherit;
+}
+
 /* Focus Visible */
 a:focus-visible,
 button:focus-visible,

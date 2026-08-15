@@ -48,11 +48,11 @@ export default function ServicesPreview() {
                 {service.title}
               </h3>
               {service.subheading && (
-                <p className="text-sm text-accent font-medium mb-3">
+                <p className="text-sm sm:text-base text-accent font-medium mb-3">
                   {service.subheading}
                 </p>
               )}
-              <p className="text-text-secondary mb-4 text-sm">
+              <p className="text-text-secondary mb-4 text-sm sm:text-base">
                 {service.description}
               </p>
               {service.items && (
@@ -63,7 +63,7 @@ export default function ServicesPreview() {
                 </div>
               )}
               {service.flow && (
-                <p className="text-sm text-text-secondary">
+                <p className="text-sm sm:text-base text-text-secondary">
                   {service.flow}
                 </p>
               )}

@@ -17,7 +17,7 @@ export default function AudiencePaths() {
             </p>
             <NextLink
               href="/experience"
-              className="inline-flex items-center justify-center rounded-button h-11 px-5 bg-accent text-white font-medium text-sm hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+              className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
             >
               View Experience
             </NextLink>
@@ -33,7 +33,7 @@ export default function AudiencePaths() {
             </p>
             <NextLink
               href="/contact"
-              className="inline-flex items-center justify-center rounded-button h-11 px-5 bg-accent text-white font-medium text-sm hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+              className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
             >
               Work With Me
             </NextLink>
