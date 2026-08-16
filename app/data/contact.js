@@ -61,7 +61,7 @@ export const socialLinks = [
 ];
 
 export const formspree = {
-  endpoint: "https://formspree.io/f/FORM_ID_PENDING",
-  status: "PENDING_CONFIGURATION",
-  note: "Formspree form ID needs to be configured. Replace FORM_ID_PENDING with actual endpoint."
+  endpoint: "https://formspree.io/f/xeajlpqz",
+  status: "CONFIGURED",
+  formName: "Kannan Portfolio Contact"
 };
