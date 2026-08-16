@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social Links (Placeholder - no fake URLs) */}
+          {/* Social Links */}
           <div className="md:col-span-1">
             <h3 className="text-sm font-semibold text-text-primary">
               Connect
@@ -50,6 +50,26 @@ export default function Footer() {
                   className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kannan-thangavel/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ntvkannan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  GitHub
                 </a>
               </li>
             </ul>
