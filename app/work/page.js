@@ -7,6 +7,12 @@ import ContactCTA from "@/app/components/home/ContactCTA";
 export const metadata = {
   title: "Selected Work — Kannan Thangavel",
   description: "Explore my professional UX/UI projects, client design work, and design-to-code portfolio.",
+  openGraph: {
+    title: "Selected Work — Kannan Thangavel",
+    description: "Explore my professional UX/UI projects, client design work, and design-to-code portfolio.",
+    url: "/work",
+    type: "website",
+  },
 };
 
 export default function WorkPage() {

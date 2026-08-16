@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Experience — Kannan Thangavel",
     description: "Learn about my professional career progression and experience across design and development.",
-    url: "https://kannanthangavel.com/experience",
+    url: "/experience",
     type: "website",
   },
 };

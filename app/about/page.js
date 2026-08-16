@@ -10,6 +10,12 @@ import ContactCTA from "@/app/components/home/ContactCTA";
 export const metadata = {
   title: "About — Kannan Thangavel",
   description: "Learn about my career spanning visual design, frontend development, UX/UI design and product experience.",
+  openGraph: {
+    title: "About — Kannan Thangavel",
+    description: "Learn about my career spanning visual design, frontend development, UX/UI design and product experience.",
+    url: "/about",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

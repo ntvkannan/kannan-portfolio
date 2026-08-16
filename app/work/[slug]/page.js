@@ -45,6 +45,28 @@ export async function generateMetadata({ params }) {
   };
 }
 
+function ProjectStructuredData({ project }) {
+  const creativeWorkSchema = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    url: `https://kannanthangavel.com/work/${project.slug}`,
+    image: `https://kannanthangavel.com${project.image}`,
+    creator: {
+      "@type": "Person",
+      name: "Kannan Thangavel",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(creativeWorkSchema) }}
+    />
+  );
+}
+
 export default async function ProjectPage({ params }) {
   const resolvedParams = await params;
   const project = projects.find((p) => p.slug === resolvedParams.slug);
@@ -57,6 +79,8 @@ export default async function ProjectPage({ params }) {
 
   return (
     <>
+      <ProjectStructuredData project={project} />
+
       {/* Breadcrumb */}
       <Section variant="small">
         <Container>

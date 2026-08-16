@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "UX/UI & Design Services — Kannan Thangavel",
     description: "UX/UI design, visual design, and frontend development services. I help bring digital products to life from concept through deployment.",
-    url: "https://kannanthangavel.com/services",
+    url: "/services",
     type: "website",
   },
 };
