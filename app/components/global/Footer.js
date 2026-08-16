@@ -75,14 +75,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resume (Placeholder - no fake file) */}
+          {/* Resume */}
           <div className="md:col-span-1">
             <h3 className="text-sm font-semibold text-text-primary">
               Resume
             </h3>
-            <p className="mt-4 text-sm text-text-muted">
-              Coming soon
-            </p>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  Download PDF
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
