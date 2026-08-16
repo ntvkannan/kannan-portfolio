@@ -175,7 +175,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                   required
                   aria-invalid={Boolean(errors.name)}
                   aria-describedby={errors.name ? "name-error" : undefined}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
                   placeholder="Your name"
                 />
                 {errors.name && (
@@ -204,7 +204,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                   required
                   aria-invalid={Boolean(errors.email)}
                   aria-describedby={errors.email ? "email-error" : undefined}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
                   placeholder="your@email.com"
                 />
                 {errors.email && (
@@ -234,7 +234,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                   aria-describedby={
                     errors.projectType ? "projectType-error" : undefined
                   }
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
                 >
                   <option value="">Select a project type...</option>
                   {projectTypeOptions.map((option) => (
@@ -271,7 +271,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                     errors.message ? "message-error" : undefined
                   }
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors resize-none"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (

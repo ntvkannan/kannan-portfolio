@@ -44,7 +44,7 @@ export default function MobileMenu() {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
-        className="relative p-2 text-text-primary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        className="relative p-2.5 text-text-primary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       >
         <span className="sr-only">Open menu</span>
         <svg
@@ -72,7 +72,7 @@ export default function MobileMenu() {
       <nav
         ref={menuRef}
         id="mobile-menu"
-        className={`fixed right-0 top-0 z-50 h-screen w-full max-w-sm bg-surface shadow-lg transition-transform duration-200 ${
+        className={`fixed right-0 top-0 z-50 h-screen w-full max-w-[90vw] sm:max-w-sm bg-surface shadow-lg transition-transform duration-200 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -108,7 +108,7 @@ export default function MobileMenu() {
               <Link
                 href={item.href}
                 onClick={closeMenu}
-                className="block rounded-md px-3 py-2 text-base font-medium text-text-primary hover:bg-surface-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="block rounded-md px-3 py-2.5 text-base font-medium text-text-primary hover:bg-surface-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 {item.label}
               </Link>

@@ -29,7 +29,7 @@ export default function ContactPaths({ onPathSelect }) {
           <p className="text-center text-text-secondary mb-8">
             What's your project about?
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {contactPaths.map((path) => (
               <button
                 key={path.id}

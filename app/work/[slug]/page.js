@@ -60,7 +60,7 @@ export default async function ProjectPage({ params }) {
       {/* Breadcrumb */}
       <Section variant="small">
         <Container>
-          <nav className="flex items-center gap-2 text-sm text-text-secondary" aria-label="Breadcrumb">
+          <nav className="flex items-center gap-2 text-xs sm:text-sm text-text-secondary" aria-label="Breadcrumb">
             <a href="/" className="text-text-secondary hover:text-text-primary transition-colors">
               Home
             </a>
