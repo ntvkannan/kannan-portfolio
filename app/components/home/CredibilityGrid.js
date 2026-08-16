@@ -24,6 +24,7 @@ export default function CredibilityGrid() {
   return (
     <Section variant="normal">
       <Container>
+        <h2 className="sr-only">Professional qualifications</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {items.map((item, index) => (
             <div key={index}>

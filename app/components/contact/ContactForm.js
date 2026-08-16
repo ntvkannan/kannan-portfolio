@@ -72,6 +72,18 @@ export default function ContactForm({ preSelectedProjectType = null }) {
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+      // Focus on first invalid field for accessibility
+      const fieldOrder = ['name', 'email', 'projectType', 'message'];
+      for (const field of fieldOrder) {
+        if (validationErrors[field]) {
+          const element = document.getElementById(field);
+          if (element) {
+            element.focus();
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          break;
+        }
+      }
       return;
     }
 

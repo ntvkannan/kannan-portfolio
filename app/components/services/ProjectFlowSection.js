@@ -17,11 +17,11 @@ export default function ProjectFlowSection({ projectFlow }) {
               {projectFlow.map((item, index) => (
                 <div key={index} className="flex-1">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm">
+                    <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm" aria-hidden="true">
                       {index + 1}
                     </div>
                     <h3 className="text-xl font-semibold text-text-primary">
-                      {item.step}
+                      <span className="sr-only">Step {index + 1}:</span> {item.step}
                     </h3>
                   </div>
                   <p className="text-text-secondary leading-relaxed">
@@ -38,11 +38,11 @@ export default function ProjectFlowSection({ projectFlow }) {
               {projectFlow.map((item, index) => (
                 <div key={index}>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm">
+                    <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm" aria-hidden="true">
                       {index + 1}
                     </div>
                     <h3 className="text-lg font-semibold text-text-primary">
-                      {item.step}
+                      <span className="sr-only">Step {index + 1}:</span> {item.step}
                     </h3>
                   </div>
                   <p className="text-sm text-text-secondary leading-relaxed">
@@ -58,16 +58,16 @@ export default function ProjectFlowSection({ projectFlow }) {
             {projectFlow.map((item, index) => (
               <div key={index} className="flex gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm">
+                  <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-semibold text-sm" aria-hidden="true">
                     {index + 1}
                   </div>
                   {index < projectFlow.length - 1 && (
-                    <div className="w-0.5 h-16 bg-border mt-2" />
+                    <div className="w-0.5 h-16 bg-border mt-2" aria-hidden="true" />
                   )}
                 </div>
                 <div className="flex-1 pb-4">
                   <h3 className="text-base font-semibold text-text-primary mb-2">
-                    {item.step}
+                    <span className="sr-only">Step {index + 1}:</span> {item.step}
                   </h3>
                   <p className="text-sm text-text-secondary leading-relaxed">
                     {item.description}

@@ -15,7 +15,7 @@ export default function CareerTimeline({ timeline }) {
             <ol className="space-y-8">
               {timeline.map((entry, index) => (
                 <li key={index}>
-                  <div className="border-l-2 border-border pl-6">
+                  <article className="border-l-2 border-border pl-6">
                     <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">
                       {entry.period}
                     </p>
@@ -31,7 +31,7 @@ export default function CareerTimeline({ timeline }) {
                     <p className="text-sm text-text-secondary leading-relaxed">
                       {entry.summary}
                     </p>
-                  </div>
+                  </article>
                 </li>
               ))}
             </ol>
@@ -42,7 +42,7 @@ export default function CareerTimeline({ timeline }) {
             <ol className="space-y-6">
               {timeline.map((entry, index) => (
                 <li key={index}>
-                  <div className="flex gap-4">
+                  <article className="flex gap-4">
                     <div className="flex flex-col items-center flex-shrink-0">
                       <div className="w-3 h-3 rounded-full bg-accent mt-1"></div>
                       {index < timeline.length - 1 && (
@@ -66,7 +66,7 @@ export default function CareerTimeline({ timeline }) {
                         {entry.summary}
                       </p>
                     </div>
-                  </div>
+                  </article>
                 </li>
               ))}
             </ol>

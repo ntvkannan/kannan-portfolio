@@ -3,7 +3,7 @@ import Link from "@/app/components/foundation/Link";
 
 export default function ProjectCard({ project }) {
   return (
-    <div>
+    <article>
       {/* Project Image */}
       <div className="bg-surface-secondary rounded-lg overflow-hidden mb-4 aspect-video flex items-center justify-center">
         <p className="text-text-muted text-center text-sm">Project image placeholder</p>
@@ -33,6 +33,6 @@ export default function ProjectCard({ project }) {
       <Link href={`/work/${project.slug}`} color="accent">
         View Case Study →
       </Link>
-    </div>
+    </article>
   );
 }

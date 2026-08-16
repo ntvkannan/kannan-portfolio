@@ -6,6 +6,7 @@ export default function AudiencePaths() {
   return (
     <Section variant="normal">
       <Container>
+        <h2 className="sr-only">Choose your path</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Employers Card */}
           <div className="border border-border rounded-lg p-8 bg-surface">

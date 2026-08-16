@@ -24,6 +24,7 @@ export default function Link({
         target="_blank"
         rel="noopener noreferrer"
         className={finalClassName}
+        aria-label={`${children} (opens in new tab)`}
         {...props}
       >
         {linkContent}
