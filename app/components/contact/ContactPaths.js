@@ -1,25 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
 import { contactPaths } from "@/app/data/contact";
 
 export default function ContactPaths({ onPathSelect }) {
   const [selectedPath, setSelectedPath] = useState(null);
+  const [shouldScroll, setShouldScroll] = useState(false);
+
+  useEffect(() => {
+    if (shouldScroll) {
+      const formElement = document.getElementById("contact-form");
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      setShouldScroll(false);
+    }
+  }, [shouldScroll]);
 
   const handlePathClick = (path) => {
     setSelectedPath(path.id);
     if (onPathSelect) {
       onPathSelect(path.projectType);
     }
-    // Scroll to form
-    setTimeout(() => {
-      const formElement = document.getElementById("contact-form");
-      if (formElement) {
-        formElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 0);
+    setShouldScroll(true);
   };
 
   return (

@@ -7,6 +7,8 @@ export default function Image({
   rounded = "md",
   width,
   height,
+  sizes,
+  priority = false,
   loading = "lazy",
   className = "",
   ...props
@@ -37,7 +39,9 @@ export default function Image({
         alt={alt}
         width={width}
         height={height}
-        loading={loading}
+        sizes={sizes}
+        priority={priority}
+        loading={priority ? "eager" : loading}
         className="w-full h-full object-cover"
         {...props}
       />
