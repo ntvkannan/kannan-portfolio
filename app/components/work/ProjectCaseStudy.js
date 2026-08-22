@@ -77,7 +77,7 @@ function ChallengesSection({ challenges }) {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-12 md:space-y-16">
       {challenges.map((challenge, idx) => (
         <DesignChallenge key={idx} challenge={challenge} number={idx + 1} />
       ))}

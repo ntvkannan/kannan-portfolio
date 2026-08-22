@@ -16,12 +16,12 @@ export const projects = [
     title: "Advocate Consultation Platform",
     category: "professional",
     displayCategory: "Professional UX/UI",
-    description: "A digital experience designed to support consultation workflows and improve the way users connect and interact with legal service providers.",
+    description: "A two-sided consultation platform connecting clients seeking legal advice with available advocates through integrated booking and case management workflows.",
     role: "UX/UI Design",
     type: "Digital Consultation Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/advocate-placeholder.jpg"
+    image: "/images/projects/advocate/advocate-01-role-selector.png"
   },
   {
     slug: "school-erp",

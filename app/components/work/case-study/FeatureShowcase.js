@@ -40,11 +40,11 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
 
           {/* Image */}
           {feature.image && typeof feature.image === 'string' && (
-            <div className="w-full">
+            <div className={feature.imageRatio === "9:16" ? "w-full max-w-lg mx-auto md:max-w-md" : "w-full"}>
               <Image
                 src={feature.image}
                 alt={feature.imageAlt || feature.title}
-                ratio="16:9"
+                ratio={feature.imageRatio || "16:9"}
                 rounded="lg"
               />
             </div>
@@ -55,12 +55,16 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
   }
 
   // Multiple features
+  // For portrait images, use stacked layout; for landscape, use configured layout
+  const hasPortraitImages = features.some(f => f.imageRatio === "9:16");
+  const effectiveLayout = hasPortraitImages ? 'stacked' : layout;
+
   return (
     <div
       className={
-        layout === 'grid'
-          ? 'grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12'
-          : 'space-y-14'
+        effectiveLayout === 'grid'
+          ? 'grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16'
+          : 'space-y-16 md:space-y-20'
       }
     >
       {features.map((feature, index) => (
@@ -68,7 +72,7 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
           key={index}
           className={
             feature.image
-              ? 'grid grid-cols-1 gap-6 md:gap-8'
+              ? 'grid grid-cols-1 gap-6 md:gap-10'
               : ''
           }
         >
@@ -99,11 +103,11 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
 
           {/* Image */}
           {feature.image && typeof feature.image === 'string' && (
-            <div className="w-full">
+            <div className={feature.imageRatio === "9:16" ? "w-full max-w-sm mx-auto md:mx-0" : "w-full"}>
               <Image
                 src={feature.image}
                 alt={feature.imageAlt || feature.title}
-                ratio="16:9"
+                ratio={feature.imageRatio || "16:9"}
                 rounded="lg"
               />
             </div>

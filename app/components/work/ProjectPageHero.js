@@ -7,51 +7,56 @@ export default function ProjectPageHero({ project }) {
   return (
     <Section variant="major">
       <Container>
-        {/* Hero Image */}
-        <div className="mb-12">
-          <Image
-            src={project.image}
-            alt={`${project.title} project image`}
-            ratio="16:9"
-            rounded="lg"
-          />
-        </div>
+        {/* Editorial 2-column layout: content + image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start">
+          {/* Hero Content */}
+          <div className="order-2 lg:order-1 space-y-8">
+            {/* Category Badge */}
+            <Badge variant="accent">
+              {project.displayCategory}
+            </Badge>
 
-        {/* Hero Content */}
-        <div className="max-w-3xl">
-          {/* Category Badge */}
-          <Badge variant="accent" className="mb-4">
-            {project.displayCategory}
-          </Badge>
-
-          {/* Project Title */}
-          <h1 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-4 leading-tight">
-            {project.title}
-          </h1>
-
-          {/* Description */}
-          <p className="text-lg sm:text-xl text-text-secondary mb-8 leading-relaxed">
-            {project.description}
-          </p>
-
-          {/* Metadata Grid */}
-          <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
+            {/* Project Title */}
             <div>
-              <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-2">
-                Role
-              </p>
-              <p className="text-base sm:text-lg text-text-primary">
-                {project.role}
-              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-semibold text-text-primary leading-tight">
+                {project.title}
+              </h1>
             </div>
-            <div>
-              <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-2">
-                Type
-              </p>
-              <p className="text-base sm:text-lg text-text-primary">
-                {project.type}
-              </p>
+
+            {/* Description */}
+            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-lg">
+              {project.description}
+            </p>
+
+            {/* Metadata */}
+            <div className="flex flex-col gap-6 pt-4">
+              <div>
+                <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-2">
+                  Role
+                </p>
+                <p className="text-base sm:text-lg text-text-primary">
+                  {project.role}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-2">
+                  Type
+                </p>
+                <p className="text-base sm:text-lg text-text-primary">
+                  {project.type}
+                </p>
+              </div>
             </div>
+          </div>
+
+          {/* Hero Image */}
+          <div className="order-1 lg:order-2">
+            <Image
+              src={project.image}
+              alt={`${project.title} project image`}
+              ratio={project.imageRatio || "16:9"}
+              rounded="lg"
+            />
           </div>
         </div>
       </Container>

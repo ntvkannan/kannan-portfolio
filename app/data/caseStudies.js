@@ -239,36 +239,247 @@ export const caseStudies = {
   },
   "advocate-consultation-platform": {
     sections: [
+      // 01. The Challenge
       {
         type: "problem",
         title: "The Challenge",
-        content: "Consultation workflows require a clear and intuitive experience that helps users efficiently connect with service providers while maintaining confidence in the process. The digital experience must support complex interactions between multiple parties while remaining accessible and straightforward.",
+        content: "Connecting clients seeking legal consultation with available advocates requires more than a simple booking system. The platform must support two distinct user groups with different needs: advocates managing professional profiles, availability, subscriptions, and client information; and clients discovering advocates, evaluating credentials, booking appointments, and preparing case details. Both workflows must integrate seamlessly within a single platform.",
       },
+
+      // 02. Designing for Two User Roles
       {
-        type: "solution",
-        title: "The Approach",
-        content: "Advocate Consultation Platform was designed as a comprehensive experience to support consultation workflows. The UX/UI design focused on creating clarity in the consultation process, building trust through transparent communication, and providing practical navigation that guides users through each step.",
-      },
-      {
-        type: "gallery",
-        title: "Project Gallery",
-        items: [
+        type: "feature-showcase",
+        title: "Designing for Two User Roles",
+        features: [
           {
-            id: 1,
-            title: "Consultation Dashboard",
-            description: "Main interface for managing consultation requests and scheduling",
+            title: "Advocate Operations",
+            description: "Legal professionals need tools to establish credibility, manage their time, handle incoming client bookings, and access case information before consultations. The advocate experience prioritizes profile management, availability control, and appointment administration.",
+            points: [
+              "Professional profile and credentials",
+              "Subscription and service tiers",
+              "Availability scheduling",
+              "Appointment management",
+              "Client case information access",
+            ],
+            image: "/images/projects/advocate/advocate-02-advocate-registration.png",
+            imageRatio: "9:16",
+            imageAlt: "Advocate registration form showing profile setup for legal professionals",
           },
           {
-            id: 2,
-            title: "Provider Directory",
-            description: "Service provider discovery and connection interface",
-          },
-          {
-            id: 3,
-            title: "Communication Center",
-            description: "Secure messaging and interaction management",
+            title: "Client Consultation Journey",
+            description: "Clients need to discover qualified advocates, evaluate their credentials and specializations, select available time slots, complete payment, and provide case context. The client experience emphasizes discovery, evaluation, booking, and preparation.",
+            points: [
+              "Location-based advocate discovery",
+              "Specialization and rating filters",
+              "Advocate profile and testimonials",
+              "Appointment booking and payment",
+              "Pre-consultation case information",
+            ],
+            image: "/images/projects/advocate/advocate-06-client-discovery.png",
+            imageRatio: "9:16",
+            imageAlt: "Client advocate discovery interface showing filtered list of legal professionals",
           },
         ],
+      },
+
+      // 03. Advocate Operations Workflow
+      {
+        type: "workflow-visual",
+        title: "Advocate Operations",
+        steps: [
+          {
+            title: "Profile & Registration",
+            description: "Set up professional profile with name, qualifications, specialization, and license information",
+            image: "/images/projects/advocate/advocate-02-advocate-registration.png",
+            imageAlt: "Advocate registration form with fields for personal and professional information",
+          },
+          {
+            title: "Configure Time Slots",
+            description: "Define working hours by day and time period, with support for flexible slot durations",
+            image: "/images/projects/advocate/advocate-03-time-slot-config.png",
+            imageRatio: "9:16",
+            imageAlt: "Time-slot configuration interface showing day selection and time period setup",
+          },
+          {
+            title: "Manage Availability",
+            description: "View availability calendar and toggle specific time slots between available and unavailable",
+            image: "/images/projects/advocate/advocate-04-availability-calendar.png",
+            imageRatio: "9:16",
+            imageAlt: "Availability calendar showing color-coded available and booked consultation slots",
+          },
+          {
+            title: "Handle Appointments",
+            description: "Manage incoming client bookings, view case information, and track appointment status",
+            image: "/images/projects/advocate/advocate-05-appointments.png",
+            imageRatio: "9:16",
+            imageAlt: "Advocate appointments interface showing list of booked consultations with client information",
+          },
+        ],
+      },
+
+      // 04. Client Consultation Journey
+      {
+        type: "workflow-visual",
+        title: "Client Consultation Journey",
+        steps: [
+          {
+            title: "Discover Advocates",
+            description: "Search for advocates by location and browse available legal professionals filtered by specialization",
+            image: "/images/projects/advocate/advocate-06-client-discovery.png",
+            imageAlt: "Client advocate discovery list showing multiple legal professionals with ratings and specializations",
+          },
+          {
+            title: "Evaluate Advocate",
+            description: "Review advocate profile, qualifications, experience, specialization, and client testimonials",
+            image: "/images/projects/advocate/advocate-07-advocate-profile.png",
+            imageRatio: "9:16",
+            imageAlt: "Advocate profile showing detailed information including qualifications and client feedback",
+          },
+          {
+            title: "Select & Book Appointment",
+            description: "Choose preferred date and time slot, select consultation mode (walk-in or video call), and complete payment",
+            image: "/images/projects/advocate/advocate-08-booking.png",
+            imageRatio: "9:16",
+            imageAlt: "Appointment booking interface showing available time slots for selected date",
+          },
+          {
+            title: "Provide Case Information",
+            description: "Add case details, upload supporting documents and attachments to help advocate prepare for consultation",
+            image: "/images/projects/advocate/advocate-09-case-information.png",
+            imageRatio: "9:16",
+            imageAlt: "Case information form with text field and file attachment support for document uploads",
+          },
+          {
+            title: "Track Appointments",
+            description: "View upcoming appointments, access appointment details, and manage consultation schedules",
+            image: "/images/projects/advocate/advocate-10-client-appointments.png",
+            imageRatio: "9:16",
+            imageAlt: "Client appointments list showing upcoming and completed consultations with details",
+          },
+        ],
+      },
+
+      // 05. Core Design Challenges
+      {
+        type: "challenges",
+        title: "Core Design Challenges",
+        challenges: [
+          {
+            title: "Time-Slot Configuration at Scale",
+            challenge: "Advocates must configure and manage 21+ time slots across a week (7 days × 3 time periods), plus handle flexible slot durations. Without a thoughtful interface, this becomes overwhelming.",
+            decision: "Design a modular configuration system that separates day selection, time period entry, and slot size specification. Include an 'apply to all days' toggle to reduce repetition and minimize entry errors.",
+            outcome: "Advocates can configure complete weekly schedules in a streamlined, manageable workflow without feeling overwhelmed by data entry.",
+            image: "/images/projects/advocate/advocate-03-time-slot-config.png",
+            imageAlt: "Time-slot configuration interface with modular design and apply-to-all functionality",
+          },
+          {
+            title: "Availability Visibility & Management",
+            challenge: "Advocates need clear visual feedback distinguishing available slots, booked slots, and unavailable times to prevent errors and ensure accurate availability management.",
+            decision: "Implement a calendar-grid interface with color-coded states: available (visible), booked (marked), and unavailable (disabled). Add toggle controls for quick slot-state changes.",
+            outcome: "Advocates gain at-a-glance clarity of their schedule, reducing mistakes and enabling confident availability management.",
+            image: "/images/projects/advocate/advocate-04-availability-calendar.png",
+            imageAlt: "Calendar grid showing color-coded time slots with available, booked and unavailable states",
+          },
+          {
+            title: "Trust & Credibility in Advocate Discovery",
+            challenge: "Clients must feel confident selecting an unfamiliar advocate for important legal matters. A simple list view is insufficient; clients need credibility signals and clear differentiation.",
+            decision: "Combine advocate discovery with visible credentials (specialization, experience, qualifications) and social proof (star ratings and client testimonials). Support filtering and sorting by specialization.",
+            outcome: "Clients gain confidence during discovery through visible credibility signals and can quickly identify advocates that match their legal needs.",
+            image: "/images/projects/advocate/advocate-06-client-discovery.png",
+            imageAlt: "Advocate discovery list with specialization filters, ratings, and client testimonials visible",
+          },
+          {
+            title: "Case Information Collection Before Consultation",
+            challenge: "Clients must provide case context for advocates to prepare effectively, but the process should feel natural rather than burdensome. This requires clear structure and file-attachment support.",
+            decision: "Create a dedicated case-information form supporting both text descriptions and file uploads. Separate the form into logical sections: case details, attachments, and additional remarks.",
+            outcome: "Clients can easily provide comprehensive case information, enabling advocates to prepare for more effective consultations.",
+            image: "/images/projects/advocate/advocate-09-case-information.png",
+            imageAlt: "Case information form with text input, file attachments, and structured fields",
+          },
+        ],
+      },
+
+      // 06. Key Features & Solutions
+      {
+        type: "feature-showcase",
+        title: "Key Features & Solutions",
+        layout: "grid",
+        features: [
+          {
+            title: "Advocate Availability Management",
+            description: "A structured time-slot configuration and calendar-based availability interface that makes scheduling intuitive and error-resistant.",
+            points: [
+              "Modular day and time period setup",
+              "Flexible slot durations",
+              "Visual availability calendar",
+              "Quick state toggles",
+            ],
+          },
+          {
+            title: "Location-Based Advocate Discovery",
+            description: "Clients discover advocates near them with filtering by specialization, enabling quick identification of qualified legal professionals.",
+            points: [
+              "Geographic search capability",
+              "Specialization filtering",
+              "Real-time availability view",
+              "Ratings and reviews",
+            ],
+          },
+          {
+            title: "Advocate Profile & Trust Building",
+            description: "Comprehensive advocate profiles displaying credentials, qualifications, experience, and client testimonials to build client confidence.",
+            points: [
+              "Detailed qualification display",
+              "Client testimonials and ratings",
+              "Specialization information",
+              "Experience transparency",
+            ],
+          },
+          {
+            title: "Appointment Booking & Payment",
+            description: "Streamlined booking interface where clients select time slots and complete subscription and payment in a single flow.",
+            points: [
+              "Visual time-slot selection",
+              "Consultation mode choice",
+              "Integrated payment processing",
+              "Instant confirmation",
+            ],
+          },
+          {
+            title: "Pre-Consultation Case Preparation",
+            description: "Structured case-information collection enabling clients to provide context and advocates to prepare effectively.",
+            points: [
+              "Case detail input",
+              "File attachment support",
+              "Document organization",
+              "Advocate access before meeting",
+            ],
+          },
+          {
+            title: "Appointment Management for Both Roles",
+            description: "Unified appointment tracking that serves both advocates managing their schedule and clients tracking their bookings.",
+            points: [
+              "Status visibility",
+              "Reschedule capability",
+              "Case context access",
+              "History tracking",
+            ],
+          },
+        ],
+      },
+
+      // 07. Reflection
+      {
+        type: "reflection",
+        title: "Reflection",
+        content: "Advocate demonstrates the importance of designing two-sided platforms with equal consideration for both user groups. The most significant design consideration is recognizing that advocates and clients have fundamentally different needs within the same platform. Advocates need operational efficiency (scheduling, availability, client information), while clients need confidence-building tools (credibility signals, discovery, evaluation). A successful design bridges these different requirements without compromising either experience. The platform succeeds when both sides feel understood and supported.",
+      },
+
+      // 08. Next Case Study
+      {
+        type: "next-project",
+        title: "Next Case Study",
+        nextProjectSlug: "school-erp",
       },
     ],
   },

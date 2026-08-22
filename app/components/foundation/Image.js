@@ -23,6 +23,7 @@ export default function Image({
     "4:3": "aspect-video",
     "3:2": "aspect-[3/2]",
     "16:9": "aspect-video",
+    "9:16": "aspect-[9/16]",
     "1:1": "aspect-square",
   };
 
@@ -31,6 +32,7 @@ export default function Image({
     "4:3": { w: 1200, h: 900 },
     "3:2": { w: 1200, h: 800 },
     "16:9": { w: 1200, h: 675 },
+    "9:16": { w: 540, h: 960 },
     "1:1": { w: 1200, h: 1200 },
   };
 
