@@ -32,22 +32,22 @@ const steps = [
 export default function DesignPhilosophy() {
   return (
     <Section variant="normal">
-      <Container>
+      <Container size="wide">
         <div className="max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-12">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-12">
             How I approach design
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-8">
             {steps.map((step, index) => (
               <div key={index}>
-                <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-3">
-                  {step.number}
+                <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-4">
+                  Step {step.number}
                 </p>
-                <h3 className="text-lg sm:text-base font-semibold text-text-primary mb-3">
+                <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-4">
                   {step.title}
                 </h3>
-                <p className="text-sm sm:text-sm text-text-secondary leading-relaxed">
+                <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
                   {step.description}
                 </p>
               </div>

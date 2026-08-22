@@ -1,6 +1,4 @@
-import Container from "@/app/components/layout/Container";
 import AboutHero from "@/app/components/about/AboutHero";
-import Introduction from "@/app/components/about/Introduction";
 import CareerEvolution from "@/app/components/about/CareerEvolution";
 import DesignPhilosophy from "@/app/components/about/DesignPhilosophy";
 import CurrentDirection from "@/app/components/about/CurrentDirection";
@@ -22,7 +20,6 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <Introduction />
       <CareerEvolution />
       <DesignPhilosophy />
       <CurrentDirection />

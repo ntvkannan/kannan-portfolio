@@ -44,21 +44,21 @@ const skillGroups = [
 export default function Skills() {
   return (
     <Section variant="normal">
-      <Container>
+      <Container size="wide">
         <div className="max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-12">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-12">
             Skills & Capabilities
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-14">
             {skillGroups.map((group, index) => (
               <div key={index}>
-                <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-6">
                   {group.category}
                 </h3>
                 <div className="space-y-3">
                   {group.skills.map((skill, skillIndex) => (
-                    <p key={skillIndex} className="text-sm text-text-secondary">
+                    <p key={skillIndex} className="text-base text-text-secondary">
                       {skill}
                     </p>
                   ))}
