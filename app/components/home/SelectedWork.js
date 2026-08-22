@@ -3,6 +3,7 @@ import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
 import SectionHeader from "@/app/components/foundation/SectionHeader";
 import Badge from "@/app/components/foundation/Badge";
+import Image from "@/app/components/foundation/Image";
 import { projects } from "@/app/data/projects";
 
 export default function SelectedWork() {
@@ -22,10 +23,13 @@ export default function SelectedWork() {
         {/* Featured Project */}
         {featuredProject && (
           <div className="mb-16">
-            <div className="bg-surface-secondary rounded-lg overflow-hidden mb-6">
-              <div className="aspect-video bg-gradient-to-br from-surface-secondary to-border p-12 flex items-center justify-center">
-                <p className="text-text-muted text-center text-sm">Project image placeholder</p>
-              </div>
+            <div className="mb-6">
+              <Image
+                src={featuredProject.image}
+                alt={`${featuredProject.title} project image`}
+                ratio="16:9"
+                rounded="lg"
+              />
             </div>
             <div className="max-w-2xl">
               <Badge variant="accent" className="mb-3">
@@ -48,7 +52,7 @@ export default function SelectedWork() {
                 </div>
               </div>
               <NextLink
-                href="/work"
+                href={`/work/${featuredProject.slug}`}
                 className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors"
               >
                 View Case Study →
@@ -61,8 +65,13 @@ export default function SelectedWork() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {supportingProjects.map(project => (
             <div key={project.slug}>
-              <div className="bg-surface-secondary rounded-lg overflow-hidden mb-4 aspect-video flex items-center justify-center">
-                <p className="text-text-muted text-center text-sm">Project image placeholder</p>
+              <div className="mb-4">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project image`}
+                  ratio="16:9"
+                  rounded="lg"
+                />
               </div>
               <Badge variant="neutral" className="mb-2">
                 {project.displayCategory}
@@ -71,7 +80,7 @@ export default function SelectedWork() {
                 {project.title}
               </h4>
               <NextLink
-                href="/work"
+                href={`/work/${project.slug}`}
                 className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors"
               >
                 View Case Study →

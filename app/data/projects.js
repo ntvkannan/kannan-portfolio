@@ -9,7 +9,7 @@ export const projects = [
     type: "Enterprise SaaS / Signage Management",
     status: "completed",
     featured: true,
-    image: "/images/projects/osel-placeholder.jpg"
+    image: "/images/projects/osel/dashboard.png"
   },
   {
     slug: "advocate-consultation-platform",

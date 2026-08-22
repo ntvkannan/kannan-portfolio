@@ -1,5 +1,6 @@
 import Badge from "@/app/components/foundation/Badge";
 import Link from "@/app/components/foundation/Link";
+import Image from "@/app/components/foundation/Image";
 
 export default function FeaturedProject({ project }) {
   if (!project) return null;
@@ -7,10 +8,13 @@ export default function FeaturedProject({ project }) {
   return (
     <div className="mb-16">
       {/* Featured Project Image */}
-      <div className="bg-surface-secondary rounded-lg overflow-hidden mb-6">
-        <div className="aspect-video flex items-center justify-center">
-          <p className="text-text-muted text-center text-sm">Project image placeholder</p>
-        </div>
+      <div className="mb-6">
+        <Image
+          src={project.image}
+          alt={`${project.title} project image`}
+          ratio="16:9"
+          rounded="lg"
+        />
       </div>
 
       {/* Featured Project Content */}
@@ -43,7 +47,7 @@ export default function FeaturedProject({ project }) {
         </div>
 
         {/* CTA Link */}
-        <Link href="/work" color="accent">
+        <Link href={`/work/${project.slug}`} color="accent">
           View Case Study →
         </Link>
       </div>

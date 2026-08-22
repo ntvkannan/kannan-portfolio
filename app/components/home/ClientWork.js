@@ -3,6 +3,7 @@ import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
 import SectionHeader from "@/app/components/foundation/SectionHeader";
 import Badge from "@/app/components/foundation/Badge";
+import Image from "@/app/components/foundation/Image";
 import { projects } from "@/app/data/projects";
 
 export default function ClientWork() {
@@ -18,8 +19,13 @@ export default function ClientWork() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {clientProjects.map(project => (
             <div key={project.slug}>
-              <div className="bg-surface-secondary rounded-lg overflow-hidden mb-6 aspect-video flex items-center justify-center">
-                <p className="text-text-muted text-center text-sm">Project image placeholder</p>
+              <div className="mb-6">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project image`}
+                  ratio="16:9"
+                  rounded="lg"
+                />
               </div>
               <Badge variant="neutral" className="mb-3">
                 {project.displayCategory}
@@ -31,7 +37,7 @@ export default function ClientWork() {
                 {project.description}
               </p>
               <NextLink
-                href="/work"
+                href={`/work/${project.slug}`}
                 className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
               >
                 View Project

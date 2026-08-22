@@ -1,12 +1,18 @@
 import Badge from "@/app/components/foundation/Badge";
 import Link from "@/app/components/foundation/Link";
+import Image from "@/app/components/foundation/Image";
 
 export default function ProjectCard({ project }) {
   return (
     <article>
       {/* Project Image */}
-      <div className="bg-surface-secondary rounded-lg overflow-hidden mb-4 aspect-video flex items-center justify-center">
-        <p className="text-text-muted text-center text-sm">Project image placeholder</p>
+      <div className="mb-4">
+        <Image
+          src={project.image}
+          alt={`${project.title} project image`}
+          ratio="16:9"
+          rounded="lg"
+        />
       </div>
 
       {/* Category Badge */}

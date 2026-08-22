@@ -1,36 +1,239 @@
 export const caseStudies = {
   "osel-signage-cms": {
     sections: [
+      // 03. The Challenge
       {
         type: "problem",
         title: "The Challenge",
-        content: "Digital signage management requires the ability to create, manage and control content across multiple displays. Users need a structured, intuitive experience that simplifies complex workflows while maintaining control over content distribution and scheduling.",
+        content: "Digital signage management involves more than displaying a single piece of content. The OSEL product manages a broader ecosystem where content is organized, placed into layouts, scheduled, assigned to displays, and managed through user roles and permissions. This creates a product with several connected management workflows rather than a single linear task.",
       },
       {
-        type: "solution",
-        title: "The Approach",
-        content: "OSEL Signage CMS was designed as a comprehensive management experience to address these workflows. The UX/UI design focused on creating clear information architecture, intuitive navigation, and practical interfaces that help users efficiently manage their signage content across displays.",
+        type: "challenge-diagram",
+        title: "From Content to Displays",
+        items: [
+          { label: "Media", description: "Content sources" },
+          { label: "Layout", description: "Visual structure" },
+          { label: "Schedule", description: "Timing & status" },
+          { label: "Display", description: "Screen assignment" },
+          { label: "Monitor", description: "Playback tracking" },
+        ],
+        layout: "horizontal",
       },
+
+      // 04. My Role
       {
-        type: "gallery",
-        title: "Project Gallery",
+        type: "role-metadata",
+        title: "My Role",
+        responsibilities: [
+          "Product information structure and navigation",
+          "Management screens and workflows",
+          "Layout and template creation experiences",
+          "Scheduling and display management",
+          "User and role-based permissions",
+          "Enterprise reporting and administration",
+        ],
+      },
+
+      // 05. Understanding the Product
+      {
+        type: "ecosystem-diagram",
+        title: "One Platform, Multiple Connected Workflows",
         items: [
           {
-            id: 1,
-            title: "Dashboard Overview",
-            description: "Main dashboard showing content management interface",
+            label: "CONTENT",
+            items: ["Media", "Media Groups", "Playlists"],
           },
           {
-            id: 2,
-            title: "Content Management",
-            description: "Content creation and editing interface",
+            label: "EXPERIENCE",
+            items: ["Layouts", "Layout Templates"],
           },
           {
-            id: 3,
-            title: "Display Management",
-            description: "Managing multiple display assignments and scheduling",
+            label: "OPERATIONS",
+            items: ["Schedules", "Displays", "Display Groups"],
+          },
+          {
+            label: "ADMINISTRATION",
+            items: ["Users", "Roles", "Permissions"],
           },
         ],
+      },
+
+      // 05B. Dashboard Overview (Visual evidence)
+      {
+        type: "feature-showcase",
+        title: "The Dashboard",
+        features: [
+          {
+            title: "Administrative Environment",
+            description:
+              "The OSEL dashboard provides an at-a-glance view of the overall signage management system, connecting display status, media inventory, scheduled content, and recent activity.",
+            image: "/images/projects/osel/dashboard.png",
+            imageAlt: "OSEL dashboard showing display, media, schedule and recent activity overview",
+          },
+        ],
+      },
+
+      // 06. Core Workflow
+      {
+        type: "workflow-visual",
+        title: "From Content to Display",
+        steps: [
+          {
+            title: "New Layout",
+            description: "Start the layout creation process by defining a name and description",
+            image: "/images/projects/osel/layout-step-01.png",
+            imageAlt: "OSEL layout creation workflow showing the first step for defining a new layout",
+          },
+          {
+            title: "Choose Template",
+            description: "Select a reusable template based on required region structure and display format",
+            image: "/images/projects/osel/layout-step-02.png",
+            imageAlt: "OSEL layout template selection showing available templates with different region configurations",
+          },
+          {
+            title: "Assign Media",
+            description: "Assign media to individual regions while maintaining layout structure and preview visibility",
+            image: "/images/projects/osel/layout-step-03.png",
+            imageAlt: "OSEL layout workflow showing media assignment to regions with live preview",
+          },
+          {
+            title: "Schedule",
+            description: "Connect the layout to a time period and display assignment for scheduled playback",
+            image: "/images/projects/osel/scheduling.png",
+            imageAlt: "OSEL scheduling interface showing running, upcoming and expired schedules with time and display assignments",
+          },
+          {
+            title: "Display & Monitor",
+            description: "Manage connected displays and track assigned schedules and playback status",
+            image: "/images/projects/osel/display-detail.png",
+            imageAlt: "OSEL display management showing display details and assigned schedule information",
+          },
+        ],
+      },
+
+      // 07. Key Design Challenges
+      {
+        type: "challenges",
+        title: "Key Design Challenges",
+        challenges: [
+          {
+            title: "Structuring Product Complexity",
+            challenge:
+              "The product contains multiple management domains that are related but serve different purposes.",
+            decision:
+              "Organize related capabilities into clear product areas with consistent management patterns across the platform.",
+            outcome:
+              "The final interface presents a broad signage-management system through recognizable functional areas rather than one undifferentiated workspace.",
+          },
+          {
+            title: "Connecting Content to Layouts",
+            challenge:
+              "Media is not simply uploaded and displayed directly. It must be organized and assigned to regions within a layout.",
+            decision:
+              "Create a structured workflow that separates template selection from media assignment while maintaining layout context and region visibility.",
+            outcome:
+              "Users move through a clear path from selecting a template to assigning media to specific regions.",
+            image: "/images/projects/osel/layout-builder.png",
+            imageAlt: "OSEL layout builder showing flexible region configuration with multiple regions and media assignment options",
+          },
+          {
+            title: "Making Scheduling Operational",
+            challenge:
+              "A layout becomes operational only when connected to a time period and a display.",
+            decision:
+              "Present schedules as manageable records with clear status categories and key scheduling attributes.",
+            outcome:
+              "The schedule interface makes operational state visible through Running, Upcoming, and Expired groupings.",
+          },
+        ],
+      },
+
+      // 08. Enterprise Administration
+      {
+        type: "feature-showcase",
+        title: "Managing Role-Based Access",
+        layout: "grid",
+        features: [
+          {
+            title: "Permissions Matrix",
+            description:
+              "The product includes a dedicated permission-management matrix supporting feature-level access configuration.",
+            points: [
+              "Feature-level permission control",
+              "Granular access management",
+            ],
+            image: "/images/projects/osel/permissions.png",
+            imageAlt: "OSEL permissions screen showing role-based access controls for display management and other features",
+          },
+          {
+            title: "Role Management",
+            description:
+              "Pre-defined roles such as Admin, Authorizer, and Publisher can be configured and managed through the enterprise administration interface.",
+            points: [
+              "Pre-defined roles available",
+              "Customizable role assignments",
+              "Clear role hierarchy",
+            ],
+            image: "/images/projects/osel/roles.png",
+            imageAlt: "OSEL roles interface showing Admin, Authorizer and Publisher role configurations",
+          },
+        ],
+      },
+
+      // 09. Supporting Experience
+      {
+        type: "feature-showcase",
+        title: "Supporting Workflows",
+        layout: "grid",
+        features: [
+          {
+            title: "Media Management",
+            description:
+              "Organize and manage content across multiple media types and create reusable playlists.",
+            points: [
+              "Content search and filtering",
+              "Media groups and organization",
+              "Supported content types",
+            ],
+            image: "/images/projects/osel/media-management.png",
+            imageAlt: "OSEL media management interface showing content organization with search, filtering and media type support",
+          },
+          {
+            title: "Proof of Play & Reporting",
+            description:
+              "Track signage playback activity and operational status through comprehensive reporting features.",
+            points: [
+              "Playback activity tracking",
+              "Status monitoring",
+              "Operational insights",
+            ],
+            image: "/images/projects/osel/proof-of-play.png",
+            imageAlt: "OSEL reporting interface showing playback history and proof-of-play metrics for scheduled content",
+          },
+        ],
+      },
+
+      // 10. Outcome
+      {
+        type: "solution",
+        title: "Outcome",
+        content:
+          "The resulting interface brings content management, layout creation, scheduling, display administration, permissions, and reporting into a connected signage-management experience.",
+      },
+
+      // 11. Reflection
+      {
+        type: "reflection",
+        title: "Reflection",
+        content:
+          "OSEL demonstrates the importance of designing enterprise products as connected systems rather than collections of individual screens. The most significant design consideration is the relationship between content, layouts, schedules, displays, and administrative permissions. Good enterprise UX makes complex relationships understandable.",
+      },
+
+      // 12. Next Project
+      {
+        type: "next-project",
+        title: "Next Case Study",
+        nextProjectSlug: "advocate-consultation-platform",
       },
     ],
   },

@@ -26,6 +26,18 @@ export default function Image({
     "1:1": "aspect-square",
   };
 
+  // Default dimensions keyed to aspect ratio when not explicitly provided
+  const defaultDimensions = {
+    "4:3": { w: 1200, h: 900 },
+    "3:2": { w: 1200, h: 800 },
+    "16:9": { w: 1200, h: 675 },
+    "1:1": { w: 1200, h: 1200 },
+  };
+
+  const dims = defaultDimensions[ratio] || defaultDimensions["4:3"];
+  const finalWidth = width || dims.w;
+  const finalHeight = height || dims.h;
+
   const finalClassName = `${roundedStyles[rounded]} ${aspectRatioStyles[ratio]} overflow-hidden ${className}`;
 
   if (!alt) {
@@ -37,8 +49,8 @@ export default function Image({
       <NextImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
+        width={finalWidth}
+        height={finalHeight}
         sizes={sizes}
         priority={priority}
         loading={priority ? "eager" : loading}
