@@ -4,9 +4,9 @@ import Section from "@/app/components/layout/Section";
 
 export default function ServicesContactCTA() {
   return (
-    <Section variant="normal">
-      <Container>
-        <div className="max-w-3xl mx-auto text-center">
+    <Section variant="major" className="-mt-8 md:-mt-10 lg:-mt-14">
+      <Container size="wide">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-text-primary leading-tight mb-4">
             Ready to start a project?
           </h2>

@@ -4,10 +4,10 @@ import SectionHeader from "@/app/components/foundation/SectionHeader";
 
 export default function ProjectFlowSection({ projectFlow }) {
   return (
-    <Section variant="normal">
-      <Container>
+    <Section variant="normal" className="-mt-6 md:-mt-8 lg:-mt-12">
+      <Container size="wide">
         <div className="max-w-4xl">
-          <SectionHeader className="mb-16">
+          <SectionHeader className="mb-14">
             How I work
           </SectionHeader>
 

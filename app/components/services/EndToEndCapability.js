@@ -3,14 +3,14 @@ import Section from "@/app/components/layout/Section";
 
 export default function EndToEndCapability({ capability }) {
   return (
-    <Section variant="normal">
-      <Container>
-        <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-6">
+    <Section variant="normal" className="-mt-6 md:-mt-8 lg:-mt-12">
+      <Container size="wide">
+        <div className="max-w-4xl">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-8">
             {capability.title}
           </h2>
 
-          <div className="border border-border rounded-lg p-8 bg-surface-secondary mb-6">
+          <div className="border border-border rounded-lg p-8 md:p-10 bg-surface-secondary mb-8">
             <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-3">
               {capability.subtitle}
             </p>
@@ -22,7 +22,7 @@ export default function EndToEndCapability({ capability }) {
             </p>
           </div>
 
-          <p className="text-text-secondary leading-relaxed text-sm">
+          <p className="text-base text-text-secondary leading-relaxed">
             {capability.note}
           </p>
         </div>
