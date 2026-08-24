@@ -29,7 +29,7 @@ export default function ContactPaths({ onPathSelect }) {
 
   return (
     <Section variant="normal">
-      <Container>
+      <Container size="wide">
         <div className="max-w-4xl mx-auto">
           <p className="text-center text-text-secondary mb-8">
             What's your project about?

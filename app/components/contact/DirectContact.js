@@ -6,8 +6,8 @@ import { contactMethods } from "@/app/data/contact";
 export default function DirectContact() {
   return (
     <Section variant="normal">
-      <Container>
-        <div className="max-w-3xl mx-auto">
+      <Container size="wide">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-8">
             Direct Contact
           </h2>

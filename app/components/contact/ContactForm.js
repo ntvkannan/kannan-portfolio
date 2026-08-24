@@ -142,7 +142,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
 
   return (
     <Section variant="normal">
-      <Container>
+      <Container size="wide">
         <div className="max-w-2xl mx-auto">
           <div id="contact-form" className="scroll-mt-20">
             <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-8">

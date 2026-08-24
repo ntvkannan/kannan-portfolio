@@ -1,11 +1,13 @@
+import Container from "@/app/components/layout/Container";
+import Section from "@/app/components/layout/Section";
 import Link from "@/app/components/foundation/Link";
 import { socialLinks } from "@/app/data/contact";
 
 export default function SocialLinks() {
   return (
-    <div className="py-16 sm:py-16 lg:py-24">
-      <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
+    <Section variant="normal">
+      <Container size="wide">
+        <div className="max-w-4xl">
           <h2 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-6">
             Connect
           </h2>
@@ -23,7 +25,7 @@ export default function SocialLinks() {
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </Section>
   );
 }
