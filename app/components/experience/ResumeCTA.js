@@ -4,9 +4,9 @@ import Section from "@/app/components/layout/Section";
 
 export default function ResumeCTA() {
   return (
-    <Section variant="normal">
-      <Container>
-        <div className="max-w-3xl mx-auto text-center">
+    <Section variant="normal" className="-mt-4 md:-mt-6 lg:-mt-8">
+      <Container size="wide">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-6">
             Download My Resume
           </h2>

@@ -4,8 +4,8 @@ import Tag from "@/app/components/foundation/Tag";
 
 export default function SkillsSection({ skills }) {
   return (
-    <Section variant="normal">
-      <Container>
+    <Section variant="normal" className="-mt-4 md:-mt-6 lg:-mt-8">
+      <Container size="wide">
         <div className="max-w-4xl">
           <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-12">
             Skills & Capabilities
