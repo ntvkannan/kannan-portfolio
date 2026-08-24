@@ -25,6 +25,7 @@ export default function Image({
     "16:9": "aspect-video",
     "9:16": "aspect-[9/16]",
     "1:1": "aspect-square",
+    "auto": "",
   };
 
   // Default dimensions keyed to aspect ratio when not explicitly provided
@@ -46,6 +47,11 @@ export default function Image({
     throw new Error("Image component requires an alt prop");
   }
 
+  // Return null if src is invalid to prevent passing empty strings to NextImage
+  if (!src || typeof src !== "string" || src.trim() === "") {
+    return null;
+  }
+
   return (
     <div className={finalClassName}>
       <NextImage
@@ -56,7 +62,7 @@ export default function Image({
         sizes={sizes}
         priority={priority}
         loading={priority ? "eager" : loading}
-        className="w-full h-full object-cover"
+        className={`w-full h-auto ${ratio === 'auto' ? 'object-contain' : 'object-cover'}`}
         {...props}
       />
     </div>

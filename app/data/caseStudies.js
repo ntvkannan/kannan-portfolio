@@ -518,41 +518,6 @@ export const caseStudies = {
       },
     ],
   },
-  "kit-management": {
-    sections: [
-      {
-        type: "problem",
-        title: "The Challenge",
-        content: "Managing operational kits and equipment across distributed operations requires visibility into availability, location, condition, and usage. Without a structured system, it becomes difficult to track assets, coordinate distribution, and maintain operational efficiency.",
-      },
-      {
-        type: "solution",
-        title: "The Approach",
-        content: "Kit Management was designed as a structured management experience to simplify operational workflows and improve visibility across kit-related processes. The UX/UI design focused on providing clear, at-a-glance status of all kits, streamlined workflows for checking in and out, and transparent reporting that helps teams coordinate and plan.",
-      },
-      {
-        type: "gallery",
-        title: "Project Gallery",
-        items: [
-          {
-            id: 1,
-            title: "Kit Inventory",
-            description: "Real-time view of all kits and their current status",
-          },
-          {
-            id: 2,
-            title: "Request & Allocation",
-            description: "Interface for requesting kits and coordinating distribution",
-          },
-          {
-            id: 3,
-            title: "Reports & Analytics",
-            description: "Usage tracking and operational insights",
-          },
-        ],
-      },
-    ],
-  },
   "seafood-restaurant": {
     sections: [
       {
@@ -665,6 +630,204 @@ export const caseStudies = {
             description: "Next.js, React, and Tailwind CSS implementation",
           },
         ],
+      },
+    ],
+  },
+
+  "kit-management": {
+    sections: [
+      // 01. The Challenge
+      {
+        type: "problem",
+        title: "01 — The Challenge",
+        content: "Kit Management is a module within a school management system designed to handle the complete workflow of providing study kits to newly enrolled pre-school students. A study kit is a collection of essential materials—bags, books, stationery—configured for each grade level (Playgroup, Nursery, LKG, UKG).\n\nThe business operates through a Franchisor-Franchisee model: corporate offices manage kit configuration, stock, and dispatch, while individual pre-school centers onboard students and request kits. The kit serves a dual purpose—an operational necessity for new students and a revenue stream for payment collection.\n\nThe design challenge was to automate a workflow that previously relied on manual, paper-based processes between these two user groups. The system needed to create visibility for both sides: corporate oversight for operational management, and center-level tracking for request monitoring.",
+      },
+
+      // 02. Designing for Two Roles
+      {
+        type: "problem",
+        title: "02 — Designing for Two Roles",
+        content: "The fundamental design challenge was that two very different user groups needed to work within the same workflow, but with opposite mental models.\n\nThe Franchisor (Corporate Office) thinks in aggregates and operations. They need high-level visibility across all centers, operational dashboards showing metrics and trends, the ability to manage kit requests, and reporting to understand financial collection and performance.\n\nThe Franchisee (Pre-school Center) thinks in tasks and local context. They need to see newly enrolled students at their center, submit kit requests, provide payment information, and track whether requests have been processed and dispatched.\n\nRather than creating one interface that tried to serve both, the approach was to create two distinct experiences, each optimized for how its users think about the problem.",
+      },
+
+      // 02B. Role Comparison
+      {
+        type: "feature-showcase",
+        title: "Separate Interfaces for Different Roles",
+        features: [
+          {
+            eyebrow: "Franchisor Dashboard",
+            title: "Operational Overview",
+            description: "The corporate office sees a dashboard showing aggregate metrics across all centers, operational visibility into requests, and financial collection status.",
+            image: "/images/projects/kit-management/franchisor-dashboard.png",
+            imageAlt: "Franchisor dashboard showing aggregate metrics and operational overview",
+            imageRatio: "auto",
+          },
+          {
+            eyebrow: "Franchisee Dashboard",
+            title: "Center-Specific View",
+            description: "Each pre-school center sees their own enrollment, request status, and dispatch tracking—a local view rather than system-wide aggregates.",
+            image: "/images/projects/kit-management/franchisee-dashboard.png",
+            imageAlt: "Franchisee dashboard showing center-specific enrollment and status",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 03. Connecting the Workflow
+      {
+        type: "problem",
+        title: "03 — Connecting the Workflow",
+        content: "Despite having separate interfaces, both users are part of a single connected workflow. The workflow moves through distinct phases, each supporting a different part of the request lifecycle:\n\nFranchisee creates a request → Provides payment information → Franchisor reviews and processes → Kits are dispatched → Franchisee tracks status.\n\nThe design had to make this lifecycle clear for both sides while reflecting that they see different aspects of the same flow.",
+      },
+
+      {
+        type: "challenge-diagram",
+        title: "The Kit Request Lifecycle",
+        items: [
+          { label: "Student Enrollment", description: "Franchisee onboards new students" },
+          { label: "Kit Request", description: "Franchisee creates request" },
+          { label: "Payment Information", description: "Franchisee provides payment details" },
+          { label: "Franchisor Processing", description: "Corporate office reviews and processes" },
+          { label: "Kit Dispatch", description: "Kits are sent (full or partial)" },
+          { label: "Status Tracking", description: "Franchisee monitors progress" },
+        ],
+        layout: "vertical",
+      },
+
+      // 04. My Design Approach
+      {
+        type: "problem",
+        title: "04 — My Design Approach",
+        content: "My process began by understanding the business requirements provided by the Project Manager, then mapping how each user group needed to interact with the system.\n\nFirst, I understood the ecosystem: What is a kit and how is it composed? Who manages what? What data matters to each user? Then I developed the information architecture: What features must each side have? How should they be organized? What information is critical at each step?\n\nNext, I designed workflows for each user group: How does a Franchisor operate at their dashboard level? How does a Franchisee execute the request creation task? What are the differences in their interaction patterns and needs?\n\nFinally, I refined the designs based on Project Manager feedback and prepared the complete module design for handoff to the development team.",
+      },
+
+      // 05. Franchisor Experience
+      {
+        type: "problem",
+        title: "05 — Franchisor Experience",
+        content: "The Franchisor interface is built on a dashboard-first approach, because the corporate office's primary need is operational visibility across all centers.",
+      },
+
+      {
+        type: "feature-showcase",
+        title: "Operational Dashboard",
+        features: [
+          {
+            title: "Dashboard Overview",
+            description: "The Franchisor dashboard shows aggregate metrics and gives corporate staff visibility into kit requests across all franchise locations. This operational view allows monitoring of submissions, tracking collections, and understanding fulfillment status at a glance.",
+            image: "/images/projects/kit-management/franchisor-dashboard.png",
+            imageAlt: "Franchisor dashboard showing metrics and operational overview",
+            imageRatio: "auto",
+          },
+        ],
+      },
+
+      {
+        type: "feature-showcase",
+        title: "Request Management & Payment Processing",
+        features: [
+          {
+            title: "Kit Requests List",
+            description: "Franchisor can view all submitted requests from all centers, see request status, and understand the volume of pending work.",
+            image: "/images/projects/kit-management/franchisor-requests.png",
+            imageAlt: "Franchisor kit requests list showing request status and details",
+            imageRatio: "auto",
+          },
+          {
+            title: "Request Details & Payment Handling",
+            description: "Franchisor can drill into individual requests to see student details, verify payment information, and manage the dispatch workflow.",
+            image: "/images/projects/kit-management/franchisor-request-details.png",
+            imageAlt: "Franchisor request detail view showing student and payment information",
+            imageRatio: "auto",
+          },
+          {
+            title: "Payment Verification",
+            description: "The interface supports payment verification and collection tracking as a core part of request processing.",
+            image: "/images/projects/kit-management/franchisor-collect-payment.png",
+            imageAlt: "Franchisor payment collection and verification interface",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 06. Franchisee Experience
+      {
+        type: "problem",
+        title: "06 — Franchisee Experience",
+        content: "The Franchisee interface is designed around task completion. The center manager's core task is straightforward: see newly enrolled students, create a kit request for them, provide payment information, and then track that request through processing and dispatch.",
+      },
+
+      {
+        type: "feature-showcase",
+        title: "Kit Request Creation",
+        features: [
+          {
+            title: "Request Creation Workflow",
+            description: "The primary interaction for a Franchisee is the kit request creation experience. Centered on selecting students and providing payment information, the workflow is linear and task-focused.",
+            image: "/images/projects/kit-management/franchisee-new-request.png",
+            imageAlt: "Franchisee creating a new kit request with student selection",
+            imageRatio: "auto",
+          },
+        ],
+      },
+
+      {
+        type: "feature-showcase",
+        title: "Request Tracking & Status Visibility",
+        features: [
+          {
+            title: "Center Dashboard",
+            description: "The Franchisee dashboard provides a center-specific view of enrollment, request status, and dispatch progress for their students.",
+            image: "/images/projects/kit-management/franchisee-dashboard.png",
+            imageAlt: "Franchisee dashboard showing center enrollment and request status",
+            imageRatio: "auto",
+          },
+          {
+            title: "Request List & Progress Tracking",
+            description: "After submission, Franchisee can view their submitted requests and track status (Submitted, Partially Dispatched, or Dispatched) to understand what has been fulfilled.",
+            image: "/images/projects/kit-management/franchisee-requests.png",
+            imageAlt: "Franchisee requests list showing status and tracking information",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 07. Key UX Decisions
+      {
+        type: "problem",
+        title: "07 — Key UX Decisions",
+        content: "Several design decisions emerged from thinking through these workflows and how to serve two fundamentally different user groups:",
+      },
+
+      {
+        type: "role-metadata",
+        title: "Design Decisions",
+        responsibilities: [
+          "Separate Interfaces by Role — Two complete, distinct experiences instead of one multi-role interface. Each user sees only what's relevant to their role and workflow.",
+          "Dashboard-First for Franchisor — Operational overview as the primary landing. Drill-down to specific requests provides detail as needed.",
+          "Task-Focused for Franchisee — Linear request creation workflow. Create → provide payment → submit. No unnecessary options or complexity.",
+          "Payment Information Connected to Request — Captured as part of the request submission itself, not a separate step. Keeps the workflow efficient.",
+          "Status Visibility as Primary Communication — Request statuses (Submitted, Partially Dispatched, Dispatched) used consistently to show progress.",
+          "Partial Dispatch as a Recognized State — The system acknowledges that kits might be dispatched in phases. This reflects real-world operational constraints.",
+        ],
+      },
+
+      // 08. From Design to Development
+      {
+        type: "problem",
+        title: "08 — From Design to Development",
+        content: "The complete module design was prepared and handed to the development team. This included information architecture, screen designs for all major user flows, design assets, and specifications for both Franchisor and Franchisee interfaces.\n\nThe design demonstrates end-to-end UX thinking: from business requirements through user-focused interface design to development-ready specifications. The design provided the blueprint for implementation.",
+      },
+
+      // 09. Reflection
+      {
+        type: "problem",
+        title: "09 — Reflection",
+        content: "The separation of Franchisor and Franchisee interfaces addresses a fundamental design challenge: two very different users within one connected workflow. By tailoring the experience to each role's mental model—operations versus task completion—the design makes complex workflows feel natural for both users.\n\nThis project demonstrates an approach that transfers beyond Kit Management: when two user groups have opposite needs, separate interfaces often work better than forced unification. Dashboard-first is powerful for operational roles; task-first is powerful for transactional roles. Connecting payment information to the request keeps workflows efficient. Status visibility reduces support burden and builds user confidence.",
       },
     ],
   },

@@ -23,14 +23,16 @@ export default function SelectedWork() {
         {/* Featured Project */}
         {featuredProject && (
           <div className="mb-16">
-            <div className="mb-6">
-              <Image
-                src={featuredProject.image}
-                alt={`${featuredProject.title} project image`}
-                ratio="16:9"
-                rounded="lg"
-              />
-            </div>
+            {featuredProject.image && (
+              <div className="mb-6">
+                <Image
+                  src={featuredProject.image}
+                  alt={`${featuredProject.title} project image`}
+                  ratio="16:9"
+                  rounded="lg"
+                />
+              </div>
+            )}
             <div className="max-w-2xl">
               <Badge variant="accent" className="mb-3">
                 {featuredProject.displayCategory}
@@ -65,14 +67,16 @@ export default function SelectedWork() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {supportingProjects.map(project => (
             <div key={project.slug}>
-              <div className="mb-4">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} project image`}
-                  ratio="16:9"
-                  rounded="lg"
-                />
-              </div>
+              {project.image && (
+                <div className="mb-4">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} project image`}
+                    ratio="16:9"
+                    rounded="lg"
+                  />
+                </div>
+              )}
               <Badge variant="neutral" className="mb-2">
                 {project.displayCategory}
               </Badge>

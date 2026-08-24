@@ -6,14 +6,16 @@ export default function ProjectCard({ project }) {
   return (
     <article>
       {/* Project Image */}
-      <div className="mb-4">
-        <Image
-          src={project.image}
-          alt={`${project.title} project image`}
-          ratio="16:9"
-          rounded="lg"
-        />
-      </div>
+      {project.image && (
+        <div className="mb-4">
+          <Image
+            src={project.image}
+            alt={`${project.title} project image`}
+            ratio="16:9"
+            rounded="lg"
+          />
+        </div>
+      )}
 
       {/* Category Badge */}
       <Badge variant="neutral" className="mb-3">

@@ -33,7 +33,7 @@ export const projects = [
     type: "Education Management Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/school-erp-placeholder.jpg"
+    image: null
   },
   {
     slug: "kit-management",
@@ -45,7 +45,7 @@ export const projects = [
     type: "Management Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/kit-management-placeholder.jpg"
+    image: null
   },
   {
     slug: "seafood-restaurant",
@@ -57,7 +57,7 @@ export const projects = [
     type: "Brand & Marketing",
     status: "completed",
     featured: false,
-    image: "/images/projects/seafood-placeholder.jpg"
+    image: null
   },
   {
     slug: "yoga-center",
@@ -69,7 +69,7 @@ export const projects = [
     type: "Brand & Marketing",
     status: "completed",
     featured: false,
-    image: "/images/projects/yoga-placeholder.jpg"
+    image: null
   },
   {
     slug: "kannan-personal-website",
@@ -81,6 +81,6 @@ export const projects = [
     type: "Product & Development",
     status: "building",
     featured: false,
-    image: "/images/projects/personal-website-placeholder.jpg"
+    image: null
   }
 ];
