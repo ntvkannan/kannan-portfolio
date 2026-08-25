@@ -5,6 +5,8 @@ import WorkflowSteps from "./case-study/WorkflowSteps";
 import FeatureShowcase from "./case-study/FeatureShowcase";
 import DesignChallenge from "./case-study/DesignChallenge";
 import Link from "@/app/components/foundation/Link";
+import CaseStudySectionNav from "./CaseStudySectionNav";
+import { slugify } from "@/app/utils/slugify";
 import { projects } from "@/app/data/projects";
 
 function GallerySection({ items }) {
@@ -147,8 +149,13 @@ export default function ProjectCaseStudy({ caseStudy }) {
 
   return (
     <>
-      {caseStudy.sections.map((section, index) => (
-        <Section key={index} variant="normal">
+      <CaseStudySectionNav sections={caseStudy.sections} />
+
+      {caseStudy.sections.map((section, index) => {
+        const sectionId = section.title ? slugify(section.title) : `section-${index}`;
+
+        return (
+        <Section key={index} variant="normal" id={sectionId}>
           <Container size="wide">
             {/* Section Heading */}
             {section.title && (
@@ -171,7 +178,8 @@ export default function ProjectCaseStudy({ caseStudy }) {
             {section.type === "next-project" && <NextProjectSection nextProjectSlug={section.nextProjectSlug} />}
           </Container>
         </Section>
-      ))}
+        );
+      })}
     </>
   );
 }

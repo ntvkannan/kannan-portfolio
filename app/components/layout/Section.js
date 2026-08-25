@@ -1,4 +1,4 @@
-export default function Section({ children, variant = "normal", className = "" }) {
+export default function Section({ children, variant = "normal", className = "", id, ...props }) {
   const variantClasses = {
     small: "py-12 sm:py-12 lg:py-16",
     normal: "py-16 sm:py-16 lg:py-24",
@@ -6,7 +6,7 @@ export default function Section({ children, variant = "normal", className = "" }
   };
 
   return (
-    <section className={`${variantClasses[variant]} ${className}`}>
+    <section id={id} className={`${variantClasses[variant]} ${className}`} {...props}>
       {children}
     </section>
   );
