@@ -12,25 +12,25 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
     const feature = features[0];
     return (
       <div className="w-full">
-        <div className="grid grid-cols-1 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 gap-10 md:gap-14">
           {/* Content */}
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             {feature.eyebrow && (
-              <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-3">
+              <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-widest mb-3">
                 {feature.eyebrow}
               </p>
             )}
-            <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-4">
+            <h3 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-text-primary mb-5">
               {feature.title}
             </h3>
-            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-6">
+            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-7">
               {feature.description}
             </p>
             {feature.points && (
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {feature.points.map((point, idx) => (
                   <li key={idx} className="text-base sm:text-lg text-text-secondary flex items-start gap-3">
-                    <span className="text-accent mt-1">•</span>
+                    <span className="text-accent mt-1 flex-shrink-0">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -40,7 +40,7 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
 
           {/* Image */}
           {feature.image && typeof feature.image === 'string' && (
-            <div className={feature.imageRatio === "9:16" ? "w-full max-w-lg mx-auto md:max-w-md" : "w-full"}>
+            <div className={feature.imageRatio === "9:16" ? "w-full max-w-xl mx-auto" : "w-full -mx-4 sm:mx-0 px-4 sm:px-0"}>
               <Image
                 src={feature.image}
                 alt={feature.imageAlt || feature.title}
@@ -103,7 +103,7 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
 
           {/* Image */}
           {feature.image && typeof feature.image === 'string' && (
-            <div className={feature.imageRatio === "9:16" ? "w-full max-w-sm mx-auto md:mx-0" : "w-full"}>
+            <div className={feature.imageRatio === "9:16" ? "w-full max-w-md mx-auto" : "w-full"}>
               <Image
                 src={feature.image}
                 alt={feature.imageAlt || feature.title}

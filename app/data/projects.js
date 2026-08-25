@@ -33,7 +33,7 @@ export const projects = [
     type: "Education Management Platform",
     status: "completed",
     featured: false,
-    image: null
+    image: "/images/projects/school-erp/school-erp-dashboard.png"
   },
   {
     slug: "kit-management",
@@ -45,7 +45,7 @@ export const projects = [
     type: "Management Platform",
     status: "completed",
     featured: false,
-    image: null
+    image: "/images/projects/kit-management/franchisor-dashboard.png"
   },
   {
     slug: "seafood-restaurant",

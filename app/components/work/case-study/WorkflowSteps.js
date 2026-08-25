@@ -36,7 +36,7 @@ export default function WorkflowSteps({ steps }) {
           </div>
 
           {introStep.image && typeof introStep.image === 'string' && (
-            <div className="w-full pt-2">
+            <div className="w-full -mx-4 sm:mx-0 px-4 sm:px-0 pt-2">
               <Image
                 src={introStep.image}
                 alt={introStep.imageAlt || "Step 1: " + introStep.title}
@@ -75,7 +75,7 @@ export default function WorkflowSteps({ steps }) {
                 </div>
 
                 {step.image && typeof step.image === 'string' && (
-                  <div className="w-full pt-2">
+                  <div className="w-full -mx-4 sm:mx-0 px-4 sm:px-0 pt-2">
                     <Image
                       src={step.image}
                       alt={step.imageAlt || `Step ${index + 2}: ${step.title}`}
@@ -118,7 +118,7 @@ export default function WorkflowSteps({ steps }) {
 
           {/* Step Visual (if image provided) */}
           {step.image && typeof step.image === 'string' && (
-            <div className={step.imageRatio === "9:16" ? "w-full max-w-sm mx-auto md:mx-0" : "w-full"}>
+            <div className={step.imageRatio === "9:16" ? "w-full max-w-md mx-auto" : "w-full -mx-4 sm:mx-0 px-4 sm:px-0"}>
               <Image
                 src={step.image}
                 alt={step.imageAlt || `Step ${index + 1}: ${step.title}`}

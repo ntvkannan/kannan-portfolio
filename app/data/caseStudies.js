@@ -485,36 +485,253 @@ export const caseStudies = {
   },
   "school-erp": {
     sections: [
+      // 01. The Challenge
       {
         type: "problem",
-        title: "The Challenge",
-        content: "Educational institutions manage multiple complex workflows — from student information and enrollment to course management, attendance, and communication. Consolidating these across separate systems creates inefficiency and makes it difficult for stakeholders to find the information they need.",
+        title: "01 — The Challenge",
+        content: "Building a unified School ERP system meant translating broad requirements into a coherent experience that could serve multiple school roles and workflows simultaneously — across admissions, student enrollment, academic operations, financial management, and staff administration.",
       },
+
+      // 02. My Design Approach
       {
-        type: "solution",
-        title: "The Approach",
-        content: "School ERP was designed as a unified education management experience to bring multiple school workflows and information into one structured digital platform. The UX/UI design focused on organizing complex institutional data into clear, role-based views that serve different user types — administrators, teachers, students, and parents.",
+        type: "problem",
+        title: "02 — My Design Approach",
+        content: "My process: understand the requirements, map key workflows (admissions, enrollment, fee management, staff roles), structure the information architecture, design each workflow's UX, and refine through stakeholder feedback.",
       },
+
+      // 02B. Admin Dashboard
       {
-        type: "gallery",
-        title: "Project Gallery",
-        items: [
+        type: "feature-showcase",
+        title: "Administration Dashboard",
+        features: [
           {
-            id: 1,
-            title: "Admin Dashboard",
-            description: "Institutional overview and management interface",
-          },
-          {
-            id: 2,
-            title: "Teacher Portal",
-            description: "Course, student, and attendance management",
-          },
-          {
-            id: 3,
-            title: "Student / Parent View",
-            description: "Personalized academic progress and communication",
+            title: "Operational Overview",
+            description: "An administration-focused dashboard bringing core school operations into one structured view, from programs and academic terms to fee structures, classrooms, activities and events.",
+            image: "/images/projects/school-erp/school-erp-dashboard.png",
+            imageAlt: "School ERP administration dashboard showing programs, academic terms, fee structures, classrooms, activities and events overview",
           },
         ],
+      },
+
+      // 02C. Product Structure
+      {
+        type: "ecosystem-diagram",
+        title: "The School ERP System",
+        items: [
+          {
+            label: "ADMISSIONS",
+            items: ["Leads", "Registrations", "Enrollments"],
+          },
+          {
+            label: "PEOPLE",
+            items: ["Students", "Families", "Users", "Roles"],
+          },
+          {
+            label: "ACADEMIC",
+            items: ["Classes", "Teachers", "Sessions"],
+          },
+          {
+            label: "OPERATIONS",
+            items: ["Tasks", "Events", "Activity", "Communication"],
+          },
+          {
+            label: "FINANCE",
+            items: ["Fee Structure", "Payments", "Collections"],
+          },
+          {
+            label: "ADMINISTRATION",
+            items: ["User Management", "Permissions", "Settings"],
+          },
+        ],
+      },
+
+      // 03. Primary Workflow
+      {
+        type: "challenge-diagram",
+        title: "From Lead Management to Student Fee Assignment",
+        items: [
+          { label: "Lead Management", description: "Capture and qualify prospects" },
+          { label: "Family Records", description: "Connect students with family information" },
+          { label: "New Enrollment", description: "Multi-step enrollment process" },
+          { label: "Enrollment Management", description: "Manage active enrollments" },
+          { label: "Enrollment Detail", description: "Track record history and status" },
+          { label: "Fee Structure", description: "Administrative configuration" },
+          { label: "Student Fee Assignment", description: "Apply fees to enrolled students" },
+        ],
+        layout: "vertical",
+      },
+
+      // 04. Lead Management
+      {
+        type: "feature-showcase",
+        title: "Lead Management",
+        features: [
+          {
+            title: "High-Volume Lead Tracking",
+            description: "The lead management interface demonstrates how to structure a high-volume prospect experience around searchable records, status tracking, assignment, and next actions. Each lead record contains key information — name, program interest, age, assignment, contact information, and lead date — organized in a scannable list format.",
+            points: [
+              "Search and filtering for 100+ records",
+              "Lead status and assignment tracking",
+              "Contact information at a glance",
+              "Action controls without drilling into detail",
+              "Structured column organization",
+            ],
+            image: "/images/projects/school-erp/school-erp-lead-list.png",
+            imageAlt: "School ERP lead management list showing searchable records with prospect information, program details, lead status, assigned staff, contact information, and action controls",
+          },
+        ],
+      },
+
+      // 05. Family & Student Relationships
+      {
+        type: "feature-showcase",
+        title: "Family Records & Relationships",
+        features: [
+          {
+            title: "Family Information Management",
+            description: "Family records connect students with related household information, giving staff a structured view of students, parents and other family members within the same record. Families are organized to show the student-family relationship and other household members.",
+            points: [
+              "Students connected to family records",
+              "Family member roles and relationships",
+              "Multiple members per household",
+              "Centralized household information",
+              "Clear member organization by relationship",
+            ],
+            image: "/images/projects/school-erp/school-erp-student-family-information.png",
+            imageAlt: "School ERP family records showing student relationships with parents and household members, demonstrating family-based organization of student information",
+          },
+        ],
+      },
+
+      // 06. New Enrollment Workflow
+      {
+        type: "feature-showcase",
+        title: "New Enrollment — Multi-Step Wizard",
+        features: [
+          {
+            title: "Structured Enrollment Process",
+            description: "New enrollment is handled through a structured workflow with dedicated steps: Student, Family, Program, Fees, Services, Health Record, and Documents. Each step focuses on specific data categories, making complex enrollment manageable by breaking it into clear, progressive stages.",
+            points: [
+              "Seven-step enrollment workflow",
+              "Student information as first step",
+              "Progressive data collection across related areas",
+              "Clear step indicators and navigation",
+              "Each stage focused on one data category",
+            ],
+            image: "/images/projects/school-erp/school-erp-enrollment-1.png",
+            imageAlt: "School ERP enrollment wizard showing the student information entry step with tabs for Student, Family, Program, Fees, Services, Health Record, and Documents",
+          },
+        ],
+      },
+
+      // 06B. Enrollment Management
+      {
+        type: "feature-showcase",
+        title: "Enrollment Management",
+        features: [
+          {
+            title: "Active Enrollment Records",
+            description: "Once enrollment records are created, staff can manage students across academic year, program and enrollment type while reviewing associated services and guardian information. The enrollment list provides a structured view for managing multiple students.",
+            points: [
+              "Filter by academic year, program, enrollment type",
+              "Search and organize active enrollments",
+              "Bulk actions for multiple records",
+              "Program fee assignment from list view",
+              "Guardian and services information visible",
+            ],
+            image: "/images/projects/school-erp/school-erp-enrollment-2.png",
+            imageAlt: "School ERP enrollment management list showing multiple student records with program, services, and guardian information across academic years",
+          },
+        ],
+      },
+
+      // 06C. Enrollment Detail
+      {
+        type: "feature-showcase",
+        title: "Enrollment Detail & History",
+        features: [
+          {
+            title: "Student Enrollment Record",
+            description: "The enrollment record brings program history, activities, notes and status changes into a single detailed view, supporting ongoing management after enrollment. Staff can review the complete enrollment journey and make adjustments as needed.",
+            points: [
+              "Program history and changes",
+              "Activities and service enrollment",
+              "Notes and communication record",
+              "Enrollment timeline and status",
+              "Detailed student context over time",
+            ],
+            image: "/images/projects/school-erp/school-erp-enrollment-3.png",
+            imageAlt: "School ERP enrollment detail showing program history, activities, notes and status changes for an enrolled student",
+          },
+        ],
+      },
+
+      // 07. Role-Based Experience
+      {
+        type: "problem",
+        title: "03 — Role-Based Design",
+        content: "The system needed to serve different school roles with fundamentally different perspectives. Administrators need system-wide operational visibility and configuration controls. School/center staff need a local view of their students and operations. The design approach was to create distinct experiences optimized for how each role thinks about their work, rather than forcing them into a unified interface.\n\nA clear example is the fee management experience: administrators configure system-wide fee structures defining fees for all programs and centers, while school staff apply those structures to their specific students and track payments. Both work with the same underlying data, but from completely different perspectives.",
+      },
+
+      {
+        type: "feature-showcase",
+        title: "Admin Configuration vs. School Application",
+        features: [
+          {
+            title: "Fee Structure Management",
+            description: "Fee structures are organized as reusable configurations for different program and admission contexts. Administrators can manage multiple fee structures, each tailored to specific program-admission combinations, providing a centralized place to organize and apply fees across the system.",
+            image: "/images/projects/school-erp/school-erp-fee-admin.png",
+            imageAlt: "School ERP fee structure management showing reusable fee structure configurations organized by program and admission context",
+          },
+          {
+            title: "School-Specific Fee Management",
+            description: "School staff manage student-specific fee assignment at the local level, focusing on how individual students are enrolled in programs and assigned fee structures. The view demonstrates fee breakdown, discount management, and related management actions available to school staff.",
+            image: "/images/projects/school-erp/school-erp-fee-school.png",
+            imageAlt: "School ERP student fee management showing student enrollment, program assignment, fee breakdown, discounts, and school-specific management actions",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 08. Key Design Decisions
+      {
+        type: "problem",
+        title: "04 — Key Design Decisions",
+        content: "Several design decisions emerged from analyzing the School ERP workflows and requirements:",
+      },
+
+      {
+        type: "role-metadata",
+        title: "Design Principles",
+        responsibilities: [
+          "Separate Role-Based Interfaces — Different roles see different views of the same data (admin sees system configuration; school sees student application), each optimized for their mental model and workflow.",
+          "Structured Workflows — Complex enrollment and data capture are broken into clear stages or sections, making the process feel manageable rather than overwhelming.",
+          "Information Grouping — Related information (student + guardian) is grouped by semantic relationship, making dense information feel organized.",
+          "List-Based Management — High-volume records (leads, students, enrollments) use searchable, filterable lists with status visibility and action controls.",
+          "Progressive Disclosure — Complex forms show essential fields by default and provide options to show/hide advanced fields based on user needs.",
+          "Consistent Patterns — Navigation, forms, lists, and filters use consistent patterns across modules, making the system feel cohesive despite handling diverse workflows.",
+        ],
+      },
+
+      // 09. Outcome
+      {
+        type: "solution",
+        title: "Outcome",
+        content: "The complete School ERP UX/UI design was approved by the manager and handed over to the development team.",
+      },
+
+      // 10. Reflection
+      {
+        type: "reflection",
+        title: "Reflection",
+        content: "School ERP demonstrates the importance of approaching enterprise UX as systems thinking. The challenge was not optimizing a single screen, but structuring how dozens of interconnected workflows would be experienced by different user roles.\n\nRole-based design works best when each interface is optimized for a specific mental model rather than forcing all users into one view. Information density becomes manageable through semantic grouping and progressive disclosure. Most importantly, successful enterprise design starts by thoroughly understanding workflows and requirements, translating them into clear user experiences, and refining through stakeholder feedback.",
+      },
+
+      // 12. Next Project
+      {
+        type: "next-project",
+        title: "Next Case Study",
+        nextProjectSlug: "seafood-restaurant",
       },
     ],
   },

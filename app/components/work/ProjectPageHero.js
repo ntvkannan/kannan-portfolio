@@ -8,9 +8,9 @@ export default function ProjectPageHero({ project }) {
     <Section variant="major">
       <Container>
         {/* Editorial 2-column layout: content + image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 lg:items-start">
           {/* Hero Content */}
-          <div className="order-2 lg:order-1 space-y-8">
+          <div className="order-2 lg:order-1 lg:col-span-2 space-y-8">
             {/* Category Badge */}
             <Badge variant="accent">
               {project.displayCategory}
@@ -50,7 +50,7 @@ export default function ProjectPageHero({ project }) {
           </div>
 
           {/* Hero Image */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2 lg:col-span-3">
             <Image
               src={project.image}
               alt={`${project.title} project image`}
