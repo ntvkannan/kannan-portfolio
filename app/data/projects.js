@@ -71,6 +71,7 @@ export const projects = [
     status: "completed",
     featured: false,
     heroType: "brand",
+    image: "/images/projects/yoga-center/visual-language.png",
     primaryLogo: "/images/projects/yoga-center/primary logo.jpg",
     secondaryLogo: "/images/projects/yoga-center/circular logo.png"
   },
