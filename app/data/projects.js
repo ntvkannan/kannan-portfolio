@@ -63,13 +63,15 @@ export const projects = [
     slug: "yoga-center",
     title: "Yoga Center",
     category: "client",
-    displayCategory: "Client & Brand Work",
-    description: "A visual identity and marketing design project supporting the brand communication and promotional needs of a yoga center.",
+    displayCategory: "Brand Identity & Visual Communication",
+    description: "I designed the visual identity for Nagendran Yoga International and applied the visual direction across promotional, print, and digital touchpoints.",
     role: "Brand & Visual Design",
-    type: "Brand & Marketing",
+    type: "Brand Identity / Visual Communication",
     status: "completed",
     featured: false,
-    image: null
+    heroType: "brand",
+    primaryLogo: "/images/projects/yoga-center/primary logo.jpg",
+    secondaryLogo: "/images/projects/yoga-center/circular logo.png"
   },
   {
     slug: "kannan-personal-website",

@@ -1048,4 +1048,163 @@ export const caseStudies = {
       },
     ],
   },
+
+  "yoga-center": {
+    sections: [
+      // 01. Overview
+      {
+        type: "problem",
+        title: "01 — Overview",
+        content: "Nagendran Yoga International is a classical yoga center offering classes, courses, and teacher training programs. The center needed a visual identity and complete brand application across print, social media, promotional communication, and digital presence. Working directly with the center, I designed the logo, visual direction, and applied the identity across all marketing and communication touchpoints to create a cohesive, recognizable brand.",
+      },
+
+      // 02. The Identity
+      {
+        type: "feature-showcase",
+        title: "02 — The Identity",
+        features: [
+          {
+            title: "Primary Logo",
+            description: "The NYi symbol combines three visual ideas: a yoga figure in meditation pose, wings extending on both sides, and a sun above. Together, these elements represent the core philosophy: the practice of yoga (the figure), spiritual elevation and growth (the wings), and energy and enlightenment (the sun). The symbol is anchored by 'NYi'—an abbreviation clear to the center's community.",
+            image: "/images/projects/yoga-center/primary logo.jpg",
+            imageAlt: "Nagendran Yoga International primary logo with yoga figure, wings, and sun symbol",
+            imageRatio: "auto",
+          },
+          {
+            title: "Circular Badge",
+            description: "A circular badge format featuring the same symbol with the full organizational name around the perimeter, designed for certificates, credentials, and formal applications. The logo works in two primary versions, allowing flexibility across different contexts while maintaining consistent recognition.",
+            image: "/images/projects/yoga-center/circular logo.png",
+            imageAlt: "Circular badge variation with full organizational name and classical yoga shala tagline",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "grid",
+      },
+
+      // 03. Visual Language
+      {
+        type: "problem",
+        title: "03 — Visual Language",
+        content: "Beyond the logo, the visual language is built from a tight palette of recurring elements. Orange serves as the dominant color, creating immediate energy and warmth across every touchpoint. A complementary maroon appears for depth and formal contexts. Typography is bold and clean, supporting clear communication across social media, print, and web. The graphic language draws from yoga imagery: meditation silhouettes, mandala patterns (representing inner peace and spirituality), sun and circular motifs, and decorative borders. Photography emphasizes practice, instructors, and outdoor natural settings. Together, these elements create a visual system recognizable even when individual applications vary significantly in layout or purpose.",
+      },
+
+      // 03B. Visual Language Board
+      {
+        type: "feature-showcase",
+        title: "",
+        features: [
+          {
+            title: "",
+            description: "",
+            image: "/images/projects/yoga-center/visual-language.png",
+            imageAlt: "Visual language analysis board showing color palette, typography, graphic elements, logo usage, photography direction, and applications",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 04. Communication Design
+      {
+        type: "feature-showcase",
+        title: "04 — Communication Design",
+        features: [
+          {
+            title: "Course Promotions & Announcements",
+            description: "The same visual language was applied to different communication formats without forcing every design into one template. Course promotions highlighted yoga practice and learning outcomes. Announcements celebrated milestones and openings. Educational graphics built credibility and trust. Each format required different information hierarchy, imagery approach, and spatial treatment—but all maintained the visual identity.",
+            image: "/images/projects/yoga-center/Hatha Yoga 5am-01.jpg",
+            imageAlt: "Hatha Yoga course promotion post with meditation silhouette and mandala pattern",
+            imageRatio: "auto",
+          },
+          {
+            title: "Multi-Format Adaptation",
+            description: "Rather than constraints, the variety of formats demonstrated the flexibility and strength of the system. The identity worked equally well as a minimalist social media post and as a dense information design with detailed course curriculum.",
+            image: "/images/projects/yoga-center/Pranayama Workshop-01.jpg",
+            imageAlt: "Pranayama Workshop promotion combining content hierarchy with instructor credibility",
+            imageRatio: "auto",
+          },
+          {
+            title: "Photography-Led Formats",
+            description: "Some promotional materials emphasized strong photography while maintaining visual identity through color palette and logo placement.",
+            image: "/images/projects/yoga-center/Aerial Yoga TTC-02.jpg",
+            imageAlt: "Aerial Yoga Teacher Training announcement with photography-led design and certification badges",
+            imageRatio: "auto",
+          },
+          {
+            title: "Milestone Announcements",
+            description: "Celebration of achievements like certification registration and major milestones used illustrated scenes and celebratory messaging.",
+            image: "/images/projects/yoga-center/RYS-01.jpg",
+            imageAlt: "Yoga Alliance certification milestone announcement with illustrated sunset scene",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 05. Print Applications
+      {
+        type: "feature-showcase",
+        title: "05 — Print Applications",
+        features: [
+          {
+            title: "Formal Identity Application",
+            description: "The visual identity extended beyond digital to print materials. Certificates used the maroon secondary color to convey formality and permanence, anchoring the identity in official contexts.",
+            image: "/images/projects/yoga-center/certificate.png",
+            imageAlt: "Formal identity application for yoga teacher training certification",
+            imageRatio: "auto",
+          },
+          {
+            title: "Brochure — Page 1",
+            description: "A multi-page promotional piece extending the visual identity across course information, schedules, and supporting content.",
+            image: "/images/projects/yoga-center/brochure-page-1.png",
+            imageAlt: "Brochure cover page with visual identity and course information",
+            imageRatio: "auto",
+          },
+          {
+            title: "Brochure — Page 2",
+            description: "Inner pages of the brochure demonstrating consistent application of typography, color, and graphic language throughout the complete promotional material.",
+            image: "/images/projects/yoga-center/brochure-page-2.png",
+            imageAlt: "Brochure inner page with detailed course offerings and identity system",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 06. Digital Presence
+      {
+        type: "feature-showcase",
+        title: "06 — Digital Presence",
+        features: [
+          {
+            title: "Website Design and Brand Integration",
+            description: "The website served as the most comprehensive application of the visual identity. The design integrated the logo, color system, typography, photography, and graphic language across multiple sections: hero (establishing calm through nature imagery), about, class information (emphasizing variety with photography), trainer profiles, testimonials, and scheduling (color-coded calendar for clarity). The website needed to balance marketing (why choose NYi?) with practical information (what classes are available, when, what does it cost). The visual system provided both cohesion and flexibility—each section could emphasize different content while maintaining immediate brand recognition.",
+            image: "/images/projects/yoga-center/website.png",
+            imageAlt: "Complete Yoga Center website design showing integrated visual identity across all sections",
+            imageRatio: "auto",
+          },
+        ],
+      },
+
+      // 07. One Identity, Many Touchpoints
+      {
+        type: "solution",
+        title: "07 — One Identity, Many Touchpoints",
+        content: "From a single symbol emerged an entire visual ecosystem. Logo, social media promotions, printed materials, certificates, and website all spoke with one voice while serving different purposes. The consistency was not rigid—it was intentional, allowing each application to solve its specific communication challenge while remaining immediately recognizable as part of the same brand. Social announcements celebrated milestones using illustrated scenes and celebratory messaging. Promotional posters combined the orange primary color with full course listings and strong visual hierarchy. The website integrated all visual elements across hero, classes, testimonials, and scheduling into a cohesive digital experience. This balance between unity and flexibility is the strength of the identity system.",
+      },
+
+      // 08. Reflection
+      {
+        type: "reflection",
+        title: "08 — Reflection",
+        content: "Working across multiple formats—social media, print, digital—taught me how visual identity systems need both clarity and flexibility. The core symbol and color palette provided the guardrails, but each application required problem-solving specific to its format and purpose. A social media post needed to catch attention in a crowded feed. A certificate needed to convey credibility and permanence. A website needed to balance marketing with practical information. The same identity language worked across all of these because it was strong enough to remain recognizable, yet flexible enough to adapt.\n\nIf I were approaching this project today, I would establish the usage guidelines and spatial rules for the identity even more explicitly at the outset. Creating a more detailed brand system document would make scaling to new applications easier, and would help anyone future-extending the identity maintain the same intentionality.\n\nThe work also reinforced how important consistency is in building brand trust. Every material, from a small social post to a large poster, contributed to a cohesive impression. The visual identity became synonymous with the center's values and positioning.",
+      },
+
+      // 09. Next Project
+      {
+        type: "next-project",
+        nextProjectSlug: "seafood-restaurant",
+      },
+    ],
+  },
 };
