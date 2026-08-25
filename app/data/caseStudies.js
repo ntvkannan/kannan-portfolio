@@ -737,41 +737,182 @@ export const caseStudies = {
   },
   "seafood-restaurant": {
     sections: [
+      // 01. Hero (handled by ProjectPageHero)
+      // 02. Project Overview (handled by ProjectOverview)
+
+      // 03. The Challenge
       {
         type: "problem",
-        title: "Brand Identity & Visual Communication",
-        content: "A seafood restaurant needed to establish a distinctive visual identity and create consistent, professional communication materials that reflect the business's character and appeal to customers. This includes everything from core brand identity through day-to-day marketing materials.",
+        title: "03 — The Challenge",
+        content: "The restaurant needed to move beyond traditional approaches to reach customers online. The design work required several things simultaneously:\n\nFirst, creating a website that presented the menu clearly and made ordering straightforward. Second, establishing consistent visual presence across digital and print—the website, menu card, and promotional materials all needed to feel connected. Third, working within the limitations of the Google Sites platform while still achieving a professional, custom-designed feel.\n\nThe challenge wasn't just building a website; it was creating a complete brand experience across multiple formats.",
       },
+
+      // 04. Designing Within Constraints
       {
-        type: "solution",
-        title: "Current Design Scope",
-        content: "The project focused on developing brand identity and visual communication materials for the restaurant. This includes brand direction, visual guidelines, and practical marketing materials — business cards, brochures, flyers, and posters — that support the business across multiple touchpoints.",
+        type: "problem",
+        title: "04 — Designing Within Constraints",
+        content: "I implemented the website using Google Sites, which meant working within a templated platform rather than custom development. This introduced real constraints—limited layout flexibility, predefined component options, and less control over responsive behavior than a custom-built site would offer.\n\nRather than see this as a limitation, I approached it as a design problem to solve. The focus became making intentional decisions about information hierarchy, content organisation, spacing, imagery, and visual consistency. Within the available layout options, I structured the pages to guide visitors clearly from first impression to menu discovery to ordering.\n\nThe result was a website that feels designed and considered, despite the platform's constraints. The visual direction and hierarchy were strong enough that the platform boundaries became invisible to the visitor.",
       },
+
+      // 05. Website UX/UI
       {
-        type: "solution",
-        title: "The Next Step: Digital Product",
-        content: "The project will later expand from brand and marketing design into a digital booking, ordering and delivery experience. The progression would move from established brand identity into UX, UI, and finally functional digital products. Status: Building.",
+        type: "problem",
+        title: "05 — Website UX/UI",
+        content: "The website needed five main sections: a home page to establish first impression and value; an About section to build trust; a Menu page for detailed offerings; an FAQ for customer questions; and a Contact page for ordering and location information. This structure created a clear path: discover → understand → browse menu → order.\n\nThe home page was the strongest part of the design. It opened with a clear tagline—\"Fresh Seafood Menu Crafted for You\"—followed by six value proposition cards explaining what made the restaurant different: fresh catch, no mixing of stocks, no chemicals, chettinad taste, hygienic preparation, and premium quality at honest pricing. Below that, I structured a menu showcase with food categories (Fry, Curry, Combo), a four-step process flow showing how to order, and owner information with an embedded map. The design guided visitors through a journey: who are you, what do you offer, how do I order, where are you located.\n\nThe menu page presented categories and items with descriptions and pricing, organized for easy scanning. Contact and ordering were made prominent throughout: WhatsApp for direct pre-ordering, Zomato for aggregator ordering, QR codes for quick access, and the business phone number repeated at multiple points. The design removed friction from the ordering process.",
       },
+
+      // 05B. Website Showcase
       {
-        type: "gallery",
-        title: "Brand & Marketing Assets",
-        items: [
+        type: "feature-showcase",
+        title: "Website Structure in Practice",
+        features: [
           {
-            id: 1,
-            title: "Brand Identity",
-            description: "Logo, color palette, and visual direction",
+            title: "Homepage",
+            description: "Hero section with tagline and value propositions, menu showcase, process flow, and owner information with location.",
+            image: "/images/projects/seafood-restaurant/home.png",
+            imageAlt: "Sakisa Seafoods website homepage showing hero section, value propositions, menu categories, process flow, and location information",
+            imageRatio: "auto",
           },
           {
-            id: 2,
-            title: "Print Materials",
-            description: "Business cards, brochures, flyers, and posters",
+            title: "Menu Page",
+            description: "Organized menu categories with food imagery and clear information hierarchy for browsing.",
+            image: "/images/projects/seafood-restaurant/menu.png",
+            imageAlt: "Sakisa Seafoods website menu page showing organized food categories and items",
+            imageRatio: "auto",
           },
           {
-            id: 3,
-            title: "Brand Applications",
-            description: "Marketing and promotional materials",
+            title: "Contact & Ordering",
+            description: "Multiple ordering options integrated throughout the site: WhatsApp, Zomato, QR codes, and map location.",
+            image: "/images/projects/seafood-restaurant/contact.png",
+            imageAlt: "Sakisa Seafoods website contact section with WhatsApp and Zomato ordering options and location map",
+            imageRatio: "auto",
           },
         ],
+        layout: "stacked",
+      },
+
+      // 06. Visual Language
+      {
+        type: "problem",
+        title: "06 — Creating the Visual Language",
+        content: "The visual direction wasn't something I inherited—the client provided the logo, but the color system, typography, layout approach, and consistency across materials were design decisions I made.\n\nThe palette used a deep brown/burgundy primary with golden yellow/orange accents and cream backgrounds. This combination conveyed warmth and trust while supporting appetite appeal for food imagery. The typography was clean and readable across scales, with strong heading hierarchy to guide scanning. The layout used structured sections, clear grouping, and balanced imagery to create visual rhythm.\n\nThese choices weren't complicated, but they were intentional. Every element served the goal of presenting the restaurant as professional and trustworthy while feeling approachable. The bilingual presentation—English and Tamil—ensured local relevance.\n\nThe strongest part of this visual language was its consistency. The same colors, typography, and layout patterns appeared on the website, menu card, and flyer. That consistency created recognition and professionalism across multiple contexts.",
+      },
+
+      // 07. Menu Card
+      {
+        type: "problem",
+        title: "07 — Menu Card",
+        content: "I designed the menu card from scratch as a single-page, double-sided format. The layout featured a circular arrangement of food dishes at the center—a visual anchor that made the card memorable and visually interesting. Around that, I organised the actual menu into categories: Curry, Fried, Masala, Meals, Dinner.\n\nThe design decisions were practical ones. The circular arrangement caught attention and broke the monotony of lists. The category organisation made the card scannable—a customer could quickly find what they were looking for. Pricing was clear and consistent. The logo and tagline grounded the card as a Sakisa Seafoods piece.\n\nThe menu names and pricing came from the business; the way I organised them, the visual hierarchy, the color treatment, the overall layout—those were design contributions.",
+      },
+
+      // 07B. Menu Card Visual
+      {
+        type: "feature-showcase",
+        title: "Menu Card Design",
+        features: [
+          {
+            title: "Menu Card",
+            description: "Circular food arrangement anchors the design, with bilingual menu categories organized for easy browsing and clear pricing.",
+            image: "/images/projects/seafood-restaurant/menu-card.png",
+            imageAlt: "Sakisa Seafoods printed menu card with circular food arrangement and organized menu categories in English and Tamil",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 08. Promotional Flyer
+      {
+        type: "problem",
+        title: "08 — Promotional Flyer",
+        content: "The flyer was a front/back promotional piece designed to catch attention and drive ordering. The front side featured a large circular food arrangement paired with messaging about quality: \"Fresh Catch. No Mixing. No Chemicals. Chettinad Taste. Hygienic. Premium Quality.\" This wasn't marketing fluff—these were actual business practices the owner could stand behind.\n\nThe back side organised the menu by category with food imagery and prominent ordering CTAs: WhatsApp, Zomato, and QR codes. The design used the same color system and typography as the website and menu card, creating visual continuity.\n\nI also created an alternate flyer version, exploring different compositions while maintaining the same visual language and messaging.\n\nThe flyer demonstrated how the same visual direction could adapt to different formats and purposes—it wasn't just a miniaturised version of the website, but a separate design that solved the problem of promotional materials while maintaining brand consistency.",
+      },
+
+      // 08B. Flyer Visual
+      {
+        type: "feature-showcase",
+        title: "Promotional Flyer Design",
+        features: [
+          {
+            title: "Primary Flyer",
+            description: "Front and back promotional design featuring value propositions, menu preview, and multiple ordering options.",
+            image: "/images/projects/seafood-restaurant/flyer.jpg",
+            imageAlt: "Sakisa Seafoods promotional flyer front and back with food arrangement, value propositions, menu categories and ordering CTAs",
+            imageRatio: "auto",
+          },
+          {
+            title: "Alternate Composition",
+            description: "Alternate flyer design exploring a different visual arrangement while maintaining the same visual language, menu organization, and ordering calls-to-action.",
+            image: "/images/projects/seafood-restaurant/flyer-alternate.jpg",
+            imageAlt: "Sakisa Seafoods alternate promotional flyer using the same visual language, menu categories, and ordering information",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "stacked",
+      },
+
+      // 09. One Visual Language Across Multiple Touchpoints
+      {
+        type: "problem",
+        title: "09 — One Visual Language Across Multiple Touchpoints",
+        content: "The strongest part of this project wasn't any single design, but the consistency across all three: website, menu card, flyer.\n\nA visitor encountering the website and later seeing the menu card or flyer would immediately recognise them as part of the same brand. The color palette was identical. The typography was consistent. The way information was organized followed similar patterns. Even the food imagery had a consistent visual treatment and tone.\n\nThis wasn't a formal design system with extensive documentation. It was visual consistency achieved through intentional design decisions and careful implementation. Every layout choice, color choice, and typography choice was made with an eye toward maintaining that cohesion.\n\nIn practice, this meant that the restaurant's brand voice was consistent regardless of where the customer encountered it—online or in print, on a large desktop screen or a printed card in their hands. That consistency is what creates recognition and trust.",
+      },
+
+      // 09B. Cross-Channel Composition
+      {
+        type: "feature-showcase",
+        title: "Visual Consistency Across Formats",
+        features: [
+          {
+            title: "Website",
+            description: "Digital presence showing visual system in action across sections and interactions.",
+            image: "/images/projects/seafood-restaurant/home.png",
+            imageAlt: "Sakisa Seafoods website homepage as primary touchpoint",
+            imageRatio: "auto",
+          },
+          {
+            title: "Menu Card",
+            description: "Print design applying the same visual language to a compact, functional format.",
+            image: "/images/projects/seafood-restaurant/menu-card.png",
+            imageAlt: "Sakisa Seafoods menu card showing consistent color and typography",
+            imageRatio: "auto",
+          },
+          {
+            title: "Promotional Flyer",
+            description: "Marketing material adapting the visual direction for promotional impact.",
+            image: "/images/projects/seafood-restaurant/flyer.jpg",
+            imageAlt: "Sakisa Seafoods promotional flyer extending visual language to print promotion",
+            imageRatio: "auto",
+          },
+        ],
+        layout: "grid",
+      },
+
+      // 10. Content Creation
+      {
+        type: "problem",
+        title: "10 — Content Creation",
+        content: "The website content was created using AI based on business information the client provided—menu item names, descriptions, pricing, address, hours, and business details. I structured that content into the website experience, organising it for clarity and scannability.\n\nThis approach allowed the website to launch quickly with accurate business information without requiring me to independently create menu descriptions or business copy. The client remained the authority on what the restaurant offers; I structured that information for the digital format.",
+      },
+
+      // 11. Outcome
+      {
+        type: "problem",
+        title: "11 — Outcome",
+        content: "The project delivered:\n\n• A complete website designed and implemented on Google Sites\n• Five main pages (Home, About, Menu, FAQ, Contact) with clear information architecture\n• A menu card that organised the business's offerings for print distribution\n• A promotional flyer that communicated key differentiators and drove ordering\n• A consistent visual language across all digital and print materials\n• Integration with WhatsApp and Zomato ordering systems\n\nThe design demonstrates the ability to create cohesive brand experiences across different media and formats, to work effectively within platform constraints, and to balance visual design with practical user needs.\n\nNo measurable business outcome data was available for this project. The case study is based on the quality and breadth of the design work itself—the information architecture, visual consistency, and thoughtful implementation across web and print.",
+      },
+
+      // 12. Reflection
+      {
+        type: "reflection",
+        title: "12 — Reflection",
+        content: "This project illustrated how constraints can actually drive better design. Because I was limited by the Google Sites platform, I couldn't rely on custom code or complex interactions. I had to solve problems through clear hierarchy, strong layout decisions, and consistent visual language. The result was cleaner and more focused than it might have been otherwise.\n\nIt also demonstrated the value of working across multiple formats. The website, menu card, and flyer were different problems with different requirements, but solving them as a connected system created something stronger than any single piece alone. That kind of thinking—considering how one design choice supports the whole brand experience—is something I bring to every project.\n\nFinally, it reminded me that design at its best solves real problems for real people. Sakisa Seafoods is a functioning business with actual customers, not a fictional case study. The website, menu, and flyer had to work. The visual language had to be professional enough to build trust, but approachable enough to feel welcoming to local customers. Those practical constraints made the design better.",
+      },
+
+      // Next Project
+      {
+        type: "next-project",
+        nextProjectSlug: "kannan-personal-website",
       },
     ],
   },

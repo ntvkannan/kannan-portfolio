@@ -49,14 +49,15 @@ export const projects = [
   },
   {
     slug: "seafood-restaurant",
-    title: "Seafood Restaurant",
+    title: "Sakisa Seafoods",
     category: "client",
-    displayCategory: "Client & Brand Work",
-    description: "A visual identity and marketing design project for a seafood restaurant, covering brand direction and practical business communication materials.",
-    role: "Brand & Visual Design",
-    type: "Brand & Marketing",
+    displayCategory: "Brand & Digital Experience",
+    description: "I designed the website UX/UI and implemented it on Google Sites, then created supporting marketing materials—a menu card and promotional flyer—all sharing a cohesive visual language.",
+    role: "Brand & Digital Experience Designer",
+    type: "Brand & Digital Experience",
     status: "completed",
     featured: false,
+    heroType: "brand",
     image: null
   },
   {
