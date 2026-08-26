@@ -5,8 +5,8 @@ import MobileMenuTrigger from "./MobileMenuTrigger";
 
 export default function Header() {
   return (
-    <header className="border-b border-border bg-surface py-4 sticky top-0 z-40">
-      <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
+    <header className="border-b border-border/60 bg-surface/92 backdrop-blur-md py-4 sticky top-0 z-40">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo / Name */}
           <Link
