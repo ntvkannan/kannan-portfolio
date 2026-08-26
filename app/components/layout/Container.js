@@ -1,6 +1,6 @@
 export default function Container({ children, className = "", size = "default" }) {
   const sizeClasses = {
-    default: "max-w-5xl",
+    default: "max-w-6xl",
     wide: "max-w-6xl",
     full: "max-w-full",
   };
