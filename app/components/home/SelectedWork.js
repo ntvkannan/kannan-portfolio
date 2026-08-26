@@ -67,7 +67,7 @@ export default function SelectedWork() {
         )}
 
         {/* Supporting Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {supportingProjects.map(project => (
             <div key={project.slug}>
               {project.image && (
@@ -77,6 +77,7 @@ export default function SelectedWork() {
                     alt={`${project.title} project image`}
                     ratio="16:9"
                     rounded="lg"
+                    className="!aspect-[16/10]"
                   />
                 </div>
               )}

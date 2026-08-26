@@ -21,7 +21,7 @@ export const projects = [
     type: "Digital Consultation Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/advocate/advocate-01-role-selector.png"
+    image: "/images/projects/advocate/advocate-08-booking.png"
   },
   {
     slug: "school-erp",
@@ -45,7 +45,7 @@ export const projects = [
     type: "Management Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/kit-management/franchisor-dashboard.png"
+    image: "/images/projects/kit-management/franchisee-dashboard.png"
   },
   {
     slug: "seafood-restaurant",
