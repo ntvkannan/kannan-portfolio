@@ -37,7 +37,7 @@ export default function SelectedWork() {
               <Badge variant="accent" className="mb-3">
                 {featuredProject.displayCategory}
               </Badge>
-              <h3 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-3">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-3">
                 {featuredProject.title}
               </h3>
               <p className="text-lg text-text-body mb-6">
