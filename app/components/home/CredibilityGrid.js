@@ -22,20 +22,25 @@ export default function CredibilityGrid() {
   ];
 
   return (
-    <Section variant="normal">
+    <Section variant="normal" className="!pt-16 lg:!pt-20">
       <Container>
         <h2 className="sr-only">Professional qualifications</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {items.map((item, index) => (
-            <div key={index}>
-              <p className="text-2xl sm:text-3xl font-semibold text-accent mb-2">
-                {item.stat}
-              </p>
-              <p className="text-sm sm:text-base text-text-body">
-                {item.description}
-              </p>
-            </div>
-          ))}
+        <div className="border-t border-border pt-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 md:gap-x-0">
+            {items.map((item, index) => (
+              <div
+                key={index}
+                className="md:px-8 md:border-l md:border-border md:first:border-l-0 md:first:pl-0"
+              >
+                <p className="text-xl sm:text-2xl font-semibold text-accent mb-1.5">
+                  {item.stat}
+                </p>
+                <p className="text-sm text-text-body leading-snug">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

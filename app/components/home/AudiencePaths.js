@@ -4,13 +4,14 @@ import Section from "@/app/components/layout/Section";
 
 export default function AudiencePaths() {
   return (
-    <Section variant="normal">
+    <Section variant="normal" className="!pb-0">
       <Container>
         <h2 className="sr-only">Choose your path</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Employers Card */}
-          <div className="border border-border rounded-lg p-8 bg-surface">
-            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+          {/* Path A - Employers */}
+          <div className="flex flex-col items-start">
+            <div className="w-12 h-1 bg-accent rounded-full mb-5"></div>
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary leading-snug mb-3">
               Looking for a UX/UI Designer who understands development?
             </h3>
             <p className="text-text-body mb-6">
@@ -18,15 +19,16 @@ export default function AudiencePaths() {
             </p>
             <NextLink
               href="/experience"
-              className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+              className="mt-auto inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-transparent border border-border-strong text-text-primary font-medium text-sm sm:text-base hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
             >
               View Experience
             </NextLink>
           </div>
 
-          {/* Clients Card */}
-          <div className="border border-border rounded-lg p-8 bg-surface">
-            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
+          {/* Path B - Clients */}
+          <div className="flex flex-col items-start">
+            <div className="w-12 h-1 bg-accent rounded-full mb-5"></div>
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary leading-snug mb-3">
               Need design, development, or both?
             </h3>
             <p className="text-text-body mb-6">
@@ -34,7 +36,7 @@ export default function AudiencePaths() {
             </p>
             <NextLink
               href="/contact"
-              className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+              className="mt-auto inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
             >
               Work With Me
             </NextLink>
