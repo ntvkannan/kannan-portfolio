@@ -101,7 +101,7 @@ export default function HeroSection() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-6xl sm:text-7xl font-bold text-text-primary leading-tight mb-8">
+            <h1 className="text-6xl sm:text-7xl font-bold text-text-primary leading-[1.1] mb-6">
               Designing digital products from{" "}
               <span
                 className="text-accent px-1 rounded-sm"
@@ -118,12 +118,12 @@ export default function HeroSection() {
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-8 max-w-xl">
               I design user experiences, create thoughtful interfaces and build modern web experiences with a strong understanding of how products are designed and developed.
             </p>
 
             {/* Experience Stats - Compact */}
-            <div className="mb-10 flex flex-col sm:flex-row gap-8">
+            <div className="mb-8 flex flex-col sm:flex-row gap-8">
               <div>
                 <p className="text-2xl font-bold text-text-primary">15+</p>
                 <p className="text-sm text-text-body">years frontend</p>
@@ -139,13 +139,13 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <NextLink
                 href="/work"
-                className="inline-flex items-center justify-center rounded-button h-12 px-8 bg-primary text-white font-semibold text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+                className="inline-flex items-center justify-center rounded-button h-12 px-6 bg-primary text-white font-semibold text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
               >
                 View My Work
               </NextLink>
               <NextLink
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-button h-12 px-8 bg-transparent border-2 border-text-primary text-text-primary font-semibold text-base hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+                className="inline-flex items-center justify-center rounded-button h-12 px-6 bg-transparent border border-border-strong text-text-primary font-medium text-base hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
               >
                 Work With Me
               </NextLink>
