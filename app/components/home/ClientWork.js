@@ -12,21 +12,24 @@ export default function ClientWork() {
   return (
     <Section variant="normal">
       <Container>
-        <SectionHeader className="mb-12">
+        <SectionHeader eyebrow="Brand & Visual Design" className="mb-12">
           Client & Brand Work
         </SectionHeader>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {clientProjects.map(project => (
+          {clientProjects.map((project, index) => (
             <div key={project.slug}>
-              <div className="mb-6">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} project image`}
-                  ratio="16:9"
-                  rounded="lg"
-                />
-              </div>
+              {project.image && (
+                <div className="mb-6">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} project image`}
+                    ratio="16:9"
+                    rounded="lg"
+                    className="!aspect-[16/10]"
+                  />
+                </div>
+              )}
               <Badge variant="neutral" className="mb-3">
                 {project.displayCategory}
               </Badge>
@@ -38,7 +41,11 @@ export default function ClientWork() {
               </p>
               <NextLink
                 href={`/work/${project.slug}`}
-                className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+                className={`inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 font-medium text-sm sm:text-base focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200 ${
+                  index === 0
+                    ? "bg-accent text-white hover:bg-accent-hover"
+                    : "bg-transparent border border-border-strong text-text-primary hover:bg-surface-secondary"
+                }`}
               >
                 View Project
               </NextLink>

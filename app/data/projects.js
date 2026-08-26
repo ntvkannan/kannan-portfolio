@@ -58,7 +58,7 @@ export const projects = [
     status: "completed",
     featured: false,
     heroType: "brand",
-    image: null
+    image: "/images/projects/seafood-restaurant/flyer.jpg"
   },
   {
     slug: "yoga-center",
