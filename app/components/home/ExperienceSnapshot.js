@@ -21,7 +21,7 @@ export default function ExperienceSnapshot() {
         </SectionHeader>
 
         {/* Horizontal Timeline - Desktop */}
-        <div className="hidden md:block mb-12">
+        <div className="hidden lg:block mb-12">
           <div className="flex items-center justify-between mb-8">
             {progressionSteps.map((step, index) => (
               <div key={index} className="flex items-center flex-1 last:flex-none">
@@ -41,7 +41,7 @@ export default function ExperienceSnapshot() {
         </div>
 
         {/* Vertical Timeline - Mobile/Tablet */}
-        <div className="md:hidden mb-12">
+        <div className="lg:hidden mb-12">
           <div className="space-y-4">
             {progressionSteps.map((step, index) => (
               <div key={index}>
