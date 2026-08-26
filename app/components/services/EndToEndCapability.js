@@ -17,12 +17,12 @@ export default function EndToEndCapability({ capability }) {
             <p className="text-2xl sm:text-3xl font-semibold text-text-primary mb-4">
               {capability.flow}
             </p>
-            <p className="text-text-secondary leading-relaxed text-sm">
+            <p className="text-text-body leading-relaxed text-sm">
               {capability.description}
             </p>
           </div>
 
-          <p className="text-base text-text-secondary leading-relaxed">
+          <p className="text-base text-text-body leading-relaxed">
             {capability.note}
           </p>
         </div>

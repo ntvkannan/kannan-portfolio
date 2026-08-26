@@ -11,10 +11,10 @@ export default function CurrentDirection() {
           </h2>
 
           <div className="space-y-8">
-            <p className="text-lg text-text-secondary leading-relaxed">
+            <p className="text-lg text-text-body leading-relaxed">
               I am continuing to strengthen the connection between UX/UI design and frontend development by creating and developing real products myself.
             </p>
-            <p className="text-lg text-text-secondary leading-relaxed">
+            <p className="text-lg text-text-body leading-relaxed">
               The goal is not simply to design interfaces or write code independently, but to understand the complete journey from product idea to usable digital experience.
             </p>
           </div>

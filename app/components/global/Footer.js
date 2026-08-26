@@ -14,7 +14,7 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-text-primary">
               Kannan Thangavel
             </h2>
-            <p className="mt-2 text-sm text-text-secondary">
+            <p className="mt-2 text-sm text-text-body">
               Senior UX/UI Designer & Frontend Developer
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   >
                     {item.label}
                   </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:ntvkannan@gmail.com"
-                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   Email
                 </a>
@@ -57,7 +57,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/kannan-thangavel/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   LinkedIn
                 </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                   href="https://github.com/ntvkannan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   GitHub
                 </a>
@@ -86,7 +86,7 @@ export default function Footer() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-text-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   Download PDF
                 </a>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 text-center">
-          <p className="text-sm text-text-secondary">
+          <p className="text-sm text-text-body">
             © {currentYear} Kannan Thangavel. All rights reserved.
           </p>
         </div>

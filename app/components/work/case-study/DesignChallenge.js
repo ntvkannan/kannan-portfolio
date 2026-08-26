@@ -31,7 +31,7 @@ export default function DesignChallenge({ challenge, number }) {
                 <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-3">
                   Challenge
                 </p>
-                <p className="text-base sm:text-lg text-text-secondary leading-relaxed">
+                <p className="text-base sm:text-lg text-text-body leading-relaxed">
                   {challenge.challenge}
                 </p>
               </div>
@@ -42,7 +42,7 @@ export default function DesignChallenge({ challenge, number }) {
                 <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-3">
                   Design Decision
                 </p>
-                <p className="text-base sm:text-lg text-text-secondary leading-relaxed">
+                <p className="text-base sm:text-lg text-text-body leading-relaxed">
                   {challenge.decision}
                 </p>
               </div>
@@ -53,7 +53,7 @@ export default function DesignChallenge({ challenge, number }) {
                 <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-3">
                   Result
                 </p>
-                <p className="text-base sm:text-lg text-text-secondary leading-relaxed">
+                <p className="text-base sm:text-lg text-text-body leading-relaxed">
                   {challenge.outcome}
                 </p>
               </div>

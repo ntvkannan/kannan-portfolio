@@ -28,18 +28,25 @@ export default function ProjectCard({ project }) {
       </h3>
 
       {/* Project Description */}
-      <p className="text-sm sm:text-base text-text-secondary mb-3">
+      <p className="text-sm sm:text-base text-text-body mb-3">
         {project.description}
       </p>
 
       {/* Project Role */}
-      <p className="text-xs sm:text-sm text-text-secondary mb-4">
+      <p className="text-xs sm:text-sm text-text-body mb-6">
         <span className="font-semibold text-text-primary">Role:</span> {project.role}
       </p>
 
       {/* CTA Link */}
-      <Link href={`/work/${project.slug}`} color="accent">
-        View Case Study →
+      <Link
+        href={`/work/${project.slug}`}
+        color="accent"
+        className="font-medium group"
+      >
+        <span className="inline-flex items-center gap-1">
+          View Case Study
+          <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+        </span>
       </Link>
     </article>
   );

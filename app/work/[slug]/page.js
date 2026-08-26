@@ -6,7 +6,6 @@ import ProjectOverview from "@/app/components/work/ProjectOverview";
 import ProjectCaseStudy from "@/app/components/work/ProjectCaseStudy";
 import RelatedProjects from "@/app/components/work/RelatedProjects";
 import ContactCTA from "@/app/components/home/ContactCTA";
-import BackToTop from "@/app/components/foundation/BackToTop";
 import { projects } from "@/app/data/projects";
 import { caseStudies } from "@/app/data/caseStudies";
 
@@ -113,9 +112,6 @@ export default async function ProjectPage({ params }) {
 
       {/* Contact CTA */}
       <ContactCTA />
-
-      {/* Back to Top Button */}
-      <BackToTop />
     </>
   );
 }

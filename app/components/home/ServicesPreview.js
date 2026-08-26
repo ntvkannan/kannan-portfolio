@@ -52,7 +52,7 @@ export default function ServicesPreview() {
                   {service.subheading}
                 </p>
               )}
-              <p className="text-text-secondary mb-4 text-sm sm:text-base">
+              <p className="text-text-body mb-4 text-sm sm:text-base">
                 {service.description}
               </p>
               {service.items && (
@@ -63,7 +63,7 @@ export default function ServicesPreview() {
                 </div>
               )}
               {service.flow && (
-                <p className="text-sm sm:text-base text-text-secondary">
+                <p className="text-sm sm:text-base text-text-body">
                   {service.flow}
                 </p>
               )}

@@ -32,12 +32,12 @@ export default function FeaturedProject({ project }) {
         </h2>
 
         {/* Project Description */}
-        <p className="text-lg text-text-secondary mb-6">
+        <p className="text-lg text-text-body mb-6">
           {project.description}
         </p>
 
         {/* Project Metadata */}
-        <div className="flex flex-col sm:flex-row gap-8 text-sm text-text-secondary mb-6">
+        <div className="flex flex-col sm:flex-row gap-8 text-sm text-text-body mb-8">
           <div>
             <p className="font-semibold text-text-primary">Role</p>
             <p>{project.role}</p>
@@ -49,8 +49,15 @@ export default function FeaturedProject({ project }) {
         </div>
 
         {/* CTA Link */}
-        <Link href={`/work/${project.slug}`} color="accent">
-          View Case Study →
+        <Link
+          href={`/work/${project.slug}`}
+          color="accent"
+          className="font-medium group"
+        >
+          <span className="inline-flex items-center gap-1">
+            View Case Study
+            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+          </span>
         </Link>
       </div>
     </div>

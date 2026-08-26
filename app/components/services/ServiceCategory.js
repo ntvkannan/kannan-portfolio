@@ -6,7 +6,7 @@ export default function ServiceCategory({ category }) {
       <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
         {category.title}
       </h3>
-      <p className="text-text-secondary mb-6 leading-relaxed">
+      <p className="text-text-body mb-6 leading-relaxed">
         {category.description}
       </p>
       <div className="flex flex-wrap gap-2">

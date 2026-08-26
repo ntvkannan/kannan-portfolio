@@ -31,7 +31,7 @@ export default function ContactPaths({ onPathSelect }) {
     <Section variant="normal">
       <Container size="wide">
         <div className="max-w-4xl mx-auto">
-          <p className="text-center text-text-secondary mb-8">
+          <p className="text-center text-text-body mb-8">
             What's your project about?
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -49,7 +49,7 @@ export default function ContactPaths({ onPathSelect }) {
                 <h3 className="font-semibold text-text-primary mb-2">
                   {path.title}
                 </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
+                <p className="text-sm text-text-body leading-relaxed">
                   {path.description}
                 </p>
               </button>

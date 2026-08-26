@@ -15,15 +15,15 @@ export default function AboutSnapshot() {
             </SectionHeader>
 
             <div className="mt-8 space-y-6">
-              <p className="text-text-secondary">
+              <p className="text-text-body">
                 My career has evolved across visual design, web design, frontend development and UX/UI, giving me a broad understanding of how digital experiences are planned, designed and built.
               </p>
 
-              <p className="text-text-secondary">
+              <p className="text-text-body">
                 I have spent more than a decade working in UX/UI and product design, with a longer background in frontend and UI implementation.
               </p>
 
-              <p className="text-text-secondary">
+              <p className="text-text-body">
                 Today, I bring those experiences together to design thoughtful digital products and build modern interfaces.
               </p>
 

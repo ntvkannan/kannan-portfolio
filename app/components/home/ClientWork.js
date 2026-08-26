@@ -33,7 +33,7 @@ export default function ClientWork() {
               <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-3">
                 {project.title}
               </h3>
-              <p className="text-text-secondary mb-6">
+              <p className="text-text-body mb-6">
                 {project.description}
               </p>
               <NextLink

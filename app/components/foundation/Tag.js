@@ -3,7 +3,7 @@ export default function Tag({
   className = "",
 }) {
   const baseStyles =
-    "inline-block rounded-full px-2.5 py-1 text-xs font-medium text-text-secondary bg-surface-secondary whitespace-nowrap";
+    "inline-block rounded-full px-2.5 py-1 text-xs font-medium text-text-body bg-surface-secondary whitespace-nowrap";
 
   const finalClassName = `${baseStyles} ${className}`;
 

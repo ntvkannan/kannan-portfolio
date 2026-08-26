@@ -19,7 +19,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Supporting Copy */}
-          <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-8 max-w-2xl">
+          <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-8 max-w-2xl">
             I design user experiences, create thoughtful interfaces and build modern web experiences with a strong understanding of how products are designed and developed.
           </p>
 
@@ -27,11 +27,11 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 mb-8 text-sm sm:text-base">
             <div>
               <p className="font-semibold text-text-primary">15+ years</p>
-              <p className="text-text-secondary">frontend experience</p>
+              <p className="text-text-body">frontend experience</p>
             </div>
             <div>
               <p className="font-semibold text-text-primary">10+ years</p>
-              <p className="text-text-secondary">UX/UI</p>
+              <p className="text-text-body">UX/UI</p>
             </div>
           </div>
 

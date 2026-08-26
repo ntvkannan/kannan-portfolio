@@ -11,7 +11,7 @@ export default function ServicesContactCTA() {
             Ready to start a project?
           </h2>
 
-          <p className="text-lg sm:text-xl text-text-secondary mb-8">
+          <p className="text-lg sm:text-xl text-text-body mb-8">
             Let's discuss your project, timeline, and how I can help bring it to life.
           </p>
 

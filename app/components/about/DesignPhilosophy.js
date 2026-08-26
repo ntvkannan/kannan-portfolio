@@ -47,7 +47,7 @@ export default function DesignPhilosophy() {
                 <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-4">
                   {step.title}
                 </h3>
-                <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                <p className="text-sm sm:text-base text-text-body leading-relaxed">
                   {step.description}
                 </p>
               </div>

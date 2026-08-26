@@ -13,7 +13,7 @@ export default function AudiencePaths() {
             <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
               Looking for a UX/UI Designer who understands development?
             </h3>
-            <p className="text-text-secondary mb-6">
+            <p className="text-text-body mb-6">
               Explore my professional UX/UI experience, enterprise product work, design systems and career background.
             </p>
             <NextLink
@@ -29,7 +29,7 @@ export default function AudiencePaths() {
             <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
               Need design, development, or both?
             </h3>
-            <p className="text-text-secondary mb-6">
+            <p className="text-text-body mb-6">
               From brand identity and marketing design to UX, UI and modern web experiences, I can help take a project from idea to execution.
             </p>
             <NextLink

@@ -9,7 +9,7 @@ export default function ExperienceHero() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary mb-8 leading-tight">
             Experience
           </h1>
-          <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
+          <p className="text-lg sm:text-xl text-text-body leading-relaxed">
             A career spanning visual design, frontend development, UX/UI design and product experience.
           </p>
         </div>

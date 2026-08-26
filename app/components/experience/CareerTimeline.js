@@ -22,13 +22,13 @@ export default function CareerTimeline({ timeline }) {
                     <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-1">
                       {entry.role}
                     </h3>
-                    <p className="text-base text-text-secondary mb-2">
+                    <p className="text-base text-text-body mb-2">
                       {entry.company}
                     </p>
-                    <p className="text-sm text-text-secondary mb-3">
+                    <p className="text-sm text-text-body mb-3">
                       {entry.location}
                     </p>
-                    <p className="text-sm text-text-secondary leading-relaxed">
+                    <p className="text-sm text-text-body leading-relaxed">
                       {entry.summary}
                     </p>
                   </article>
@@ -56,13 +56,13 @@ export default function CareerTimeline({ timeline }) {
                       <h3 className="text-base font-semibold text-text-primary mb-1">
                         {entry.role}
                       </h3>
-                      <p className="text-sm text-text-secondary mb-1">
+                      <p className="text-sm text-text-body mb-1">
                         {entry.company}
                       </p>
-                      <p className="text-xs text-text-secondary mb-2">
+                      <p className="text-xs text-text-body mb-2">
                         {entry.location}
                       </p>
-                      <p className="text-sm text-text-secondary leading-relaxed">
+                      <p className="text-sm text-text-body leading-relaxed">
                         {entry.summary}
                       </p>
                     </div>

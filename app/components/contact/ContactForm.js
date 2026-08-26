@@ -166,7 +166,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                 aria-live="polite"
               >
                 <p className="font-medium mb-1">Unable to send message</p>
-                <p className="text-sm text-text-secondary">{submitError}</p>
+                <p className="text-sm text-text-body">{submitError}</p>
               </div>
             )}
 
@@ -187,7 +187,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                   required
                   aria-invalid={Boolean(errors.name)}
                   aria-describedby={errors.name ? "name-error" : undefined}
-                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-body focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
                   placeholder="Your name"
                 />
                 {errors.name && (
@@ -216,7 +216,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                   required
                   aria-invalid={Boolean(errors.email)}
                   aria-describedby={errors.email ? "email-error" : undefined}
-                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-body focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
                   placeholder="your@email.com"
                 />
                 {errors.email && (
@@ -283,7 +283,7 @@ export default function ContactForm({ preSelectedProjectType = null }) {
                     errors.message ? "message-error" : undefined
                   }
                   rows={5}
-                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors resize-none"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-body focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (

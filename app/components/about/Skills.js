@@ -58,7 +58,7 @@ export default function Skills() {
                 </h3>
                 <div className="space-y-3">
                   {group.skills.map((skill, skillIndex) => (
-                    <p key={skillIndex} className="text-base text-text-secondary">
+                    <p key={skillIndex} className="text-base text-text-body">
                       {skill}
                     </p>
                   ))}

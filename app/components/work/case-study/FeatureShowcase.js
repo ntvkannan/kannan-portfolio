@@ -23,13 +23,13 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
             <h3 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-text-primary mb-5">
               {feature.title}
             </h3>
-            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-7">
+            <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-7">
               {feature.description}
             </p>
             {feature.points && (
               <ul className="space-y-4">
                 {feature.points.map((point, idx) => (
-                  <li key={idx} className="text-base sm:text-lg text-text-secondary flex items-start gap-3">
+                  <li key={idx} className="text-base sm:text-lg text-text-body flex items-start gap-3">
                     <span className="text-accent mt-1 flex-shrink-0">•</span>
                     <span>{point}</span>
                   </li>
@@ -79,7 +79,7 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
             <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-3">
               {features[0].title}
             </h3>
-            <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-text-body leading-relaxed mb-4">
               {features[0].description}
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
         <div>
           <div className="mb-6">
             <h3 className="text-2xl sm:text-2xl font-semibold text-text-primary">Brochure</h3>
-            <p className="text-base sm:text-lg text-text-secondary leading-relaxed mt-2">
+            <p className="text-base sm:text-lg text-text-body leading-relaxed mt-2">
               Multi-page promotional material extending the visual identity across course information, schedules and supporting content.
             </p>
           </div>
@@ -156,13 +156,13 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
             <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-3">
               {feature.title}
             </h3>
-            <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-text-body leading-relaxed mb-4">
               {feature.description}
             </p>
             {feature.points && (
               <ul className="space-y-2">
                 {feature.points.map((point, pidx) => (
-                  <li key={pidx} className="text-sm sm:text-base text-text-secondary flex items-start gap-2">
+                  <li key={pidx} className="text-sm sm:text-base text-text-body flex items-start gap-2">
                     <span className="text-accent mt-1 flex-shrink-0">•</span>
                     <span>{point}</span>
                   </li>

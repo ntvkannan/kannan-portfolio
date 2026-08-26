@@ -37,7 +37,16 @@ export default function ScrollToTop() {
     <button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 inline-flex items-center justify-center w-10 h-10 rounded-lg bg-accent text-white hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+      className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 inline-flex items-center justify-center w-12 h-12 bg-accent text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+      style={{
+        borderRadius: "14px",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = "rgb(30, 95, 119)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = "";
+      }}
     >
       <svg
         className="w-5 h-5"

@@ -11,7 +11,7 @@ export default function ResumeCTA() {
             Download My Resume
           </h2>
 
-          <p className="text-base sm:text-lg text-text-secondary mb-8">
+          <p className="text-base sm:text-lg text-text-body mb-8">
             For a detailed view of my complete professional background, skills, and certifications.
           </p>
 

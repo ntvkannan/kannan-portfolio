@@ -30,11 +30,11 @@ export default function CurrentlyBuilding() {
               <Tag>Tailwind CSS</Tag>
             </div>
 
-            <p className="text-text-secondary mb-6">
+            <p className="text-text-body mb-6">
               My personal website is being designed and developed as a practical design-to-code project, bringing together UX strategy, interface design, design systems and frontend development.
             </p>
 
-            <p className="text-sm text-text-secondary mb-6">
+            <p className="text-sm text-text-body mb-6">
               <strong>Process:</strong> UX → UI → Design System → Next.js → Tailwind CSS → Deployment
             </p>
 

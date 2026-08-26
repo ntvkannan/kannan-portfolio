@@ -9,7 +9,7 @@ export default function ServicesHero() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary mb-8 leading-tight">
             What I can help you with
           </h1>
-          <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
+          <p className="text-lg sm:text-xl text-text-body leading-relaxed">
             I combine UX/UI design, visual design, and frontend development to create digital products that are thoughtful, intentional, and built to work.
           </p>
         </div>

@@ -9,7 +9,7 @@ export default function WorkHero() {
         <SectionHeader>
           Selected Work
         </SectionHeader>
-        <p className="text-text-secondary max-w-2xl">
+        <p className="text-text-body max-w-2xl">
           A collection of professional UX/UI projects, client design work and products I am building.
         </p>
       </Container>

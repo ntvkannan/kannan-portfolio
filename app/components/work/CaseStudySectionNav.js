@@ -189,7 +189,7 @@ export default function CaseStudySectionNav({ sections }) {
                       className={`block px-4 py-1.5 text-sm transition-colors ${
                         isActive
                           ? "bg-surface-secondary text-text-primary border-l-2 border-accent"
-                          : "text-text-secondary hover:bg-surface-secondary hover:text-text-primary border-l-2 border-transparent"
+                          : "text-text-body hover:bg-surface-secondary hover:text-text-primary border-l-2 border-transparent"
                       }`}
                     >
                       <span className="text-text-muted text-xs font-semibold">

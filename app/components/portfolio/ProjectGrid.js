@@ -4,7 +4,7 @@ export default function ProjectGrid({ projects }) {
   if (projects.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-text-secondary">No projects found in this category.</p>
+        <p className="text-text-body">No projects found in this category.</p>
       </div>
     );
   }

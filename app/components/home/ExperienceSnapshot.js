@@ -59,7 +59,7 @@ export default function ExperienceSnapshot() {
         </div>
 
         {/* Supporting Text */}
-        <p className="text-text-secondary max-w-2xl mb-8">
+        <p className="text-text-body max-w-2xl mb-8">
           My career has evolved across visual design, web design, frontend development and UX/UI, giving me a broad understanding of how digital experiences are planned, designed and built. I have spent more than a decade working in UX/UI and product design, with a longer background in frontend and UI implementation. Today, I bring those experiences together to design thoughtful digital products and build modern interfaces.
         </p>
 

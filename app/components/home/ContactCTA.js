@@ -11,7 +11,7 @@ export default function ContactCTA() {
             Have a brand, product or website to build?
           </h2>
 
-          <p className="text-lg sm:text-xl text-text-secondary mb-12">
+          <p className="text-lg sm:text-xl text-text-body mb-12">
             Let's discuss your project, role or collaboration opportunity.
           </p>
 

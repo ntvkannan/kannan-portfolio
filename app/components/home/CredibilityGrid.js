@@ -31,7 +31,7 @@ export default function CredibilityGrid() {
               <p className="text-2xl sm:text-3xl font-semibold text-accent mb-2">
                 {item.stat}
               </p>
-              <p className="text-sm sm:text-base text-text-secondary">
+              <p className="text-sm sm:text-base text-text-body">
                 {item.description}
               </p>
             </div>

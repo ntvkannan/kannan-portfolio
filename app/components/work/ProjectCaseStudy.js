@@ -32,7 +32,7 @@ function GallerySection({ items }) {
 function ProblemSection({ content }) {
   return (
     <div className="max-w-4xl">
-      <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
+      <p className="text-lg sm:text-xl text-text-body leading-relaxed">
         {content}
       </p>
     </div>
@@ -42,7 +42,7 @@ function ProblemSection({ content }) {
 function SolutionSection({ content }) {
   return (
     <div className="max-w-4xl">
-      <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
+      <p className="text-lg sm:text-xl text-text-body leading-relaxed">
         {content}
       </p>
     </div>
@@ -62,7 +62,7 @@ function RoleMetadataSection({ responsibilities }) {
         </p>
         <ul className="space-y-3">
           {responsibilities.map((resp, idx) => (
-            <li key={idx} className="text-base sm:text-lg text-text-secondary flex items-start gap-3">
+            <li key={idx} className="text-base sm:text-lg text-text-body flex items-start gap-3">
               <span className="text-accent mt-1.5 flex-shrink-0">•</span>
               <span>{resp}</span>
             </li>
@@ -90,7 +90,7 @@ function ChallengesSection({ challenges }) {
 function ReflectionSection({ content }) {
   return (
     <div className="max-w-4xl">
-      <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-6">
+      <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-6">
         {content}
       </p>
       {content && content.includes('•') && (
@@ -99,7 +99,7 @@ function ReflectionSection({ content }) {
             .split('•')
             .filter((item) => item.trim())
             .map((item, idx) => (
-              <li key={idx} className="text-sm sm:text-base text-text-secondary flex items-start gap-2">
+              <li key={idx} className="text-sm sm:text-base text-text-body flex items-start gap-2">
                 <span className="text-accent mt-1">•</span>
                 <span>{item.trim()}</span>
               </li>
@@ -130,12 +130,15 @@ function NextProjectSection({ nextProjectSlug }) {
           <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-2">
             {nextProject.title}
           </h3>
-          <p className="text-base sm:text-lg text-text-secondary">
+          <p className="text-base sm:text-lg text-text-body">
             {nextProject.description}
           </p>
         </div>
-        <Link href={`/work/${nextProject.slug}`} variant="accent" className="flex-shrink-0">
-          View Case Study →
+        <Link href={`/work/${nextProject.slug}`} variant="accent" className="flex-shrink-0 font-medium group">
+          <span className="inline-flex items-center gap-1">
+            View Case Study
+            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+          </span>
         </Link>
       </div>
     </div>

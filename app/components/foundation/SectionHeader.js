@@ -15,7 +15,7 @@ export default function SectionHeader({
         {children}
       </h2>
       {supporting && (
-        <p className="text-base sm:text-lg text-text-secondary leading-relaxed max-w-2xl">
+        <p className="text-base sm:text-lg text-text-body leading-relaxed max-w-2xl">
           {supporting}
         </p>
       )}

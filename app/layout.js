@@ -1,3 +1,4 @@
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/global/Header";
 import Footer from "@/app/components/global/Footer";
@@ -7,6 +8,11 @@ import StructuredData from "@/app/components/seo/StructuredData";
 import ScrollProgress from "@/app/components/global/ScrollProgress";
 import ScrollToTop from "@/app/components/global/ScrollToTop";
 
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata = {
   metadataBase: new URL("https://kannanthangavel.com"),
   title: "Kannan Thangavel",
@@ -15,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.className}>
       <head>
         <StructuredData />
       </head>

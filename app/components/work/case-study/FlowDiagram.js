@@ -14,7 +14,7 @@ export default function FlowDiagram({ items, layout = 'horizontal', variant = 's
               <h3 className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-widest mb-5">
                 {layer.label}
               </h3>
-              <p className="text-lg sm:text-xl text-text-secondary leading-relaxed font-medium">
+              <p className="text-lg sm:text-xl text-text-body leading-relaxed font-medium">
                 {layer.items?.join(' · ') || layer.description}
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function FlowDiagram({ items, layout = 'horizontal', variant = 's
               {item.label}
             </p>
             {item.description && (
-              <p className="text-sm sm:text-base text-text-secondary mt-3 leading-relaxed">
+              <p className="text-sm sm:text-base text-text-body mt-3 leading-relaxed">
                 {item.description}
               </p>
             )}

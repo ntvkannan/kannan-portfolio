@@ -9,7 +9,7 @@ export default function ContactHero() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary mb-8 leading-tight">
             Let's work together.
           </h1>
-          <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
+          <p className="text-lg sm:text-xl text-text-body leading-relaxed">
             Whether you're looking for a UX/UI designer, need help with a brand or digital product, or want to discuss a website or app, I'd be happy to hear about your project.
           </p>
         </div>

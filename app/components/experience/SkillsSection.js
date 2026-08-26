@@ -19,7 +19,7 @@ export default function SkillsSection({ skills }) {
                 </h3>
                 <div className="space-y-3">
                   {group.items.map((skill, skillIndex) => (
-                    <p key={skillIndex} className="text-sm text-text-secondary">
+                    <p key={skillIndex} className="text-sm text-text-body">
                       {skill}
                     </p>
                   ))}

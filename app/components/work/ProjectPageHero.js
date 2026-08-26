@@ -25,7 +25,7 @@ export default function ProjectPageHero({ project }) {
             </div>
 
             {/* Description */}
-            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mt-6 max-w-lg">
+            <p className="text-lg sm:text-xl text-text-body leading-relaxed mt-6 max-w-lg">
               {project.description}
             </p>
 
@@ -67,7 +67,7 @@ export default function ProjectPageHero({ project }) {
               </div>
 
               {/* Description */}
-              <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-lg">
+              <p className="text-lg sm:text-xl text-text-body leading-relaxed max-w-lg">
                 {project.description}
               </p>
 

@@ -29,7 +29,7 @@ export default function WorkflowSteps({ steps }) {
               </h3>
             </div>
             {introStep.description && (
-              <p className="text-base sm:text-lg text-text-secondary leading-relaxed max-w-2xl ml-16 sm:ml-20">
+              <p className="text-base sm:text-lg text-text-body leading-relaxed max-w-2xl ml-16 sm:ml-20">
                 {introStep.description}
               </p>
             )}
@@ -68,7 +68,7 @@ export default function WorkflowSteps({ steps }) {
                     </h3>
                   </div>
                   {step.description && (
-                    <p className="text-sm sm:text-base text-text-secondary leading-relaxed ml-9 sm:ml-10">
+                    <p className="text-sm sm:text-base text-text-body leading-relaxed ml-9 sm:ml-10">
                       {step.description}
                     </p>
                   )}
@@ -108,7 +108,7 @@ export default function WorkflowSteps({ steps }) {
                   {step.title}
                 </h3>
                 {step.description && (
-                  <p className="text-base sm:text-lg text-text-secondary mt-2 leading-relaxed">
+                  <p className="text-base sm:text-lg text-text-body mt-2 leading-relaxed">
                     {step.description}
                   </p>
                 )}
@@ -132,7 +132,7 @@ export default function WorkflowSteps({ steps }) {
           {!step.image && step.points && (
             <div className="flex-1 space-y-3">
               {step.points.map((point, pidx) => (
-                <p key={pidx} className="text-base sm:text-lg text-text-secondary leading-relaxed flex items-start gap-3">
+                <p key={pidx} className="text-base sm:text-lg text-text-body leading-relaxed flex items-start gap-3">
                   <span className="text-accent mt-1 flex-shrink-0">•</span>
                   <span>{point}</span>
                 </p>

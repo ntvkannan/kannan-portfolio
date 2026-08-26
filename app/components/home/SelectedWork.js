@@ -40,10 +40,10 @@ export default function SelectedWork() {
               <h3 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-3">
                 {featuredProject.title}
               </h3>
-              <p className="text-lg text-text-secondary mb-6">
+              <p className="text-lg text-text-body mb-6">
                 {featuredProject.description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-6">
+              <div className="flex flex-col sm:flex-row gap-4 text-sm text-text-body mb-8">
                 <div>
                   <p className="font-semibold text-text-primary">Role</p>
                   <p>{featuredProject.role}</p>
@@ -55,9 +55,12 @@ export default function SelectedWork() {
               </div>
               <NextLink
                 href={`/work/${featuredProject.slug}`}
-                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors"
+                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors group"
               >
-                View Case Study →
+                <span className="inline-flex items-center gap-1">
+                  View Case Study
+                  <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </span>
               </NextLink>
             </div>
           </div>
@@ -80,14 +83,17 @@ export default function SelectedWork() {
               <Badge variant="neutral" className="mb-2">
                 {project.displayCategory}
               </Badge>
-              <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-2">
+              <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-3">
                 {project.title}
               </h4>
               <NextLink
                 href={`/work/${project.slug}`}
-                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors"
+                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors group"
               >
-                View Case Study →
+                <span className="inline-flex items-center gap-1">
+                  View Case Study
+                  <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </span>
               </NextLink>
             </div>
           ))}
