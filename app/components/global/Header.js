@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./Navigation";
 import MobileMenuTrigger from "./MobileMenuTrigger";
@@ -10,9 +11,18 @@ export default function Header() {
           {/* Logo / Name */}
           <Link
             href="/"
-            className="text-lg font-semibold text-text-primary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
           >
-            Kannan Thangavel
+            <Image
+              src="/images/Kannan.jpg"
+              alt="Kannan"
+              width={32}
+              height={32}
+              className="w-8 h-8 rounded-full object-cover flex-shrink-0"
+            />
+            <span className="text-lg font-semibold text-text-primary hover:text-accent transition-colors">
+              Kannan T.
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

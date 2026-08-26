@@ -2,14 +2,26 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navigationItems } from "@/app/data/navigation";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const triggerRef = useRef(null);
+  const pathname = usePathname();
 
   const closeMenu = () => setIsOpen(false);
+
+  const isActive = (href) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    if (href === "/work") {
+      return pathname === "/work" || pathname.startsWith("/work/");
+    }
+    return pathname === href || pathname.startsWith(href + "/");
+  };
 
   useEffect(() => {
     if (!isOpen) return;
@@ -104,17 +116,25 @@ export default function MobileMenu() {
 
         {/* Navigation Links */}
         <ul className="space-y-1 px-5 py-6">
-          {navigationItems.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onClick={closeMenu}
-                className="block rounded-md px-3 py-2.5 text-base font-medium text-text-primary hover:bg-surface-secondary hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {navigationItems.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={closeMenu}
+                  aria-current={active ? "page" : undefined}
+                  className={`block rounded-md px-3 py-2.5 text-base font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200 ${
+                    active
+                      ? "text-primary hover:text-primary"
+                      : "text-text-primary hover:bg-surface-secondary hover:text-accent"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         {/* Mobile Menu CTA */}
