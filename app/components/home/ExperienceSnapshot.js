@@ -24,7 +24,7 @@ export default function ExperienceSnapshot() {
         <div className="hidden lg:block mb-12">
           <div className="flex items-center justify-between mb-8">
             {progressionSteps.map((step, index) => (
-              <div key={index} className="flex items-center flex-1 last:flex-none">
+              <div key={index} className="flex items-center flex-1">
                 <div className="text-center flex-1">
                   <p className="text-sm sm:text-base font-medium text-text-primary">
                     {step}
@@ -49,7 +49,7 @@ export default function ExperienceSnapshot() {
                   {step}
                 </p>
                 {index < progressionSteps.length - 1 && (
-                  <div className="text-accent text-lg flex justify-center mb-2">
+                  <div className="text-accent text-lg mb-2">
                     ↓
                   </div>
                 )}
