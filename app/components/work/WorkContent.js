@@ -12,6 +12,7 @@ export default function WorkContent() {
   const [activeFilter, setActiveFilter] = useState(null);
 
   const featuredProject = projects.find(p => p.featured);
+  const showFeatured = !activeFilter || featuredProject?.category === activeFilter;
 
   const filteredProjects = activeFilter
     ? projects.filter(p => p.category === activeFilter && !p.featured)
@@ -29,7 +30,7 @@ export default function WorkContent() {
       {/* Featured Project */}
       <Section variant="major">
         <Container>
-          <FeaturedProject project={featuredProject} />
+          <FeaturedProject project={showFeatured ? featuredProject : null} />
         </Container>
       </Section>
 

@@ -85,6 +85,7 @@ export const projects = [
     type: "Product & Development",
     status: "building",
     featured: false,
+    heroType: "brand",
     image: null
   }
 ];
