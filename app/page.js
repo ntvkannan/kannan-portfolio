@@ -4,7 +4,6 @@ import CredibilityGrid from "@/app/components/home/CredibilityGrid";
 import SelectedWork from "@/app/components/home/SelectedWork";
 import ClientWork from "@/app/components/home/ClientWork";
 import CurrentlyBuilding from "@/app/components/home/CurrentlyBuilding";
-import CapabilitiesGrid from "@/app/components/home/CapabilitiesGrid";
 import ExperienceSnapshot from "@/app/components/home/ExperienceSnapshot";
 import ServicesPreview from "@/app/components/home/ServicesPreview";
 import AboutSnapshot from "@/app/components/home/AboutSnapshot";
@@ -30,7 +29,6 @@ export default function Home() {
       <SelectedWork />
       <ClientWork />
       <CurrentlyBuilding />
-      <CapabilitiesGrid />
       <ExperienceSnapshot />
       <ServicesPreview />
       <AboutSnapshot />

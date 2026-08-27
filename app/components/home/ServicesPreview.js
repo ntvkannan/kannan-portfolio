@@ -24,7 +24,7 @@ export default function ServicesPreview() {
     {
       title: "Frontend Development",
       description: "Building responsive web interfaces from design using modern frontend technologies.",
-      items: ["Responsive Websites", "React", "Next.js", "Tailwind CSS", "Design-to-Code", "Frontend UI Implementation"]
+      items: ["Responsive Websites", "JavaScript", "React", "Next.js", "Tailwind CSS", "Design-to-Code", "Frontend UI Implementation"]
     },
     {
       title: "End-to-End",
@@ -41,9 +41,9 @@ export default function ServicesPreview() {
           How I can help
         </SectionHeader>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="border border-border rounded-lg p-8 bg-surface">
+            <div key={index}>
               <h3 className="text-xl font-semibold text-text-primary mb-2">
                 {service.title}
               </h3>
@@ -75,7 +75,7 @@ export default function ServicesPreview() {
         <div className="text-center">
           <NextLink
             href="/services"
-            className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-transparent border border-border-strong text-text-primary font-medium text-sm sm:text-base hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
+            className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
           >
             View Services
           </NextLink>
