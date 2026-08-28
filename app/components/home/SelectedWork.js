@@ -22,14 +22,15 @@ export default function SelectedWork() {
 
         {/* Featured Project */}
         {featuredProject && (
-          <div className="mb-16">
+          <div className="mb-16 group/card">
             {featuredProject.image && (
-              <div className="mb-6">
+              <div className="mb-6 overflow-hidden rounded-lg">
                 <Image
                   src={featuredProject.image}
                   alt={`${featuredProject.title} project image`}
                   ratio="16:9"
                   rounded="lg"
+                  className="transition-transform duration-500 ease-out group-hover/card:scale-105"
                 />
               </div>
             )}
@@ -55,7 +56,7 @@ export default function SelectedWork() {
               </div>
               <NextLink
                 href={`/work/${featuredProject.slug}`}
-                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors group"
+                className="inline-flex text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors group"
               >
                 <span className="inline-flex items-center gap-1">
                   View Case Study
@@ -69,15 +70,15 @@ export default function SelectedWork() {
         {/* Supporting Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {supportingProjects.map(project => (
-            <div key={project.slug}>
+            <div key={project.slug} className="group/card">
               {project.image && (
-                <div className="mb-4">
+                <div className="mb-4 overflow-hidden rounded-lg">
                   <Image
                     src={project.image}
                     alt={`${project.title} project image`}
                     ratio="16:9"
                     rounded="lg"
-                    className="!aspect-[16/10]"
+                    className="!aspect-[16/10] transition-transform duration-500 ease-out group-hover/card:scale-105"
                   />
                 </div>
               )}
@@ -89,7 +90,7 @@ export default function SelectedWork() {
               </h4>
               <NextLink
                 href={`/work/${project.slug}`}
-                className="inline-flex text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors group"
+                className="inline-flex text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors group"
               >
                 <span className="inline-flex items-center gap-1">
                   View Case Study

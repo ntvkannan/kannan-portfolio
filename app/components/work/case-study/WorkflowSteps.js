@@ -94,9 +94,9 @@ export default function WorkflowSteps({ steps }) {
 
   // Original stacked layout for non-mixed workflows
   return (
-    <div className="space-y-10 md:space-y-12">
+    <div className="space-y-14 md:space-y-16">
       {steps.map((step, index) => (
-        <div key={index} className="space-y-8">
+        <div key={index} className="space-y-6">
           {/* Step Number and Title */}
           <div className="flex-shrink-0">
             <div className="flex items-baseline gap-4 md:gap-5">
@@ -141,19 +141,6 @@ export default function WorkflowSteps({ steps }) {
           )}
         </div>
       ))}
-
-      {/* Step Connection Indicators */}
-      <div className="hidden md:block space-y-4">
-        {steps.length > 1 && (
-          <div className="flex justify-center py-4">
-            <div className="text-center">
-              {Array.from({ length: steps.length - 1 }).map((_, i) => (
-                <div key={i} className="text-text-muted mb-3">↓</div>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
     </div>
   );
 }

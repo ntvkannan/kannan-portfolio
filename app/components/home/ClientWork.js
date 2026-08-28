@@ -18,15 +18,15 @@ export default function ClientWork() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {clientProjects.map((project, index) => (
-            <div key={project.slug}>
+            <div key={project.slug} className="group/card">
               {project.image && (
-                <div className="mb-6">
+                <div className="mb-6 overflow-hidden rounded-lg">
                   <Image
                     src={project.image}
                     alt={`${project.title} project image`}
                     ratio="16:9"
                     rounded="lg"
-                    className="!aspect-[16/10]"
+                    className="!aspect-[16/10] transition-transform duration-500 ease-out group-hover/card:scale-105"
                   />
                 </div>
               )}

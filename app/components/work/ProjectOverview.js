@@ -3,15 +3,15 @@ import Section from "@/app/components/layout/Section";
 
 export default function ProjectOverview({ project }) {
   return (
-    <Section variant="normal">
+    <Section variant="small">
       <Container>
-        <div className="max-w-4xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-8">
+        <div>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary mb-10">
             Project Overview
           </h2>
 
           {/* Info Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 p-6 sm:p-8 bg-surface-secondary rounded-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8 pt-8 border-t border-border">
             {/* Project Name */}
             <div>
               <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-2">

@@ -19,27 +19,23 @@ export default function WorkContent() {
     : projects.filter(p => !p.featured);
 
   return (
-    <>
-      {/* Filter Section */}
-      <Section variant="normal">
-        <Container>
-          <WorkFilter onFilterChange={setActiveFilter} />
-        </Container>
-      </Section>
+    <Section variant="normal" className="!pt-10 lg:!pt-12">
+      <Container>
+        {/* Filter */}
+        <WorkFilter onFilterChange={setActiveFilter} />
 
-      {/* Featured Project */}
-      <Section variant="major">
-        <Container>
-          <FeaturedProject project={showFeatured ? featuredProject : null} />
-        </Container>
-      </Section>
+        {/* Featured Project */}
+        {showFeatured && featuredProject && (
+          <div className="mt-10 lg:mt-12">
+            <FeaturedProject project={featuredProject} />
+          </div>
+        )}
 
-      {/* Projects Grid */}
-      <Section variant="normal">
-        <Container>
+        {/* Projects Grid */}
+        <div className={showFeatured && featuredProject ? "mt-16 lg:mt-20" : "mt-10 lg:mt-12"}>
           <ProjectGrid projects={filteredProjects} />
-        </Container>
-      </Section>
-    </>
+        </div>
+      </Container>
+    </Section>
   );
 }

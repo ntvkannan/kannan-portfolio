@@ -5,6 +5,7 @@ export const caseStudies = {
       {
         type: "problem",
         title: "The Challenge",
+        chapter: true,
         content: "Digital signage management involves more than displaying a single piece of content. The OSEL product manages a broader ecosystem where content is organized, placed into layouts, scheduled, assigned to displays, and managed through user roles and permissions. This creates a product with several connected management workflows rather than a single linear task.",
       },
       {
@@ -24,6 +25,7 @@ export const caseStudies = {
       {
         type: "role-metadata",
         title: "My Role",
+        chapter: true,
         responsibilities: [
           "Product information structure and navigation",
           "Management screens and workflows",
@@ -38,6 +40,7 @@ export const caseStudies = {
       {
         type: "ecosystem-diagram",
         title: "One Platform, Multiple Connected Workflows",
+        chapter: true,
         items: [
           {
             label: "CONTENT",
@@ -77,6 +80,7 @@ export const caseStudies = {
       {
         type: "workflow-visual",
         title: "From Content to Display",
+        chapter: true,
         steps: [
           {
             title: "New Layout",
@@ -115,6 +119,7 @@ export const caseStudies = {
       {
         type: "challenges",
         title: "Key Design Challenges",
+        chapter: true,
         challenges: [
           {
             title: "Structuring Product Complexity",
@@ -152,6 +157,7 @@ export const caseStudies = {
       {
         type: "feature-showcase",
         title: "Managing Role-Based Access",
+        chapter: true,
         layout: "grid",
         features: [
           {
@@ -184,6 +190,7 @@ export const caseStudies = {
       {
         type: "feature-showcase",
         title: "Supporting Workflows",
+        chapter: true,
         layout: "grid",
         features: [
           {
@@ -217,6 +224,7 @@ export const caseStudies = {
       {
         type: "solution",
         title: "Outcome",
+        chapter: true,
         content:
           "The resulting interface brings content management, layout creation, scheduling, display administration, permissions, and reporting into a connected signage-management experience.",
       },
@@ -225,6 +233,7 @@ export const caseStudies = {
       {
         type: "reflection",
         title: "Reflection",
+        chapter: true,
         content:
           "OSEL demonstrates the importance of designing enterprise products as connected systems rather than collections of individual screens. The most significant design consideration is the relationship between content, layouts, schedules, displays, and administrative permissions. Good enterprise UX makes complex relationships understandable.",
       },
@@ -243,6 +252,7 @@ export const caseStudies = {
       {
         type: "problem",
         title: "The Challenge",
+        chapter: true,
         content: "Connecting clients seeking legal consultation with available advocates requires more than a simple booking system. The platform must support two distinct user groups with different needs: advocates managing professional profiles, availability, subscriptions, and client information; and clients discovering advocates, evaluating credentials, booking appointments, and preparing case details. Both workflows must integrate seamlessly within a single platform.",
       },
 
@@ -250,6 +260,7 @@ export const caseStudies = {
       {
         type: "feature-showcase",
         title: "Designing for Two User Roles",
+        chapter: true,
         features: [
           {
             title: "Advocate Operations",
@@ -286,11 +297,13 @@ export const caseStudies = {
       {
         type: "workflow-visual",
         title: "Advocate Operations",
+        chapter: true,
         steps: [
           {
             title: "Profile & Registration",
             description: "Set up professional profile with name, qualifications, specialization, and license information",
             image: "/images/projects/advocate/advocate-02-advocate-registration.png",
+            imageRatio: "9:16",
             imageAlt: "Advocate registration form with fields for personal and professional information",
           },
           {
@@ -321,11 +334,13 @@ export const caseStudies = {
       {
         type: "workflow-visual",
         title: "Client Consultation Journey",
+        chapter: true,
         steps: [
           {
             title: "Discover Advocates",
             description: "Search for advocates by location and browse available legal professionals filtered by specialization",
             image: "/images/projects/advocate/advocate-06-client-discovery.png",
+            imageRatio: "9:16",
             imageAlt: "Client advocate discovery list showing multiple legal professionals with ratings and specializations",
           },
           {
@@ -363,6 +378,7 @@ export const caseStudies = {
       {
         type: "challenges",
         title: "Core Design Challenges",
+        chapter: true,
         challenges: [
           {
             title: "Time-Slot Configuration at Scale",
@@ -370,6 +386,7 @@ export const caseStudies = {
             decision: "Design a modular configuration system that separates day selection, time period entry, and slot size specification. Include an 'apply to all days' toggle to reduce repetition and minimize entry errors.",
             outcome: "Advocates can configure complete weekly schedules in a streamlined, manageable workflow without feeling overwhelmed by data entry.",
             image: "/images/projects/advocate/advocate-03-time-slot-config.png",
+            imageRatio: "9:16",
             imageAlt: "Time-slot configuration interface with modular design and apply-to-all functionality",
           },
           {
@@ -378,6 +395,7 @@ export const caseStudies = {
             decision: "Implement a calendar-grid interface with color-coded states: available (visible), booked (marked), and unavailable (disabled). Add toggle controls for quick slot-state changes.",
             outcome: "Advocates gain at-a-glance clarity of their schedule, reducing mistakes and enabling confident availability management.",
             image: "/images/projects/advocate/advocate-04-availability-calendar.png",
+            imageRatio: "9:16",
             imageAlt: "Calendar grid showing color-coded time slots with available, booked and unavailable states",
           },
           {
@@ -386,6 +404,7 @@ export const caseStudies = {
             decision: "Combine advocate discovery with visible credentials (specialization, experience, qualifications) and social proof (star ratings and client testimonials). Support filtering and sorting by specialization.",
             outcome: "Clients gain confidence during discovery through visible credibility signals and can quickly identify advocates that match their legal needs.",
             image: "/images/projects/advocate/advocate-06-client-discovery.png",
+            imageRatio: "9:16",
             imageAlt: "Advocate discovery list with specialization filters, ratings, and client testimonials visible",
           },
           {
@@ -394,6 +413,7 @@ export const caseStudies = {
             decision: "Create a dedicated case-information form supporting both text descriptions and file uploads. Separate the form into logical sections: case details, attachments, and additional remarks.",
             outcome: "Clients can easily provide comprehensive case information, enabling advocates to prepare for more effective consultations.",
             image: "/images/projects/advocate/advocate-09-case-information.png",
+            imageRatio: "9:16",
             imageAlt: "Case information form with text input, file attachments, and structured fields",
           },
         ],
@@ -403,6 +423,7 @@ export const caseStudies = {
       {
         type: "feature-showcase",
         title: "Key Features & Solutions",
+        chapter: true,
         layout: "grid",
         features: [
           {
@@ -472,6 +493,7 @@ export const caseStudies = {
       {
         type: "reflection",
         title: "Reflection",
+        chapter: true,
         content: "Advocate demonstrates the importance of designing two-sided platforms with equal consideration for both user groups. The most significant design consideration is recognizing that advocates and clients have fundamentally different needs within the same platform. Advocates need operational efficiency (scheduling, availability, client information), while clients need confidence-building tools (credibility signals, discovery, evaluation). A successful design bridges these different requirements without compromising either experience. The platform succeeds when both sides feel understood and supported.",
       },
 
@@ -488,14 +510,16 @@ export const caseStudies = {
       // 01. The Challenge
       {
         type: "problem",
-        title: "01 — The Challenge",
+        title: "The Challenge",
+        chapter: true,
         content: "Building a unified School ERP system meant translating broad requirements into a coherent experience that could serve multiple school roles and workflows simultaneously — across admissions, student enrollment, academic operations, financial management, and staff administration.",
       },
 
       // 02. My Design Approach
       {
         type: "problem",
-        title: "02 — My Design Approach",
+        title: "My Design Approach",
+        chapter: true,
         content: "My process: understand the requirements, map key workflows (admissions, enrollment, fee management, staff roles), structure the information architecture, design each workflow's UX, and refine through stakeholder feedback.",
       },
 
@@ -669,7 +693,8 @@ export const caseStudies = {
       // 07. Role-Based Experience
       {
         type: "problem",
-        title: "03 — Role-Based Design",
+        title: "Role-Based Design",
+        chapter: true,
         content: "The system needed to serve different school roles with fundamentally different perspectives. Administrators need system-wide operational visibility and configuration controls. School/center staff need a local view of their students and operations. The design approach was to create distinct experiences optimized for how each role thinks about their work, rather than forcing them into a unified interface.\n\nA clear example is the fee management experience: administrators configure system-wide fee structures defining fees for all programs and centers, while school staff apply those structures to their specific students and track payments. Both work with the same underlying data, but from completely different perspectives.",
       },
 
@@ -696,7 +721,8 @@ export const caseStudies = {
       // 08. Key Design Decisions
       {
         type: "problem",
-        title: "04 — Key Design Decisions",
+        title: "Key Design Decisions",
+        chapter: true,
         content: "Several design decisions emerged from analyzing the School ERP workflows and requirements:",
       },
 
@@ -743,21 +769,24 @@ export const caseStudies = {
       // 03. The Challenge
       {
         type: "problem",
-        title: "03 — The Challenge",
+        title: "The Challenge",
+        chapter: true,
         content: "The restaurant needed to move beyond traditional approaches to reach customers online. The design work required several things simultaneously:\n\nFirst, creating a website that presented the menu clearly and made ordering straightforward. Second, establishing consistent visual presence across digital and print—the website, menu card, and promotional materials all needed to feel connected. Third, working within the limitations of the Google Sites platform while still achieving a professional, custom-designed feel.\n\nThe challenge wasn't just building a website; it was creating a complete brand experience across multiple formats.",
       },
 
       // 04. Designing Within Constraints
       {
         type: "problem",
-        title: "04 — Designing Within Constraints",
+        title: "Designing Within Constraints",
+        chapter: true,
         content: "I implemented the website using Google Sites, which meant working within a templated platform rather than custom development. This introduced real constraints—limited layout flexibility, predefined component options, and less control over responsive behavior than a custom-built site would offer.\n\nRather than see this as a limitation, I approached it as a design problem to solve. The focus became making intentional decisions about information hierarchy, content organisation, spacing, imagery, and visual consistency. Within the available layout options, I structured the pages to guide visitors clearly from first impression to menu discovery to ordering.\n\nThe result was a website that feels designed and considered, despite the platform's constraints. The visual direction and hierarchy were strong enough that the platform boundaries became invisible to the visitor.",
       },
 
       // 05. Website UX/UI
       {
         type: "problem",
-        title: "05 — Website UX/UI",
+        title: "Website UX/UI",
+        chapter: true,
         content: "The website needed five main sections: a home page to establish first impression and value; an About section to build trust; a Menu page for detailed offerings; an FAQ for customer questions; and a Contact page for ordering and location information. This structure created a clear path: discover → understand → browse menu → order.\n\nThe home page was the strongest part of the design. It opened with a clear tagline—\"Fresh Seafood Menu Crafted for You\"—followed by six value proposition cards explaining what made the restaurant different: fresh catch, no mixing of stocks, no chemicals, chettinad taste, hygienic preparation, and premium quality at honest pricing. Below that, I structured a menu showcase with food categories (Fry, Curry, Combo), a four-step process flow showing how to order, and owner information with an embedded map. The design guided visitors through a journey: who are you, what do you offer, how do I order, where are you located.\n\nThe menu page presented categories and items with descriptions and pricing, organized for easy scanning. Contact and ordering were made prominent throughout: WhatsApp for direct pre-ordering, Zomato for aggregator ordering, QR codes for quick access, and the business phone number repeated at multiple points. The design removed friction from the ordering process.",
       },
 
@@ -788,20 +817,22 @@ export const caseStudies = {
             imageRatio: "auto",
           },
         ],
-        layout: "stacked",
+        layout: "grid-3",
       },
 
       // 06. Visual Language
       {
         type: "problem",
-        title: "06 — Creating the Visual Language",
+        title: "Creating the Visual Language",
+        chapter: true,
         content: "The visual direction wasn't something I inherited—the client provided the logo, but the color system, typography, layout approach, and consistency across materials were design decisions I made.\n\nThe palette used a deep brown/burgundy primary with golden yellow/orange accents and cream backgrounds. This combination conveyed warmth and trust while supporting appetite appeal for food imagery. The typography was clean and readable across scales, with strong heading hierarchy to guide scanning. The layout used structured sections, clear grouping, and balanced imagery to create visual rhythm.\n\nThese choices weren't complicated, but they were intentional. Every element served the goal of presenting the restaurant as professional and trustworthy while feeling approachable. The bilingual presentation—English and Tamil—ensured local relevance.\n\nThe strongest part of this visual language was its consistency. The same colors, typography, and layout patterns appeared on the website, menu card, and flyer. That consistency created recognition and professionalism across multiple contexts.",
       },
 
       // 07. Menu Card
       {
         type: "problem",
-        title: "07 — Menu Card",
+        title: "Menu Card",
+        chapter: true,
         content: "I designed the menu card from scratch as a single-page, double-sided format. The layout featured a circular arrangement of food dishes at the center—a visual anchor that made the card memorable and visually interesting. Around that, I organised the actual menu into categories: Curry, Fried, Masala, Meals, Dinner.\n\nThe design decisions were practical ones. The circular arrangement caught attention and broke the monotony of lists. The category organisation made the card scannable—a customer could quickly find what they were looking for. Pricing was clear and consistent. The logo and tagline grounded the card as a Sakisa Seafoods piece.\n\nThe menu names and pricing came from the business; the way I organised them, the visual hierarchy, the color treatment, the overall layout—those were design contributions.",
       },
 
@@ -824,7 +855,8 @@ export const caseStudies = {
       // 08. Promotional Flyer
       {
         type: "problem",
-        title: "08 — Promotional Flyer",
+        title: "Promotional Flyer",
+        chapter: true,
         content: "The flyer was a front/back promotional piece designed to catch attention and drive ordering. The front side featured a large circular food arrangement paired with messaging about quality: \"Fresh Catch. No Mixing. No Chemicals. Chettinad Taste. Hygienic. Premium Quality.\" This wasn't marketing fluff—these were actual business practices the owner could stand behind.\n\nThe back side organised the menu by category with food imagery and prominent ordering CTAs: WhatsApp, Zomato, and QR codes. The design used the same color system and typography as the website and menu card, creating visual continuity.\n\nI also created an alternate flyer version, exploring different compositions while maintaining the same visual language and messaging.\n\nThe flyer demonstrated how the same visual direction could adapt to different formats and purposes—it wasn't just a miniaturised version of the website, but a separate design that solved the problem of promotional materials while maintaining brand consistency.",
       },
 
@@ -848,13 +880,14 @@ export const caseStudies = {
             imageRatio: "auto",
           },
         ],
-        layout: "stacked",
+        layout: "grid",
       },
 
       // 09. One Visual Language Across Multiple Touchpoints
       {
         type: "problem",
-        title: "09 — One Visual Language Across Multiple Touchpoints",
+        title: "One Visual Language Across Multiple Touchpoints",
+        chapter: true,
         content: "The strongest part of this project wasn't any single design, but the consistency across all three: website, menu card, flyer.\n\nA visitor encountering the website and later seeing the menu card or flyer would immediately recognise them as part of the same brand. The color palette was identical. The typography was consistent. The way information was organized followed similar patterns. Even the food imagery had a consistent visual treatment and tone.\n\nThis wasn't a formal design system with extensive documentation. It was visual consistency achieved through intentional design decisions and careful implementation. Every layout choice, color choice, and typography choice was made with an eye toward maintaining that cohesion.\n\nIn practice, this meant that the restaurant's brand voice was consistent regardless of where the customer encountered it—online or in print, on a large desktop screen or a printed card in their hands. That consistency is what creates recognition and trust.",
       },
 
@@ -885,27 +918,30 @@ export const caseStudies = {
             imageRatio: "auto",
           },
         ],
-        layout: "grid",
+        layout: "grid-3",
       },
 
       // 10. Content Creation
       {
         type: "problem",
-        title: "10 — Content Creation",
+        title: "Content Creation",
+        chapter: true,
         content: "The website content was created using AI based on business information the client provided—menu item names, descriptions, pricing, address, hours, and business details. I structured that content into the website experience, organising it for clarity and scannability.\n\nThis approach allowed the website to launch quickly with accurate business information without requiring me to independently create menu descriptions or business copy. The client remained the authority on what the restaurant offers; I structured that information for the digital format.",
       },
 
       // 11. Outcome
       {
         type: "problem",
-        title: "11 — Outcome",
+        title: "Outcome",
+        chapter: true,
         content: "The project delivered:\n\n• A complete website designed and implemented on Google Sites\n• Five main pages (Home, About, Menu, FAQ, Contact) with clear information architecture\n• A menu card that organised the business's offerings for print distribution\n• A promotional flyer that communicated key differentiators and drove ordering\n• A consistent visual language across all digital and print materials\n• Integration with WhatsApp and Zomato ordering systems\n\nThe design demonstrates the ability to create cohesive brand experiences across different media and formats, to work effectively within platform constraints, and to balance visual design with practical user needs.\n\nNo measurable business outcome data was available for this project. The case study is based on the quality and breadth of the design work itself—the information architecture, visual consistency, and thoughtful implementation across web and print.",
       },
 
       // 12. Reflection
       {
         type: "reflection",
-        title: "12 — Reflection",
+        title: "Reflection",
+        chapter: true,
         content: "This project illustrated how constraints can actually drive better design. Because I was limited by the Google Sites platform, I couldn't rely on custom code or complex interactions. I had to solve problems through clear hierarchy, strong layout decisions, and consistent visual language. The result was cleaner and more focused than it might have been otherwise.\n\nIt also demonstrated the value of working across multiple formats. The website, menu card, and flyer were different problems with different requirements, but solving them as a connected system created something stronger than any single piece alone. That kind of thinking—considering how one design choice supports the whole brand experience—is something I bring to every project.\n\nFinally, it reminded me that design at its best solves real problems for real people. Sakisa Seafoods is a functioning business with actual customers, not a fictional case study. The website, menu, and flyer had to work. The visual language had to be professional enough to build trust, but approachable enough to feel welcoming to local customers. Those practical constraints made the design better.",
       },
 
@@ -997,14 +1033,16 @@ export const caseStudies = {
       // 01. The Challenge
       {
         type: "problem",
-        title: "01 — The Challenge",
+        title: "The Challenge",
+        chapter: true,
         content: "Kit Management is a module within a school management system designed to handle the complete workflow of providing study kits to newly enrolled pre-school students. A study kit is a collection of essential materials—bags, books, stationery—configured for each grade level (Playgroup, Nursery, LKG, UKG).\n\nThe business operates through a Franchisor-Franchisee model: corporate offices manage kit configuration, stock, and dispatch, while individual pre-school centers onboard students and request kits. The kit serves a dual purpose—an operational necessity for new students and a revenue stream for payment collection.\n\nThe design challenge was to automate a workflow that previously relied on manual, paper-based processes between these two user groups. The system needed to create visibility for both sides: corporate oversight for operational management, and center-level tracking for request monitoring.",
       },
 
       // 02. Designing for Two Roles
       {
         type: "problem",
-        title: "02 — Designing for Two Roles",
+        title: "Designing for Two Roles",
+        chapter: true,
         content: "The fundamental design challenge was that two very different user groups needed to work within the same workflow, but with opposite mental models.\n\nThe Franchisor (Corporate Office) thinks in aggregates and operations. They need high-level visibility across all centers, operational dashboards showing metrics and trends, the ability to manage kit requests, and reporting to understand financial collection and performance.\n\nThe Franchisee (Pre-school Center) thinks in tasks and local context. They need to see newly enrolled students at their center, submit kit requests, provide payment information, and track whether requests have been processed and dispatched.\n\nRather than creating one interface that tried to serve both, the approach was to create two distinct experiences, each optimized for how its users think about the problem.",
       },
 
@@ -1036,7 +1074,8 @@ export const caseStudies = {
       // 03. Connecting the Workflow
       {
         type: "problem",
-        title: "03 — Connecting the Workflow",
+        title: "Connecting the Workflow",
+        chapter: true,
         content: "Despite having separate interfaces, both users are part of a single connected workflow. The workflow moves through distinct phases, each supporting a different part of the request lifecycle:\n\nFranchisee creates a request → Provides payment information → Franchisor reviews and processes → Kits are dispatched → Franchisee tracks status.\n\nThe design had to make this lifecycle clear for both sides while reflecting that they see different aspects of the same flow.",
       },
 
@@ -1057,14 +1096,16 @@ export const caseStudies = {
       // 04. My Design Approach
       {
         type: "problem",
-        title: "04 — My Design Approach",
+        title: "My Design Approach",
+        chapter: true,
         content: "My process began by understanding the business requirements provided by the Project Manager, then mapping how each user group needed to interact with the system.\n\nFirst, I understood the ecosystem: What is a kit and how is it composed? Who manages what? What data matters to each user? Then I developed the information architecture: What features must each side have? How should they be organized? What information is critical at each step?\n\nNext, I designed workflows for each user group: How does a Franchisor operate at their dashboard level? How does a Franchisee execute the request creation task? What are the differences in their interaction patterns and needs?\n\nFinally, I refined the designs based on Project Manager feedback and prepared the complete module design for handoff to the development team.",
       },
 
       // 05. Franchisor Experience
       {
         type: "problem",
-        title: "05 — Franchisor Experience",
+        title: "Franchisor Experience",
+        chapter: true,
         content: "The Franchisor interface is built on a dashboard-first approach, because the corporate office's primary need is operational visibility across all centers.",
       },
 
@@ -1114,7 +1155,8 @@ export const caseStudies = {
       // 06. Franchisee Experience
       {
         type: "problem",
-        title: "06 — Franchisee Experience",
+        title: "Franchisee Experience",
+        chapter: true,
         content: "The Franchisee interface is designed around task completion. The center manager's core task is straightforward: see newly enrolled students, create a kit request for them, provide payment information, and then track that request through processing and dispatch.",
       },
 
@@ -1157,7 +1199,8 @@ export const caseStudies = {
       // 07. Key UX Decisions
       {
         type: "problem",
-        title: "07 — Key UX Decisions",
+        title: "Key UX Decisions",
+        chapter: true,
         content: "Several design decisions emerged from thinking through these workflows and how to serve two fundamentally different user groups:",
       },
 
@@ -1177,14 +1220,16 @@ export const caseStudies = {
       // 08. From Design to Development
       {
         type: "problem",
-        title: "08 — From Design to Development",
+        title: "From Design to Development",
+        chapter: true,
         content: "The complete module design was prepared and handed to the development team. This included information architecture, screen designs for all major user flows, design assets, and specifications for both Franchisor and Franchisee interfaces.\n\nThe design demonstrates end-to-end UX thinking: from business requirements through user-focused interface design to development-ready specifications. The design provided the blueprint for implementation.",
       },
 
       // 09. Reflection
       {
         type: "problem",
-        title: "09 — Reflection",
+        title: "Reflection",
+        chapter: true,
         content: "The separation of Franchisor and Franchisee interfaces addresses a fundamental design challenge: two very different users within one connected workflow. By tailoring the experience to each role's mental model—operations versus task completion—the design makes complex workflows feel natural for both users.\n\nThis project demonstrates an approach that transfers beyond Kit Management: when two user groups have opposite needs, separate interfaces often work better than forced unification. Dashboard-first is powerful for operational roles; task-first is powerful for transactional roles. Connecting payment information to the request keeps workflows efficient. Status visibility reduces support burden and builds user confidence.",
       },
     ],
@@ -1195,14 +1240,16 @@ export const caseStudies = {
       // 01. Overview
       {
         type: "problem",
-        title: "01 — Overview",
+        title: "Overview",
+        chapter: true,
         content: "Nagendran Yoga International is a classical yoga center offering classes, courses, and teacher training programs. The center needed a visual identity and complete brand application across print, social media, promotional communication, and digital presence. Working directly with the center, I designed the logo, visual direction, and applied the identity across all marketing and communication touchpoints to create a cohesive, recognizable brand.",
       },
 
       // 02. The Identity
       {
         type: "feature-showcase",
-        title: "02 — The Identity",
+        title: "The Identity",
+        chapter: true,
         features: [
           {
             title: "Primary Logo",
@@ -1225,7 +1272,8 @@ export const caseStudies = {
       // 03. Visual Language
       {
         type: "problem",
-        title: "03 — Visual Language",
+        title: "Visual Language",
+        chapter: true,
         content: "Beyond the logo, the visual language is built from a tight palette of recurring elements. Orange serves as the dominant color, creating immediate energy and warmth across every touchpoint. A complementary maroon appears for depth and formal contexts. Typography is bold and clean, supporting clear communication across social media, print, and web. The graphic language draws from yoga imagery: meditation silhouettes, mandala patterns (representing inner peace and spirituality), sun and circular motifs, and decorative borders. Photography emphasizes practice, instructors, and outdoor natural settings. Together, these elements create a visual system recognizable even when individual applications vary significantly in layout or purpose.",
       },
 
@@ -1248,7 +1296,8 @@ export const caseStudies = {
       // 04. Communication Design
       {
         type: "feature-showcase",
-        title: "04 — Communication Design",
+        title: "Communication Design",
+        chapter: true,
         features: [
           {
             title: "Course Promotions & Announcements",
@@ -1279,13 +1328,14 @@ export const caseStudies = {
             imageRatio: "auto",
           },
         ],
-        layout: "stacked",
+        layout: "grid",
       },
 
       // 05. Print Applications
       {
         type: "feature-showcase",
-        title: "05 — Print Applications",
+        title: "Print Applications",
+        chapter: true,
         features: [
           {
             title: "Formal Identity Application",
@@ -1315,7 +1365,8 @@ export const caseStudies = {
       // 06. Digital Presence
       {
         type: "feature-showcase",
-        title: "06 — Digital Presence",
+        title: "Digital Presence",
+        chapter: true,
         features: [
           {
             title: "Website Design and Brand Integration",
@@ -1323,6 +1374,7 @@ export const caseStudies = {
             image: "/images/projects/yoga-center/website.png",
             imageAlt: "Complete Yoga Center website design showing integrated visual identity across all sections",
             imageRatio: "auto",
+            imageMaxWidth: "narrow",
           },
         ],
       },
@@ -1330,14 +1382,16 @@ export const caseStudies = {
       // 07. One Identity, Many Touchpoints
       {
         type: "solution",
-        title: "07 — One Identity, Many Touchpoints",
+        title: "One Identity, Many Touchpoints",
+        chapter: true,
         content: "From a single symbol emerged an entire visual ecosystem. Logo, social media promotions, printed materials, certificates, and website all spoke with one voice while serving different purposes. The consistency was not rigid—it was intentional, allowing each application to solve its specific communication challenge while remaining immediately recognizable as part of the same brand. Social announcements celebrated milestones using illustrated scenes and celebratory messaging. Promotional posters combined the orange primary color with full course listings and strong visual hierarchy. The website integrated all visual elements across hero, classes, testimonials, and scheduling into a cohesive digital experience. This balance between unity and flexibility is the strength of the identity system.",
       },
 
       // 08. Reflection
       {
         type: "reflection",
-        title: "08 — Reflection",
+        title: "Reflection",
+        chapter: true,
         content: "Working across multiple formats—social media, print, digital—taught me how visual identity systems need both clarity and flexibility. The core symbol and color palette provided the guardrails, but each application required problem-solving specific to its format and purpose. A social media post needed to catch attention in a crowded feed. A certificate needed to convey credibility and permanence. A website needed to balance marketing with practical information. The same identity language worked across all of these because it was strong enough to remain recognizable, yet flexible enough to adapt.\n\nIf I were approaching this project today, I would establish the usage guidelines and spatial rules for the identity even more explicitly at the outset. Creating a more detailed brand system document would make scaling to new applications easier, and would help anyone future-extending the identity maintain the same intentionality.\n\nThe work also reinforced how important consistency is in building brand trust. Every material, from a small social post to a large poster, contributed to a cohesive impression. The visual identity became synonymous with the center's values and positioning.",
       },
 

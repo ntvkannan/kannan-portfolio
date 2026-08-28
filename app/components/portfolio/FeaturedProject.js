@@ -6,23 +6,11 @@ export default function FeaturedProject({ project }) {
   if (!project) return null;
 
   return (
-    <div className="mb-16">
-      {/* Featured Project Image */}
-      {project.image && (
-        <div className="mb-6">
-          <Image
-            src={project.image}
-            alt={`${project.title} project image`}
-            ratio="16:9"
-            rounded="lg"
-          />
-        </div>
-      )}
-
-      {/* Featured Project Content */}
-      <div className="max-w-2xl">
+    <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 lg:items-center">
+      {/* Content */}
+      <div className="order-2 lg:order-1 lg:col-span-2">
         {/* Category Badge */}
-        <Badge variant="accent" className="mb-4">
+        <Badge variant="neutral" className="mb-4">
           {project.displayCategory}
         </Badge>
 
@@ -37,7 +25,7 @@ export default function FeaturedProject({ project }) {
         </p>
 
         {/* Project Metadata */}
-        <div className="flex flex-col sm:flex-row gap-8 text-sm text-text-body mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 text-sm text-text-body mb-8">
           <div>
             <p className="font-semibold text-text-primary">Role</p>
             <p>{project.role}</p>
@@ -60,6 +48,18 @@ export default function FeaturedProject({ project }) {
           </span>
         </Link>
       </div>
+
+      {/* Image */}
+      {project.image && (
+        <div className="order-1 lg:order-2 lg:col-span-3">
+          <Image
+            src={project.image}
+            alt={`${project.title} project image`}
+            ratio="16:9"
+            rounded="lg"
+          />
+        </div>
+      )}
     </div>
   );
 }

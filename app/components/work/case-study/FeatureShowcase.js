@@ -14,18 +14,22 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
       <div className="w-full">
         <div className="grid grid-cols-1 gap-10 md:gap-14">
           {/* Content */}
-          <div className="max-w-3xl">
+          <div className="max-w-3xl empty:hidden">
             {feature.eyebrow && (
               <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-widest mb-3">
                 {feature.eyebrow}
               </p>
             )}
-            <h3 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-text-primary mb-5">
-              {feature.title}
-            </h3>
-            <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-7">
-              {feature.description}
-            </p>
+            {feature.title && (
+              <h3 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-text-primary mb-5">
+                {feature.title}
+              </h3>
+            )}
+            {feature.description && (
+              <p className="text-lg sm:text-xl text-text-body leading-relaxed mb-7">
+                {feature.description}
+              </p>
+            )}
             {feature.points && (
               <ul className="space-y-4">
                 {feature.points.map((point, idx) => (
@@ -40,7 +44,15 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
 
           {/* Image */}
           {feature.image && typeof feature.image === 'string' && (
-            <div className={feature.imageRatio === "9:16" ? "w-full max-w-xl mx-auto" : "w-full -mx-4 sm:mx-0 px-4 sm:px-0"}>
+            <div
+              className={
+                feature.imageRatio === "9:16"
+                  ? "w-full max-w-xl mx-auto"
+                  : feature.imageMaxWidth === "narrow"
+                    ? "w-full max-w-2xl mx-auto"
+                    : "w-full -mx-4 sm:mx-0 px-4 sm:px-0"
+              }
+            >
               <Image
                 src={feature.image}
                 alt={feature.imageAlt || feature.title}
@@ -55,9 +67,11 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
   }
 
   // Multiple features
-  // For portrait images, use stacked layout; for landscape, use configured layout
+  // A pair of portrait screenshots reads as an intentional side-by-side comparison;
+  // three or more portrait images are kept stacked to avoid cramming.
   const hasPortraitImages = features.some(f => f.imageRatio === "9:16");
-  const effectiveLayout = hasPortraitImages ? 'stacked' : layout;
+  const isPairedPortraitComparison = features.length === 2 && features.every(f => f.imageRatio === "9:16");
+  const effectiveLayout = isPairedPortraitComparison ? 'grid' : (hasPortraitImages ? 'stacked' : layout);
 
   // Special handling for print applications: certificate full-width, then brochure pair
   const isPrintApplications = layout === 'stacked' && features.length === 3 &&
@@ -132,9 +146,11 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
   return (
     <div
       className={
-        effectiveLayout === 'grid'
-          ? 'grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16'
-          : 'space-y-16 md:space-y-20'
+        effectiveLayout === 'grid-3'
+          ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 items-start'
+          : effectiveLayout === 'grid'
+            ? 'grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16'
+            : 'space-y-16 md:space-y-20'
       }
     >
       {features.map((feature, index) => (
@@ -147,18 +163,22 @@ export default function FeatureShowcase({ features, layout = 'stacked' }) {
           }
         >
           {/* Content */}
-          <div>
+          <div className="empty:hidden">
             {feature.eyebrow && (
               <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide mb-3">
                 {feature.eyebrow}
               </p>
             )}
-            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-3">
-              {feature.title}
-            </h3>
-            <p className="text-base sm:text-lg text-text-body leading-relaxed mb-4">
-              {feature.description}
-            </p>
+            {feature.title && (
+              <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-3">
+                {feature.title}
+              </h3>
+            )}
+            {feature.description && (
+              <p className="text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                {feature.description}
+              </p>
+            )}
             {feature.points && (
               <ul className="space-y-2">
                 {feature.points.map((point, pidx) => (

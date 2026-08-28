@@ -23,7 +23,7 @@ export default function WorkFilter({ onFilterChange }) {
         <button
           key={category.id}
           onClick={() => handleFilter(category.id, category.value)}
-          className={`inline-flex items-center justify-center rounded-button h-10 px-4 font-medium text-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+          className={`inline-flex items-center justify-center rounded-button h-11 px-5 font-medium text-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
             activeCategory === category.id
               ? "bg-accent text-white hover:bg-accent-hover"
               : "bg-transparent border border-border-strong text-text-primary hover:bg-surface-secondary"

@@ -1,36 +1,51 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { slugify } from "@/app/utils/slugify";
 
 export default function CaseStudySectionNav({ sections }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const drawerRef = useRef(null);
+  const visibilityRef = useRef(new Map());
 
-  if (!sections || sections.length === 0) {
-    return null;
-  }
-
-  const navigableSections = sections.filter(
-    (section) => section.title && section.type !== "next-project"
+  // Derived with useMemo so the identity is stable across renders. Previously
+  // this was a plain .filter() used as an effect dependency, which rebuilt the
+  // IntersectionObserver on every render.
+  const navigableSections = useMemo(
+    () =>
+      (sections || []).filter(
+        (section) => section.title && section.type !== "next-project"
+      ),
+    [sections]
   );
 
-  if (navigableSections.length === 0) {
-    return null;
-  }
+  // Section ids in document order — the ordering used to resolve the active item.
+  const sectionIds = useMemo(
+    () => navigableSections.map((section) => slugify(section.title)),
+    [navigableSections]
+  );
 
   useEffect(() => {
+    if (sectionIds.length === 0) {
+      return;
+    }
+
+    const visibility = visibilityRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        let currentActive = null;
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            currentActive = entry.target.id;
-          }
+          visibility.set(entry.target.id, entry.isIntersecting);
         });
-        if (currentActive) {
-          setActiveSection(currentActive);
+
+        // Resolve against every observed section in document order. A callback
+        // batch often contains only sections *leaving* the detection line; the
+        // previous code skipped the update in that case, which left the
+        // highlight stuck on an earlier section.
+        const current = sectionIds.find((id) => visibility.get(id));
+        if (current) {
+          setActiveSection(current);
         }
       },
       {
@@ -38,8 +53,7 @@ export default function CaseStudySectionNav({ sections }) {
       }
     );
 
-    navigableSections.forEach((section) => {
-      const id = slugify(section.title);
+    sectionIds.forEach((id) => {
       const element = document.getElementById(id);
       if (element) {
         observer.observe(element);
@@ -48,8 +62,9 @@ export default function CaseStudySectionNav({ sections }) {
 
     return () => {
       observer.disconnect();
+      visibility.clear();
     };
-  }, [navigableSections]);
+  }, [sectionIds]);
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -83,6 +98,12 @@ export default function CaseStudySectionNav({ sections }) {
       };
     }
   }, [isOpen]);
+
+  // Guards live below the hooks: returning early above them broke the Rules of
+  // Hooks (three effects were declared after two conditional returns).
+  if (navigableSections.length === 0) {
+    return null;
+  }
 
   function handleSectionClick(sectionId) {
     const element = document.getElementById(sectionId);
@@ -176,7 +197,8 @@ export default function CaseStudySectionNav({ sections }) {
               {navigableSections.map((section, index) => {
                 const sectionId = slugify(section.title);
                 const isActive = activeSection === sectionId;
-                const displayTitle = section.title.replace(/^\d+\s*[—–-]?\s*/, "");
+                // Numbers are derived from position, never stored in the title.
+                const displayTitle = section.title;
 
                 return (
                   <li key={sectionId}>

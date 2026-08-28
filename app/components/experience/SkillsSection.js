@@ -14,7 +14,7 @@ export default function SkillsSection({ skills }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {skills.map((group, index) => (
               <div key={index}>
-                <h3 className="text-lg sm:text-base font-semibold text-text-primary mb-6">
+                <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-6">
                   {group.category}
                 </h3>
                 <div className="space-y-3">

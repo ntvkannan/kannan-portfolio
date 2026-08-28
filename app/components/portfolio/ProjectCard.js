@@ -4,36 +4,37 @@ import Image from "@/app/components/foundation/Image";
 
 export default function ProjectCard({ project }) {
   return (
-    <article>
+    <article className="group/card">
       {/* Project Image */}
       {project.image && (
-        <div className="mb-4">
+        <div className="mb-6 overflow-hidden rounded-lg">
           <Image
             src={project.image}
             alt={`${project.title} project image`}
             ratio="16:9"
             rounded="lg"
+            className="transition-transform duration-500 ease-out group-hover/card:scale-105"
           />
         </div>
       )}
 
       {/* Category Badge */}
-      <Badge variant="neutral" className="mb-3">
+      <Badge variant="neutral" className="mb-4">
         {project.displayCategory}
       </Badge>
 
       {/* Project Title */}
-      <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-2">
+      <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-3 transition-colors duration-200 group-hover/card:text-accent">
         {project.title}
       </h3>
 
       {/* Project Description */}
-      <p className="text-sm sm:text-base text-text-body mb-3">
+      <p className="text-sm sm:text-base text-text-body mb-4">
         {project.description}
       </p>
 
       {/* Project Role */}
-      <p className="text-xs sm:text-sm text-text-body mb-6">
+      <p className="text-xs sm:text-sm text-text-body mb-8">
         <span className="font-semibold text-text-primary">Role:</span> {project.role}
       </p>
 
