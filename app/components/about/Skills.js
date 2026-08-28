@@ -1,6 +1,6 @@
 import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
-import Tag from "@/app/components/foundation/Tag";
+import SectionHeader from "@/app/components/foundation/SectionHeader";
 
 const skillGroups = [
   {
@@ -45,27 +45,25 @@ export default function Skills() {
   return (
     <Section variant="normal">
       <Container size="wide">
-        <div className="max-w-4xl">
-          <h2 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-12">
-            Skills & Capabilities
-          </h2>
+        <SectionHeader className="mb-12">
+          Skills & Capabilities
+        </SectionHeader>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-14">
-            {skillGroups.map((group, index) => (
-              <div key={index}>
-                <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-6">
-                  {group.category}
-                </h3>
-                <div className="space-y-3">
-                  {group.skills.map((skill, skillIndex) => (
-                    <p key={skillIndex} className="text-base text-text-body">
-                      {skill}
-                    </p>
-                  ))}
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-x-20">
+          {skillGroups.map((group, index) => (
+            <div key={index}>
+              <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-6">
+                {group.category}
+              </h3>
+              <div className="space-y-3">
+                {group.skills.map((skill, skillIndex) => (
+                  <p key={skillIndex} className="text-base text-text-body">
+                    {skill}
+                  </p>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </Container>
     </Section>

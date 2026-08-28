@@ -1,5 +1,6 @@
 import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
+import SectionHeader from "@/app/components/foundation/SectionHeader";
 
 const steps = [
   {
@@ -33,26 +34,27 @@ export default function DesignPhilosophy() {
   return (
     <Section variant="normal">
       <Container size="wide">
-        <div className="max-w-4xl">
-          <h2 className="text-4xl sm:text-5xl font-semibold text-text-primary mb-12">
-            How I approach design
-          </h2>
+        <SectionHeader className="mb-12">
+          How I approach design
+        </SectionHeader>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-8">
-            {steps.map((step, index) => (
-              <div key={index}>
-                <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-4">
-                  Step {step.number}
-                </p>
-                <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-4">
-                  {step.title}
-                </h3>
-                <p className="text-sm sm:text-base text-text-body leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-x-0 lg:-mx-6">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="lg:px-6 lg:border-l lg:border-border lg:first:border-l-0"
+            >
+              <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-4">
+                Step {step.number}
+              </p>
+              <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-4">
+                {step.title}
+              </h3>
+              <p className="text-sm sm:text-base text-text-body leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          ))}
         </div>
       </Container>
     </Section>
