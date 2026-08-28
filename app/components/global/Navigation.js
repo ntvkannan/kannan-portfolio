@@ -45,10 +45,10 @@ export default function Navigation() {
                     }`}
                   ></span>
                 </Link>
-                {/* Active chevron below the underline */}
+                {/* Active chevron above the label, pointing down at it */}
                 {active && (
                   <svg
-                    className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-3 h-3 text-accent"
+                    className="absolute -top-3 left-1/2 -translate-x-1/2 w-3 h-3 text-accent"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2.5"
