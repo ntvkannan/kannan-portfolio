@@ -185,6 +185,35 @@
     border-radius: var(--radius-button);
   }
 
+  /* Single-DOM responsive layout for ProjectFlowSection steps:
+     repositions icon/connector/heading/description per breakpoint
+     via named grid areas instead of duplicating markup. */
+  .flow-step-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon heading"
+      "line desc";
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .flow-step-grid {
+      grid-template-areas:
+        "icon heading"
+        "desc desc";
+      column-gap: 0.75rem;
+      row-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .flow-step-grid {
+      row-gap: 1.5rem;
+    }
+  }
+
   /* Screen Reader Only Text */
   .sr-only {
     position: absolute;

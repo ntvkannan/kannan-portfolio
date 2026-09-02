@@ -160,8 +160,8 @@ export default function HeroSection() {
           {/* Right Column - Profile Image (42-45%) */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-sm">
-              {/* Single curved arc decoration */}
-              <div className="absolute -top-12 -right-12 w-48 h-48 border-4 border-accent opacity-15 rounded-full -z-10"></div>
+              {/* Halo arc centered behind the subject's head/shoulders */}
+              <div className="absolute top-6 left-1/2 -translate-x-1/2 w-56 h-56 border-4 border-accent opacity-15 rounded-full -z-10"></div>
 
               {/* Very subtle dot pattern */}
               <div className="absolute inset-0 rounded-3xl opacity-20 -z-10" style={{
@@ -183,13 +183,14 @@ export default function HeroSection() {
               ></div>
 
               {/* Profile Image */}
-              <div className="relative overflow-hidden rounded-3xl aspect-square">
+              <div className="relative w-full">
                 <Image
-                  src="/images/Kannan.jpg"
+                  src="/images/Kannan-hero.png"
                   alt="Kannan Thangavel"
-                  fill
-                  className="object-cover object-top"
-                  priority
+                  width={1200}
+                  height={1600}
+                  className="h-auto w-full object-contain"
+                  preload
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 40vw"
                 />
               </div>

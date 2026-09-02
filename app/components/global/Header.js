@@ -17,7 +17,7 @@ export default function Header() {
             className="flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded lg:justify-self-start"
           >
             <Image
-              src="/images/Kannan.jpg"
+              src="/images/Kannan.jpeg"
               alt="Kannan"
               width={32}
               height={32}
