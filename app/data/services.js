@@ -26,6 +26,21 @@ export const serviceCategories = [
     ]
   },
   {
+    id: "brand-marketing",
+    title: "Brand & Marketing Design",
+    description: "Helping businesses create consistent visual communication across brand and marketing materials.",
+    services: [
+      "Brand Identity",
+      "Brand Guidelines",
+      "Business Cards",
+      "Brochures",
+      "Flyers",
+      "Posters",
+      "Marketing Materials",
+      "Digital Creatives"
+    ]
+  },
+  {
     id: "frontend",
     title: "Frontend Development",
     description: "Building responsive web interfaces from design using modern frontend technologies.",
