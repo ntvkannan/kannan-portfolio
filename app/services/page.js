@@ -2,6 +2,7 @@ import ServicesHero from "@/app/components/services/ServicesHero";
 import ServiceGrid from "@/app/components/services/ServiceGrid";
 import ProjectFlowSection from "@/app/components/services/ProjectFlowSection";
 import EndToEndCapability from "@/app/components/services/EndToEndCapability";
+import MonthlyEngagement from "@/app/components/services/MonthlyEngagement";
 import ServicesContactCTA from "@/app/components/services/ServicesContactCTA";
 import { serviceCategories, projectFlow, endToEndCapability } from "@/app/data/services";
 
@@ -23,6 +24,7 @@ export default function ServicesPage() {
       <ServiceGrid categories={serviceCategories} />
       <ProjectFlowSection projectFlow={projectFlow} />
       <EndToEndCapability capability={endToEndCapability} />
+      <MonthlyEngagement />
       <ServicesContactCTA />
     </>
   );
