@@ -109,12 +109,11 @@ export default function HeroSection() {
                   boxDecorationBreak: 'clone',
                   WebkitBoxDecorationBreak: 'clone',
                   backgroundImage:
-                    'linear-gradient(to top, transparent 0.27em, color-mix(in srgb, var(--color-accent) 18%, transparent) 0.27em, color-mix(in srgb, var(--color-accent) 18%, transparent) 0.49em, transparent 0.49em)',
+                    'linear-gradient(to top, transparent 0.27em, color-mix(in srgb, var(--color-accent-hover) 32%, transparent) 0.27em, color-mix(in srgb, var(--color-accent-hover) 32%, transparent) 0.49em, transparent 0.49em)',
                 }}
               >
-                experience to
-              </span>{" "}
-              interface to code.
+                experience to interface to code.
+              </span>
             </h1>
 
             {/* Supporting Copy */}
