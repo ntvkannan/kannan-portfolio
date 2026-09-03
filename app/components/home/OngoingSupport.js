@@ -20,7 +20,7 @@ export default function OngoingSupport() {
             href="/contact"
             className="inline-flex flex-shrink-0 items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
           >
-            Work With Me
+            Discuss Monthly Support
           </NextLink>
         </div>
       </Container>

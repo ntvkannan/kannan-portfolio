@@ -3,11 +3,9 @@ import AudiencePaths from "@/app/components/home/AudiencePaths";
 import CredibilityGrid from "@/app/components/home/CredibilityGrid";
 import SelectedWork from "@/app/components/home/SelectedWork";
 import ClientWork from "@/app/components/home/ClientWork";
-import CurrentlyBuilding from "@/app/components/home/CurrentlyBuilding";
 import ExperienceSnapshot from "@/app/components/home/ExperienceSnapshot";
 import ServicesPreview from "@/app/components/home/ServicesPreview";
 import OngoingSupport from "@/app/components/home/OngoingSupport";
-import AboutSnapshot from "@/app/components/home/AboutSnapshot";
 import ContactCTA from "@/app/components/home/ContactCTA";
 
 export const metadata = {
@@ -29,11 +27,9 @@ export default function Home() {
       <CredibilityGrid />
       <SelectedWork />
       <ClientWork />
-      <CurrentlyBuilding />
       <ExperienceSnapshot />
       <ServicesPreview />
       <OngoingSupport />
-      <AboutSnapshot />
       <ContactCTA />
     </>
   );
