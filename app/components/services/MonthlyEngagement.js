@@ -3,6 +3,7 @@ import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
 import SectionHeader from "@/app/components/foundation/SectionHeader";
 import Tag from "@/app/components/foundation/Tag";
+import CollageMarquee from "@/app/components/foundation/CollageMarquee";
 
 const engagementScope = [
   "UX/UI Design",
@@ -16,7 +17,8 @@ const engagementScope = [
 
 export default function MonthlyEngagement() {
   return (
-    <Section variant="normal" className="-mt-6 md:-mt-8 lg:-mt-12">
+    <Section variant="normal" className="-mt-6 md:-mt-8 lg:-mt-12 bg-collage-gradient">
+      <CollageMarquee className="mb-8 sm:mb-10 lg:mb-12" />
       <Container size="wide">
         <div className="max-w-4xl">
           <div className="border border-border rounded-lg bg-surface p-8 md:p-10">

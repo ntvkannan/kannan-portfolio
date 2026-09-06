@@ -106,6 +106,25 @@
 
   /* Container & Layout */
   --max-width: 1200px;
+
+  /* Animation - Collage Marquee */
+  --animate-collage-marquee: collage-marquee linear infinite;
+}
+
+/* Collage marquee: the track repeats the image sequence several times
+   back-to-back (see CollageMarquee component) so the viewport stays
+   covered throughout the animation, and translates by exactly one
+   sequence width (--collage-marquee-distance, set per-instance) so it
+   loops with no visible seam. Speed is set per-instance via an inline
+   animation-duration based on the image count, so it stays paced as
+   images are added; this keyframe only defines the motion. */
+@keyframes collage-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--collage-marquee-distance, -50%));
+  }
 }
 
 @layer base {
@@ -183,6 +202,21 @@
 @layer utilities {
   .rounded-button {
     border-radius: var(--radius-button);
+  }
+
+  /* Subtle full-section wash for the collage/monthly-support areas:
+     a faint accent-blue tint on the left, settling to the page's own
+     background at the center, easing into the warm secondary-surface
+     tone on the right. Reuses the same "accent color mixed into the
+     base tone at low opacity" technique as the hero's atmospheric
+     wash, and only existing tokens — no new color values. */
+  .bg-collage-gradient {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-accent-hover) 6%, var(--color-background)) 0%,
+      var(--color-background) 50%,
+      var(--color-surface-secondary) 100%
+    );
   }
 
   /* Single-DOM responsive layout for ProjectFlowSection steps:

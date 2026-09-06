@@ -1,10 +1,12 @@
 import NextLink from "next/link";
 import Container from "@/app/components/layout/Container";
 import Section from "@/app/components/layout/Section";
+import CollageMarquee from "@/app/components/foundation/CollageMarquee";
 
 export default function OngoingSupport() {
   return (
-    <Section variant="small">
+    <Section variant="small" className="bg-collage-gradient">
+      <CollageMarquee className="mb-8 sm:mb-10 lg:mb-12" />
       <Container>
         <div className="border border-border rounded-lg bg-surface p-6 sm:p-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
           <div className="max-w-2xl">
