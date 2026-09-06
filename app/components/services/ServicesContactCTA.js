@@ -23,7 +23,7 @@ export default function ServicesContactCTA() {
               Work With Me
             </NextLink>
             <NextLink
-              href="https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zXC1j0Zv0JuHckZ-4kgm3iO3PPiHweej/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-transparent border border-border-strong text-text-primary font-medium text-sm sm:text-base hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"

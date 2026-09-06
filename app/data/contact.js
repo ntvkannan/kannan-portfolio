@@ -39,7 +39,7 @@ export const contactMethods = {
   phone: "+91 99169 64002",
   phoneHref: "tel:+919916964002",
   emailHref: "mailto:ntvkannan@gmail.com",
-  resume: "https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1zXC1j0Zv0JuHckZ-4kgm3iO3PPiHweej/view?usp=sharing"
 };
 
 export const socialLinks = [

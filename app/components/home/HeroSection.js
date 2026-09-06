@@ -152,7 +152,7 @@ export default function HeroSection() {
 
             {/* Supporting Link */}
             <Link
-              href="https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zXC1j0Zv0JuHckZ-4kgm3iO3PPiHweej/view?usp=sharing"
               color="accent"
               external
               className="text-sm font-semibold"

@@ -83,7 +83,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1zXC1j0Zv0JuHckZ-4kgm3iO3PPiHweej/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-text-body hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
