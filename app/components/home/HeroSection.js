@@ -151,7 +151,12 @@ export default function HeroSection() {
             </div>
 
             {/* Supporting Link */}
-            <Link href="/resume.pdf" color="accent" className="text-sm font-semibold">
+            <Link
+              href="https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+              color="accent"
+              external
+              className="text-sm font-semibold"
+            >
               Download Resume
             </Link>
           </div>

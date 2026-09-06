@@ -100,8 +100,9 @@ export default function ResumePage() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-8">
               <a
-                href="/resume.pdf"
-                download
+                href="https://drive.google.com/file/d/1ieWZeGsfmKrHWqcECiNOhBQ6TFegntn5/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-medium text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200"
               >
                 Download Resume (PDF)
