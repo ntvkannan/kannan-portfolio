@@ -151,6 +151,6 @@ export const projects = [
     status: "building",
     featured: false,
     heroType: "brand",
-    image: null
+    image: "/images/projects/profile/Kannan-Personal-Website.png"
   }
 ];

@@ -6,25 +6,45 @@ import FeatureShowcase from "./case-study/FeatureShowcase";
 import DesignChallenge from "./case-study/DesignChallenge";
 import Link from "@/app/components/foundation/Link";
 import CaseStudySectionNav from "./CaseStudySectionNav";
+import Image from "@/app/components/foundation/Image";
 import { slugify } from "@/app/utils/slugify";
 import { projects } from "@/app/data/projects";
 
 function GallerySection({ items }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      {items.map((item) => (
-        <div
-          key={item.id}
-          className="bg-surface-secondary rounded-lg overflow-hidden aspect-video flex flex-col items-center justify-center p-6"
-        >
-          <p className="text-text-muted text-center text-sm">
-            {item.title}
-          </p>
-          <p className="text-text-muted text-center text-xs mt-2">
-            {item.description}
-          </p>
-        </div>
-      ))}
+      {items.map((item) =>
+        item.image ? (
+          <div key={item.id} className="flex flex-col gap-4">
+            <Image
+              src={item.image}
+              alt={item.imageAlt || item.title}
+              ratio="auto"
+              rounded="lg"
+            />
+            <div>
+              <p className="text-base sm:text-lg font-semibold text-text-primary">
+                {item.title}
+              </p>
+              <p className="text-sm sm:text-base text-text-body mt-1">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div
+            key={item.id}
+            className="bg-surface-secondary rounded-lg overflow-hidden aspect-video flex flex-col items-center justify-center p-6"
+          >
+            <p className="text-text-muted text-center text-sm">
+              {item.title}
+            </p>
+            <p className="text-text-muted text-center text-xs mt-2">
+              {item.description}
+            </p>
+          </div>
+        )
+      )}
     </div>
   );
 }
