@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://kannanthangavel.com/sitemap.xml",
+    sitemap: "https://kannant.com/sitemap.xml",
   };
 }

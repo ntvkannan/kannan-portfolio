@@ -46,9 +46,9 @@ export default function ContactPaths({ onPathSelect }) {
                 }`}
                 aria-pressed={selectedPath === path.id}
               >
-                <h3 className="font-semibold text-text-primary mb-2">
+                <h2 className="text-[length:var(--font-size-h3)] leading-[var(--line-height-h3)] font-semibold text-text-primary mb-2">
                   {path.title}
-                </h3>
+                </h2>
                 <p className="text-sm text-text-body leading-relaxed">
                   {path.description}
                 </p>

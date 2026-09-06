@@ -1,7 +1,7 @@
 import { projects } from "@/app/data/projects";
 
 export default function sitemap() {
-  const baseUrl = "https://kannanthangavel.com";
+  const baseUrl = "https://kannant.com";
 
   const mainRoutes = [
     {
@@ -39,6 +39,12 @@ export default function sitemap() {
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/resume`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "yearly",
+      priority: 0.6,
     },
   ];
 

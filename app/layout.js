@@ -13,7 +13,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://kannanthangavel.com"),
+  metadataBase: new URL("https://kannant.com"),
   title: "Kannan Thangavel",
   description: "UX/UI Designer & Frontend Developer",
 };

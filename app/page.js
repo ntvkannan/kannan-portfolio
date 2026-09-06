@@ -11,11 +11,22 @@ import ContactCTA from "@/app/components/home/ContactCTA";
 export const metadata = {
   title: "Kannan Thangavel — UX/UI Designer & Frontend Developer",
   description: "Senior UX/UI Designer and Frontend Developer. Explore my portfolio of professional UX/UI projects, client design work, and design-to-code capabilities.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Kannan Thangavel — UX/UI Designer & Frontend Developer",
     description: "Senior UX/UI Designer and Frontend Developer. Explore my portfolio of professional UX/UI projects, client design work, and design-to-code capabilities.",
     url: "/",
     type: "website",
+    images: [
+      {
+        url: "/images/Kannan-hero.png",
+        width: 596,
+        height: 912,
+        alt: "Kannan Thangavel — Senior UX/UI Designer & Frontend Developer",
+      },
+    ],
   },
 };
 

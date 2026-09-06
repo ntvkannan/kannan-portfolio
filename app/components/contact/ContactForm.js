@@ -151,21 +151,23 @@ export default function ContactForm({ preSelectedProjectType = null }) {
 
             {submitStatus === "success" && (
               <div
-                className="mb-6 p-4 rounded-lg bg-surface-secondary border border-accent text-text-primary"
+                className="mb-6 p-4 rounded-lg bg-surface-secondary border border-success text-text-primary"
                 role="status"
                 aria-live="polite"
               >
-                Thanks for reaching out! I'll get back to you soon.
+                <p className="font-medium text-success">
+                  Thanks for reaching out! I'll get back to you soon.
+                </p>
               </div>
             )}
 
             {submitStatus === "error" && (
               <div
-                className="mb-6 p-4 rounded-lg bg-surface-secondary border border-accent text-text-primary"
+                className="mb-6 p-4 rounded-lg bg-surface-secondary border border-error text-text-primary"
                 role="alert"
                 aria-live="polite"
               >
-                <p className="font-medium mb-1">Unable to send message</p>
+                <p className="font-medium mb-1 text-error">Unable to send message</p>
                 <p className="text-sm text-text-body">{submitError}</p>
               </div>
             )}

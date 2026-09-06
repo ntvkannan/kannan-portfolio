@@ -8,11 +8,22 @@ import ContactCTA from "@/app/components/services/ServicesContactCTA";
 export const metadata = {
   title: "Experience — Kannan Thangavel",
   description: "Professional career history spanning visual design, frontend development, UX/UI design and product experience with 15+ years in frontend development and 10+ years in UX/UI design.",
+  alternates: {
+    canonical: "/experience",
+  },
   openGraph: {
     title: "Experience — Kannan Thangavel",
     description: "Learn about my professional career progression and experience across design and development.",
     url: "/experience",
     type: "website",
+    images: [
+      {
+        url: "/images/Kannan-hero.png",
+        width: 596,
+        height: 912,
+        alt: "Kannan Thangavel — Senior UX/UI Designer & Frontend Developer",
+      },
+    ],
   },
 };
 

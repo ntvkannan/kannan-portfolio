@@ -28,6 +28,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${project.title} — Kannan Thangavel`,
     description: project.description,
+    alternates: {
+      canonical: `/work/${project.slug}`,
+    },
     openGraph: {
       title: project.title,
       description: project.description,
@@ -51,8 +54,8 @@ function ProjectStructuredData({ project }) {
     "@type": "CreativeWork",
     name: project.title,
     description: project.description,
-    url: `https://kannanthangavel.com/work/${project.slug}`,
-    image: `https://kannanthangavel.com${project.image}`,
+    url: `https://kannant.com/work/${project.slug}`,
+    image: `https://kannant.com${project.image}`,
     creator: {
       "@type": "Person",
       name: "Kannan Thangavel",

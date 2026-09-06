@@ -214,7 +214,7 @@ export default function CaseStudySectionNav({ sections }) {
                           : "text-text-body hover:bg-surface-secondary hover:text-text-primary border-l-2 border-transparent"
                       }`}
                     >
-                      <span className="text-text-muted text-xs font-semibold">
+                      <span className="text-text-body text-xs font-semibold">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                       <span className="ml-2.5 text-sm">{displayTitle}</span>

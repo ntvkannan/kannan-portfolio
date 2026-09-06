@@ -36,10 +36,10 @@ function GallerySection({ items }) {
             key={item.id}
             className="bg-surface-secondary rounded-lg overflow-hidden aspect-video flex flex-col items-center justify-center p-6"
           >
-            <p className="text-text-muted text-center text-sm">
+            <p className="text-text-body text-center text-sm">
               {item.title}
             </p>
-            <p className="text-text-muted text-center text-xs mt-2">
+            <p className="text-text-body text-center text-xs mt-2">
               {item.description}
             </p>
           </div>

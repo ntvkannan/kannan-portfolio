@@ -8,11 +8,22 @@ import { careerTimeline, skills } from "@/app/data/experience";
 export const metadata = {
   title: "Resume — Kannan Thangavel",
   description: "Senior UX/UI Designer & Frontend Developer. Download resume or view my complete professional background, experience, and skills.",
+  alternates: {
+    canonical: "/resume",
+  },
   openGraph: {
     title: "Resume — Kannan Thangavel",
     description: "Senior UX/UI Designer & Frontend Developer. Download resume or view professional background and experience.",
     url: "/resume",
     type: "website",
+    images: [
+      {
+        url: "/images/Kannan-hero.png",
+        width: 596,
+        height: 912,
+        alt: "Kannan Thangavel — Senior UX/UI Designer & Frontend Developer",
+      },
+    ],
   },
 };
 

@@ -204,6 +204,18 @@
     border-radius: var(--radius-button);
   }
 
+  /* outline-color only ever changes when an element gains or loses
+     keyboard focus (it has no other role), but Tailwind's .transition-colors
+     utility — used site-wide on buttons/links alongside focus-visible:outline-*
+     — includes outline-color in its transitioned properties by default. That
+     made the focus ring fade in over ~200ms instead of appearing immediately.
+     Dropping outline-color from this list (keeping every other color
+     transition, e.g. hover backgrounds, intact) makes focus indication
+     instant everywhere without touching individual components. */
+  .transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  }
+
   /* Subtle full-section wash for the collage/monthly-support areas:
      a faint accent-blue tint on the left, settling to the page's own
      background at the center, easing into the warm secondary-surface

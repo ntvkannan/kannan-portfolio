@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Kannan Thangavel",
-    url: "https://kannanthangavel.com",
+    url: "https://kannant.com",
     jobTitle: "UX/UI Designer & Frontend Developer",
     sameAs: [
       "https://www.linkedin.com/in/kannan-thangavel/",
@@ -14,7 +14,7 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    url: "https://kannanthangavel.com",
+    url: "https://kannant.com",
     name: "Kannan Thangavel — Portfolio",
     creator: {
       "@type": "Person",
