@@ -1,10 +1,11 @@
+import NextLink from "next/link";
 import Badge from "@/app/components/foundation/Badge";
-import Link from "@/app/components/foundation/Link";
 import Image from "@/app/components/foundation/Image";
+import ProjectResourceLinks from "@/app/components/portfolio/ProjectResourceLinks";
 
 export default function ProjectCard({ project }) {
   return (
-    <article className="group/card">
+    <article className="group/card flex flex-col">
       {/* Project Image */}
       {project.image && (
         <div className="mb-6 overflow-hidden rounded-lg">
@@ -38,17 +39,17 @@ export default function ProjectCard({ project }) {
         <span className="font-semibold text-text-primary">Role:</span> {project.role}
       </p>
 
-      {/* CTA Link */}
-      <Link
-        href={`/work/${project.slug}`}
-        color="accent"
-        className="font-medium group"
-      >
-        <span className="inline-flex items-center gap-1">
+      <div className="mt-auto">
+        <NextLink
+          href={`/work/${project.slug}`}
+          className="inline-flex items-center justify-center gap-1.5 rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-semibold text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200 group"
+        >
           View Case Study
           <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
-        </span>
-      </Link>
+        </NextLink>
+
+        <ProjectResourceLinks resources={project.resources} className="mt-4" />
+      </div>
     </article>
   );
 }

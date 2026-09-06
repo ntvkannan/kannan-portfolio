@@ -62,7 +62,7 @@ export default function Image({
         sizes={sizes}
         priority={priority}
         loading={priority ? "eager" : loading}
-        className={`w-full h-auto ${ratio === 'auto' ? 'object-contain' : 'object-cover'}`}
+        className={`w-full ${ratio === 'auto' ? 'h-auto object-contain' : 'h-full object-cover'}`}
         {...props}
       />
     </div>

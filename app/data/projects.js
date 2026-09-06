@@ -9,7 +9,36 @@ export const projects = [
     type: "Enterprise SaaS / Signage Management",
     status: "completed",
     featured: true,
-    image: "/images/projects/osel/dashboard.png"
+    image: "/images/projects/osel/dashboard.png",
+    // Optional. Only projects with genuine public resources define this.
+    resources: [
+      {
+        type: "figma",
+        label: "Figma",
+        title: "View OSEL Figma Prototype",
+        href: "https://www.figma.com/proto/OHvGMJPe8DmHE7rrzFHzAb/OSEL?node-id=580-9148&viewport=-852%2C1231%2C0.12&t=L4sKwcxSGIa4NvxT-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=650%3A8898&show-proto-sidebar=1&page-id=0%3A1"
+      },
+      {
+        type: "pdf",
+        label: "PDF",
+        title: "Open OSEL PDF",
+        href: "https://drive.google.com/file/d/1pFgp3sB9fJ3wWm9vYfASlwGMJpuYfpnr/view?usp=sharing"
+      },
+      // osel-website = the live website; osel-portal = the developer
+      // implementation. Distinct destinations, do not merge.
+      {
+        type: "website",
+        label: "Website",
+        title: "View Live OSEL Website",
+        href: "https://ntvkannan.github.io/osel-website/"
+      },
+      {
+        type: "developer",
+        label: "Developer Implementation",
+        title: "View OSEL Developer Implementation",
+        href: "https://ntvkannan.github.io/osel-portal/"
+      }
+    ]
   },
   {
     slug: "advocate-consultation-platform",
@@ -21,7 +50,15 @@ export const projects = [
     type: "Digital Consultation Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/advocate/advocate-08-booking.png"
+    image: "/images/projects/advocate/advocate-06-client-discovery.png",
+    resources: [
+      {
+        type: "pdf",
+        label: "PDF",
+        title: "Open Advocate Consultation PDF",
+        href: "https://drive.google.com/file/d/1gpoP8az5IOurDw5cfI6sT5-KK1fste7O/view?usp=sharing"
+      }
+    ]
   },
   {
     slug: "school-erp",
@@ -33,7 +70,21 @@ export const projects = [
     type: "Education Management Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/school-erp/school-erp-dashboard.png"
+    image: "/images/projects/school-erp/school-erp-dashboard.png",
+    resources: [
+      {
+        type: "pdf",
+        label: "Lead – Enrollment",
+        title: "Open School ERP Lead – Enrollment PDF",
+        href: "https://drive.google.com/file/d/1w24vjKIXwCCTxelln66VYClrukO6dyIg/view?usp=sharing"
+      },
+      {
+        type: "pdf",
+        label: "Billing",
+        title: "Open School ERP Billing PDF",
+        href: "https://drive.google.com/file/d/11LDG52Q4W-80AwTmHUxhfkBd5XVghMKE/view?usp=sharing"
+      }
+    ]
   },
   {
     slug: "kit-management",
@@ -45,7 +96,21 @@ export const projects = [
     type: "Management Platform",
     status: "completed",
     featured: false,
-    image: "/images/projects/kit-management/franchisee-dashboard.png"
+    image: "/images/projects/kit-management/franchisee-dashboard.png",
+    resources: [
+      {
+        type: "pdf",
+        label: "Franchisee",
+        title: "Open Kit Management Franchisee PDF",
+        href: "https://drive.google.com/file/d/1z3yYuDmEia7X8z3c8iGjIVwdaz4Wc-NZ/view?usp=sharing"
+      },
+      {
+        type: "pdf",
+        label: "Corporate Office",
+        title: "Open Kit Management Corporate Office PDF",
+        href: "https://drive.google.com/file/d/1TY6uAiRsDeeOafgiRGxM2bX709hU7pZB/view?usp=sharing"
+      }
+    ]
   },
   {
     slug: "seafood-restaurant",

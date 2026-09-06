@@ -4,6 +4,7 @@ import Section from "@/app/components/layout/Section";
 import SectionHeader from "@/app/components/foundation/SectionHeader";
 import Badge from "@/app/components/foundation/Badge";
 import Image from "@/app/components/foundation/Image";
+import ProjectResourceLinks from "@/app/components/portfolio/ProjectResourceLinks";
 import { projects } from "@/app/data/projects";
 
 export default function SelectedWork() {
@@ -54,15 +55,17 @@ export default function SelectedWork() {
                   <p>{featuredProject.type}</p>
                 </div>
               </div>
-              <NextLink
-                href={`/work/${featuredProject.slug}`}
-                className="inline-flex text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent font-medium transition-colors group"
-              >
-                <span className="inline-flex items-center gap-1">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
+                <NextLink
+                  href={`/work/${featuredProject.slug}`}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-semibold text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200 group"
+                >
                   View Case Study
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
-                </span>
-              </NextLink>
+                </NextLink>
+
+                <ProjectResourceLinks resources={featuredProject.resources} />
+              </div>
             </div>
           </div>
         )}
@@ -70,7 +73,7 @@ export default function SelectedWork() {
         {/* Supporting Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {supportingProjects.map(project => (
-            <div key={project.slug} className="group/card">
+            <div key={project.slug} className="group/card flex flex-col">
               {project.image && (
                 <div className="mb-4 overflow-hidden rounded-lg">
                   <Image
@@ -88,15 +91,23 @@ export default function SelectedWork() {
               <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-3">
                 {project.title}
               </h4>
-              <NextLink
-                href={`/work/${project.slug}`}
-                className="inline-flex text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent text-sm font-medium transition-colors group"
-              >
-                <span className="inline-flex items-center gap-1">
+              <p className="text-sm sm:text-base text-text-body mb-4">
+                {project.description}
+              </p>
+              <p className="text-xs sm:text-sm text-text-body mb-4">
+                <span className="font-semibold text-text-primary">Role:</span> {project.role}
+              </p>
+              <div className="mt-auto">
+                <NextLink
+                  href={`/work/${project.slug}`}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-button h-11 sm:h-12 px-5 sm:px-6 bg-accent text-white font-semibold text-sm sm:text-base hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors duration-200 group"
+                >
                   View Case Study
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
-                </span>
-              </NextLink>
+                </NextLink>
+
+                <ProjectResourceLinks resources={project.resources} className="mt-4" />
+              </div>
             </div>
           ))}
         </div>
