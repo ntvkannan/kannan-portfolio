@@ -60,8 +60,35 @@ export const endToEndCapability = {
   title: "End-to-End Product Design",
   subtitle: "From UX to Code",
   description: "For selected projects, I can take the experience from UX and UI design through frontend implementation.",
-  flow: "UX → UI → Design System → Frontend → Deployment",
-  note: "This is an expanding capability demonstrated through self-directed product projects, where I personally combine UX/UI design with frontend development."
+  stages: [
+    {
+      icon: "ux",
+      title: "UX",
+      description: "Understand users, problems and goals."
+    },
+    {
+      icon: "ui",
+      title: "UI",
+      description: "Design intuitive and engaging interfaces."
+    },
+    {
+      icon: "designSystem",
+      title: "Design System",
+      description: "Build consistent components and scalable design systems."
+    },
+    {
+      icon: "frontend",
+      title: "Frontend",
+      description: "Develop responsive, accessible and performant interfaces."
+    },
+    {
+      icon: "deployment",
+      title: "Deployment",
+      description: "Launch, optimize and support real-world products."
+    }
+  ],
+  closingStatement: "Design. Build. Launch. Together.",
+  outcomeNote: "From ideas to impact"
 };
 
 export const projectFlow = [
